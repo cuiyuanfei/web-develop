@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49dd25c5-4062-404d-beae-c8cb3dcd4f75" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/asset/common/ember-1.0.0-rc.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/asset/common/ember.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/asset/common/handlebars.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/asset/common/jquery-1.7.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/asset/common/jquery-1.8.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/asset/common/jquery-1.8.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/asset/seajs/plugin-combo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/asset/seajs/sea-debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/asset/twk/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/asset/twk/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/emberDemo/inde.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/emberDemo/lib/ember-1.0.0-rc.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/emberDemo/lib/handlebars.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/emberDemo/lib/jquery-1.9.1.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SeaJSDemo.iws" />
@@ -36,40 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/asset/twk/config.js">
+      <file leaf-file-name="inde.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/emberDemo/inde.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="41" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
+            <state line="4" column="19" selection-start="144" selection-end="144" vertical-scroll-proportion="0.06690141">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="twk.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/twk.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="28" selection-start="198" selection-end="198" vertical-scroll-proportion="-6.785714">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/app/asset/twk/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="17" selection-start="156" selection-end="156" vertical-scroll-proportion="0.15939598">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/asset/twk/base.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="7" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#162#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -96,6 +59,7 @@
         <option value="$PROJECT_DIR$/web/app/asset/twk/config.js" />
         <option value="$PROJECT_DIR$/web/app/asset/twk/base.js" />
         <option value="$PROJECT_DIR$/web/app/asset/twk/main.js" />
+        <option value="$PROJECT_DIR$/emberDemo/inde.html" />
       </list>
     </option>
   </component>
@@ -131,6 +95,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -178,36 +152,6 @@
               <option name="myItemId" value="asset" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="twk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SeaJSDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SeaJSDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seajs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -244,15 +188,59 @@
               <option name="myItemId" value="SeaJSDemo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SeaJSDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SeaJSDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloworld" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SeaJSDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SeaJSDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="emberDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SeaJSDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SeaJSDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="emberDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -262,15 +250,15 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" serverName="Sea" serverId="032fb417-57ae-4f01-a102-4ae3b9e0da49" autoUpload="true">
     <servers>
@@ -285,11 +273,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\J2EE\GitHubRepository\cuiyuanfei\web-develop\JS-SeaJS学习\SeaJSDemo\emberDemo\lib" />
       <recent name="D:\J2EE\GitHubRepository\cuiyuanfei\web-develop\JS-SeaJS学习\SeaJSDemo\web\app\asset\seajs" />
       <recent name="D:\J2EE\GitHubRepository\cuiyuanfei\web-develop\JS-SeaJS学习\SeaJSDemo\web\app\asset\common" />
       <recent name="D:\J2EE\GitHubRepository\cuiyuanfei\web-develop\JS-SeaJS学习\SeaJSDemo\web\app\asset\twk" />
       <recent name="D:\J2EE\GitHubRepository\cuiyuanfei\web-develop\JS-SeaJS学习\SeaJSDemo\web\app\lib\asset" />
-      <recent name="D:\J2EE\GitHubRepository\cuiyuanfei\web-develop\JS-SeaJS学习\SeaJSDemo\web\app\lib\common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\J2EE\GitHubRepository\cuiyuanfei\web-develop\JS-SeaJS学习\SeaJSDemo\web\app\asset" />
@@ -339,14 +327,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1234" height="784" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.5017182" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21928328" sideWeight="0.47938144" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22354949" sideWeight="0.47938144" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.50859106" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -417,31 +405,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/helloworld/helloworld.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="108" selection-start="253" selection-end="253" vertical-scroll-proportion="0.17117117" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/asset/common/jquery-1.8.3.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/asset/common/jquery-1.8.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/asset/common/jquery-1.7.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/app/asset/common/handlebars.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -459,16 +422,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/asset/twk/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="167872" column="16" selection-start="4531125" selection-end="4531125" vertical-scroll-proportion="0.33913043">
-          <folding />
-        </state>
+        <state line="167872" column="16" selection-start="4531125" selection-end="4531125" vertical-scroll-proportion="0.33913043" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/asset/seajs/sea-debug.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="923" column="36" selection-start="20717" selection-end="20717" vertical-scroll-proportion="0.28494623">
-          <folding />
-        </state>
+        <state line="923" column="36" selection-start="20717" selection-end="20717" vertical-scroll-proportion="0.28494623" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/asset/seajs/sea.js">
@@ -478,37 +437,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/asset/seajs/plugin-combo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/asset/twk/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#162#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/asset/twk/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="41" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/twk.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="198" selection-end="198" vertical-scroll-proportion="-6.785714">
+        <state line="10" column="28" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/asset/twk/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="156" selection-end="156" vertical-scroll-proportion="0.15939598">
+        <state line="10" column="0" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/asset/common/ember.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/asset/twk/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="3" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emberDemo/lib/ember-1.0.0-rc.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emberDemo/lib/jquery-1.9.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emberDemo/lib/handlebars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emberDemo/inde.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="19" selection-start="144" selection-end="144" vertical-scroll-proportion="0.06690141">
           <folding />
         </state>
       </provider>
