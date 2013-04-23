@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="themes/bootstrap/easyui.css">
+    <link rel="stylesheet" type="text/css" href="themes/icon.css">
+    <script type="text/javascript" src="lib/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.easyui.min.js"></script>
+<style>
+    .div_mask
+    {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        z-index: 200;
+        background-color: Black;
+        position: fixed;
+        left: 0;
+        top: 0;
+        opacity: 0.95;
+        moz-opacity:0.95;
+        filter:alpha(opacity=95);
+        display: none;
+    }
+
+    #div_login
+    {
+        position:absolute;
+        top:50%;
+        left:40%;
+        width: 300px;
+        height: 230px;
+        margin: -150px 0 0 -115px;
+        background-color: #CA8EFF;
+        vertical-align: middle;
+        /*display: none;*/
+    }
+
+    td{
+        color: #000000;
+    }
+</style>
+</head>
+<body style="height:100%;width:100%;overflow:hidden;border:none;visibility:visible;" >
+<div class="easyui-window" style="width:400px;height:200px;background:#fafafa;overflow:hidden"
+     title="泉丰电脑织唛有限公司-管理信息系统" data-options="border:false,resizable:false,draggable:false,minimizable:false,maximizable:false,closable:false,collapsible:false">
+    <div style="padding:50px 0;">
+        <form action="main.jsp" method="post" id="loginForm">
+            <div style="padding-left:60px;">
+                <table cellpadding="0" cellspacing="3">
+                    <tr>
+                        <td style="width: 80px"><label for="name">登录帐号</label></td>
+                        <td><input class="easyui-validatebox" data-options="required:true" missingMessage="请输入登陆账号!" name="username"></input></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">登录密码</label></td>
+                        <td><input type="password" class="easyui-validatebox" data-options="required:true,validType:['length[6,20]']" invalidMessage="请输入至少6位的登陆密码!" missingMessage="请输入登陆密码" name="password"></input></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <a class="easyui-linkbutton" onclick="javascript:document.getElementById('loginForm').submit();">登 录</a>
+                            <a class="easyui-linkbutton" onclick="javascript:document.getElementById('loginForm').reset();">重 置</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
