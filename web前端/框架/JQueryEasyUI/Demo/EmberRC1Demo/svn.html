@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <script src="lib/jquery.js"></script>
+    <script src="lib/basic64.js"></script>
+    <script>
+        function make_basic_auth(user, password) {
+            var tok = user + ':' + password;
+            var hash = Base64.encode(tok);
+            return "Basic " + hash;
+        }
+        $(function(){
+
+
+            var auth = make_basic_auth('INNOALM','A5CE6C3AA0F73923');
+            var url = 'http://INNOALM:A5CE6C3AA0F73923@192.168.3.221:8099/svn/';
+            // jQuery
+            $.ajax({
+                url : url,
+                method : 'GET',
+                //dataType:'jsonp',
+              // jsonp:"callback",
+               // async: false,
+               /* beforeSend : function(req) {
+                    req.setRequestHeader('Authorization', auth);
+                },*/
+                success:function(data){
+                    console.log(data);
+                }
+
+                });
+        })
+
+
+    </script>
+</head>
+<body>
+       <a href="http://USR00000000000000001:5ad5c1163f12f89b013f7fa42e2c385a@192.168.3.221:8099/svn/ModelProduct/trunk/%e6%a8%a1%e5%9e%8b%e8%b5%84%e4%ba%a7%e5%ba%93/00-%e6%9e%b6%e6%9e%84%e5%9c%b0%e5%9b%be/Browser%e5%b7%a5%e7%a8%8b.doc">sssss</a>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="lib/jquery.js"></script>
+    <script src="lib/handlebars.js"></script>
+    <script src="lib/ember-1.0.0-rc.3.js"></script>
+    <script src="lib/basic64.js"></script>
+    <script>
+        $(function(){
+
+            //alert(Base64.encode("USR00000000000000041:5ad5147a3ea255d7013ea5e67a5b0001"));
+            App = Ember.Application.create({
+                LOG_TRANSITIONS : true
+
+            });
+
+            App.ApplicationController = Ember.ArrayController.extend({
+                content:[],
+                init:function(){
+                    this._super();
+                    var cont = this.get("content");
+
+                    for(var i=0;i<1000;i++){
+                        cont.pushObject(Ember.Object.create({name:"name-"+i}));
+                    }
+
+                }
+            });
+
+
+            Ember.Handlebars.registerBoundHelper('highlight', function(value, options) {
+                var escaped = Handlebars.Utils.escapeExpression(value);
+                return new Handlebars.SafeString('<span class="highlight">' + escaped + '</span>');
+            });
+
+            Ember.Handlebars.registerBoundHelper('fullName', function(person) {
+                var view = eval("OuterView").create();
+                view.append();
+                //return person.get('firstName') + ' ' + person.get('lastName');
+            }, 'firstName', 'lastName');
+
+            OuterView = Ember.View.extend({
+                name:"333",
+                layout: Ember.Handlebars.compile("<div class='my-decorative-class'>outer{{view ScrollView}} {{#view InnerView}}inner{{yield}}inner{{/view}}outer</div>"),
+                //template: Ember.Handlebars.compile("inner"),
+                eventManager: Ember.Object.create({
+                    mouseEnter: function(event, view){
+                        // view might be instance of either
+                        // OutsideView or InnerView depending on
+                        // where on the page the user interaction occured
+                    }
+                })
+            });
+
+            App.Person = Ember.Object.create({
+                firstName:"Cui",
+                lastName:"YuanFei"
+            })
+
+            InnerView = Ember.View.extend({
+
+            });
+            ScrollView = Ember.View.extend({
+                template: Ember.Handlebars.compile("<div>我是滚动条</div>")
+            });
+
+            App.ParentView = Ember.View.extend({
+                template: Ember.Handlebars.compile("The parent's child: {{view view.ChildView}}."),
+
+                ChildView: Ember.View.extend({
+                    template: Ember.Handlebars.compile("-- child view --")
+                })
+            });
+
+        })
+
+    </script>
+</head>
+<body>
+<script type="text/x-handlebars" data-template-name="application111">
+        {{#view OuterView}}
+                {{view App.ParentView}}
+                {{fullName App.Person}}
+               {{highlight view.parentView.name}}
+            {{view.parentView.name}}
+        {{/view}}
+    </script>
+<script type="text/x-handlebars" data-template-name="application">
+    {{#each item in controller}}
+        {{item.name}}<br>
+    {{/each}}
+    </script>
+</body>
+</html>
