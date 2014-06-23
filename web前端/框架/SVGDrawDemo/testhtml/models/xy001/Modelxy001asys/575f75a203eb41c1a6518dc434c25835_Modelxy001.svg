@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+  <script xlink:href="../../../js/SVGPan.js"/>
+  <script xlink:href="../../../js/fun.js"/>
+  <g>
+    <svg width="217" height="157" version="1.1" x="192" y="120" onclick="_svgNode('d3a916708d7b4886ba76f323f1d93072.html');">  
+      <defs> 
+        <linearGradient id="bg_application" x1="0" y1="0" x2="0" y2="100%"> 
+          <stop offset="0" style="stop-color:#C1D9B3"/>  
+          <stop offset="100%" style="stop-color:#7DBD75"/> 
+        </linearGradient>  
+        <g id="icon_yy" stroke="none"> 
+          <path fill="#3E3A39" d="M18,16H2V2h16V16z M16,6H4v8h12V6z M16,3h-3v2h3V3z"/> 
+        </g> 
+      </defs>  
+      <g id="eva_border" fill="url(#bg_application)" stroke="#4F4F4F"> 
+        <rect x="0" y="0" width="100%" height="100%"/>  
+        <use x="0" y="0" xlink:href="#icon_yy"/> 
+      </g>  
+      <text x="61" y="82" font-family="微软雅黑" font-size="13">银行核心系统12</text>
+    </svg>
+    <svg width="85" height="57" version="1.1" x="528" y="84" onclick="_svgNode('922afa7033ed43d09f3aae48d0cdfc16.html');">  
+      <defs> 
+        <linearGradient id="bg_hostservernode" x1="0" y1="0" x2="0" y2="100%"> 
+          <stop offset="0" style="stop-color:#EBF1E4"/>  
+          <stop offset="1" style="stop-color:#ACC8A4"/> 
+        </linearGradient>  
+        <g id="icon_zjfwq" stroke="none"> 
+          <rect x="2" y="2" fill-rule="evenodd" clip-rule="evenodd" fill="#3E3A39" width="16" height="2"/>  
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#3E3A39" d="M18,12H2V5h16V12z M16,7H4v1h12V7z M7,9H4v2h3V9z M11,9H8v2h3V9z   M16,9h-2v2h2V9z"/> 
+        </g> 
+      </defs>  
+      <g id="eva_border" fill="url(#bg_hostservernode)" stroke="#4F4F4F"> 
+        <rect x="0" y="0" width="100%" height="100%"/>  
+        <use x="0" y="0" xlink:href="#icon_zjfwq"/> 
+      </g>  
+      <text x="16" y="32" font-family="微软雅黑" font-size="13">主机信息</text>
+    </svg>
+    <path d="M 408 198 L 468 198 L 468 112 L 528 112 L " stroke="black" stroke-width="1" fill="none"/>
+  </g>
+</svg>

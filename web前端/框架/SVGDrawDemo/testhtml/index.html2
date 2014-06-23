@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<title>360模型</title>
+</head>
+
+<body>
+   <div class="wrapper">    
+    <div class="top-navbar">
+      <div class="logo-brand">
+		 <a href="index.html"><img alt="360 logo" src="images/logo-360.png"></a>
+	  </div>           
+    </div>
+    <div class="sidebar-left sidebar-nicescroller" style="overflow: hidden;" tabindex="5000">
+       <iframe src="left-page.html" name="leftbox" align="MIDDLE" width="250" height="100%" frameborder="0" marginheight-top="0px" scrolling="Yes"> </iframe>
+    </div>
+    <div class="page-content">
+          <div class="vd_head-section clearfix">            
+            <div class="vd_panel-header">
+              <div class="btn-collapse-sidebar-left">
+               <i class="fa fa-long-arrow-right icon-dinamic"></i>
+             </div>
+              <ul class="breadcrumb">
+                <li><a href="index.php">Home</a> </li>
+                <li class="active">库文件</li>
+              </ul>
+            </div>
+          </div> 
+          
+         <div>
+          <iframe src="page-1.html" name="centerbox" align="MIDDLE" width="100%" height="100%" frameborder="0" marginheight-top="0px"> </iframe>
+         </div>
+         <div class="att-panel">
+           <div class="btn-collapse-bottom">
+		    <i class="fa fa-arrow-circle-o-up att-icon-dinamic"></i>
+		 </div>
+           <iframe src="att-panel.html" name="bottombox" align="MIDDLE" width="100%" height="200" frameborder="0" marginheight-top="0px"> </iframe>
+         </div>
+    </div>
+   </div>
+   <script src="js/apps.js"></script>
+   <script src="js/tree-init.js"></script>
+</body>
+</html>

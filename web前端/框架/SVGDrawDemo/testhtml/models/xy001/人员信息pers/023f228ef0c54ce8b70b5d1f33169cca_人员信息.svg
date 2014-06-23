@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+  <script xlink:href="../../../js/SVGPan.js"/>
+  <script xlink:href="../../../js/fun.js"/>
+  <g>
+    <svg width="181" height="133" version="1.1" x="156" y="120" onclick="_svgNode('1134f2b3f70b46ec8fb57211712d9df1.html');">  
+      <defs> 
+        <linearGradient id="bg_appfunc" x1="0" y1="0" x2="0" y2="100%"> 
+          <stop offset="0" style="stop-color:#FFFFFF"/>  
+          <stop offset="100%" style="stop-color:#99CC99"/> 
+        </linearGradient>  
+        <g id="icon_yygn" stroke="none"> 
+          <path id="delivery_2_" fill="#6E7C81" d="M17.08,10.323c0.202-0.201-2.392,2.775-2.392,2.775s-4.436,0-4.879,0    c-1.165,0-3.351-1.502-5.764,0.328c-0.18-0.2-2.627-2.78-2.627-2.78s4.449-2.728,4.693-2.868C7.92,6.893,9.247,8.287,9.729,8.287    c0.482,0,3.572,0,3.793,0c0.604,0,1.288,1.192,0,1.595c-0.362,0-3.15,0-3.15,0s0.047,0.65,0.67,0.65c0.624,0,3.056,0,3.056,0    s1.273-1.274,1.475-1.495c0.503-0.664,0.911-0.054,0.911-0.054S17.986,8.896,17.08,10.323z M15.117,2.173h-2.574v2.896H9.004    V2.173H6.431v4.623C6.125,6.792,5.804,6.833,5.466,6.939V2.173V1.851V1.207h10.617v0.644v0.322v5.802c-0.181,0-0.524,0-0.966,0    V2.173z"/> 
+        </g> 
+      </defs>  
+      <g id="eva_border" fill="url(#bg_appfunc)" stroke="#4F4F4F"> 
+        <rect x="0" y="0" width="100%" height="100%"/>  
+        <use x="0" y="0" xlink:href="#icon_yygn"/> 
+      </g>  
+      <text x="77" y="70" font-family="微软雅黑" font-size="13">张三</text>
+    </svg>
+    <svg width="229" height="145" version="1.1" x="444" y="108" onclick="_svgNode('7ac03fc139b6421daa8f67abfa069cb5.html');">  
+      <defs> 
+        <linearGradient id="bg_appfunc" x1="0" y1="0" x2="0" y2="100%"> 
+          <stop offset="0" style="stop-color:#FFFFFF"/>  
+          <stop offset="100%" style="stop-color:#99CC99"/> 
+        </linearGradient>  
+        <g id="icon_yygn" stroke="none"> 
+          <path id="delivery_2_" fill="#6E7C81" d="M17.08,10.323c0.202-0.201-2.392,2.775-2.392,2.775s-4.436,0-4.879,0    c-1.165,0-3.351-1.502-5.764,0.328c-0.18-0.2-2.627-2.78-2.627-2.78s4.449-2.728,4.693-2.868C7.92,6.893,9.247,8.287,9.729,8.287    c0.482,0,3.572,0,3.793,0c0.604,0,1.288,1.192,0,1.595c-0.362,0-3.15,0-3.15,0s0.047,0.65,0.67,0.65c0.624,0,3.056,0,3.056,0    s1.273-1.274,1.475-1.495c0.503-0.664,0.911-0.054,0.911-0.054S17.986,8.896,17.08,10.323z M15.117,2.173h-2.574v2.896H9.004    V2.173H6.431v4.623C6.125,6.792,5.804,6.833,5.466,6.939V2.173V1.851V1.207h10.617v0.644v0.322v5.802c-0.181,0-0.524,0-0.966,0    V2.173z"/> 
+        </g> 
+      </defs>  
+      <g id="eva_border" fill="url(#bg_appfunc)" stroke="#4F4F4F"> 
+        <rect x="0" y="0" width="100%" height="100%"/>  
+        <use x="0" y="0" xlink:href="#icon_yygn"/> 
+      </g>  
+      <text x="101" y="76" font-family="微软雅黑" font-size="13">李四</text>
+    </svg>
+    <svg width="157" height="145" version="1.1" x="780" y="108" onclick="_svgNode('dcc5496916a9422bb2b586322ef2739c.html');">  
+      <defs> 
+        <linearGradient id="bg_appfunc" x1="0" y1="0" x2="0" y2="100%"> 
+          <stop offset="0" style="stop-color:#FFFFFF"/>  
+          <stop offset="100%" style="stop-color:#99CC99"/> 
+        </linearGradient>  
+        <g id="icon_yygn" stroke="none"> 
+          <path id="delivery_2_" fill="#6E7C81" d="M17.08,10.323c0.202-0.201-2.392,2.775-2.392,2.775s-4.436,0-4.879,0    c-1.165,0-3.351-1.502-5.764,0.328c-0.18-0.2-2.627-2.78-2.627-2.78s4.449-2.728,4.693-2.868C7.92,6.893,9.247,8.287,9.729,8.287    c0.482,0,3.572,0,3.793,0c0.604,0,1.288,1.192,0,1.595c-0.362,0-3.15,0-3.15,0s0.047,0.65,0.67,0.65c0.624,0,3.056,0,3.056,0    s1.273-1.274,1.475-1.495c0.503-0.664,0.911-0.054,0.911-0.054S17.986,8.896,17.08,10.323z M15.117,2.173h-2.574v2.896H9.004    V2.173H6.431v4.623C6.125,6.792,5.804,6.833,5.466,6.939V2.173V1.851V1.207h10.617v0.644v0.322v5.802c-0.181,0-0.524,0-0.966,0    V2.173z"/> 
+        </g> 
+      </defs>  
+      <g id="eva_border" fill="url(#bg_appfunc)" stroke="#4F4F4F"> 
+        <rect x="0" y="0" width="100%" height="100%"/>  
+        <use x="0" y="0" xlink:href="#icon_yygn"/> 
+      </g>  
+      <text x="65" y="76" font-family="微软雅黑" font-size="13">王五</text>
+    </svg>
+  </g>
+</svg>
