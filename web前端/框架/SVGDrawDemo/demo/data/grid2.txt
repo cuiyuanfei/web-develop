@@ -1,0 +1,11 @@
+﻿{
+	total: 100,
+	data: [
+            {price:'100',quantity:'20'},
+            {price:'200',quantity:'30'},
+            {price:'300',quantity:'40'},
+            {price:'400',quantity:'50'},
+            {price:'500',quantity:'60'},
+            {price:'600',quantity:'70'}
+        ]
+}

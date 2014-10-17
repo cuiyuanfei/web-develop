@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AutoComplete</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript">
+        
+        
+    </script>
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+</head>
+<body>
+   <h4>客户端查询过滤</h4>
+<input id="tbl1" name="tb" class="mini-autocomplete" required="true" style="width:200px;"
+    valueField="id" textField="text" onbeforeload="beforeload" 
+/>
+    <div class="description">
+        <h3>Description</h3>
+        <p>通过监听beforeload事件，e.cancel=true阻止服务端查询，然后组织好数据到设置给e.result即可。</p>
+    </div>
+    <script type="text/javascript">
+        mini.parse();
+
+        var emails = ["@qq.com", "@gmail.com", "@163.com", "@hotmail.com"];
+
+        function beforeload(e) {
+            //取消服务端查询
+            e.cancel = true;
+
+            //生成下拉数据
+            var key = e.data.key;
+            var data = [];
+            for (var i = 0, l = emails.length; i < l; i++) {                
+                var o = {};
+                o.id = i;
+                o.text = key + emails[i];
+                data.push(o);
+            }
+            
+            e.result = data;
+        }
+
+    </script>
+</body>
+</html>

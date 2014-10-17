@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Custom skin</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script> 
+    
+</head>
+<body>
+    <h1>Custom skin</h1>
+    
+    <input type="button" value="OpenChart" onclick="showChartWindow();"/>
+    <div id="win1" class="mini-window" title="Custom skin" style="width:480px;height:350px;" 
+        showModal="true" allowResize="true" 
+        >
+        <div id="chartContainer" style="width:100%;height:100%;"></div>
+    </div>
+</body>
+</html>
+<script src="YUI2/yahoo-dom-event.js" type="text/javascript"></script>
+<script src="YUI2/element-min.js" type="text/javascript"></script>
+<script src="YUI2/charts-min.js" type="text/javascript"></script>
+<script src="YUI2/datasource-min.js" type="text/javascript"></script>
+<script src="YUI2/json.js" type="text/javascript"></script>
+<script src="YUI2/swf/swf-min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    mini.parse();
+
+    var chartContainerId = "chartContainer";
+    function showChartWindow() {
+        var win = mini.get("win1");
+        win.show();
+        buildChart();
+    }
+    showChartWindow();  //页面打开，马上显示图表面板
+
+    //----------------------------------------------
+    function buildChart() {
+        YAHOO.widget.Chart.SWFURL = "YUI2/swf/charts.swf";
+        YAHOO.namespace("demo");
+        YAHOO.demo.salesComparison =
+	    [
+		    { month: "Oct", pork: 1354, beef: 1442 },
+		    { month: "Nov", pork: 1326, beef: 1496 },
+		    { month: "Dec", pork: 1292, beef: 1582 },
+		    { month: "Jan", pork: 1387, beef: 1597 },
+		    { month: "Feb", pork: 1376, beef: 1603 }
+	    ];
+
+            var salesData = new YAHOO.util.DataSource(YAHOO.demo.salesComparison);
+            salesData.responseType = YAHOO.util.DataSource.TYPE_JSARRAY;
+            salesData.responseSchema = { fields: ["month", "pork", "beef"] };
+
+            //--- chart
+
+        var seriesDef =
+	    [
+		    {
+		        yField: "pork",
+		        displayName: "Sales of Pork",
+		        style:
+			    {
+			        image: "images/tube.png",
+			        mode: "no-repeat",
+			        color: 0x2e434d,
+			        size: 40
+			    }
+		    },
+		    {
+		        yField: "beef",
+		        displayName: "Sales of Beef",
+		        style:
+			    {
+			        image: "images/tube.png",
+			        mode: "no-repeat",
+			        color: 0xc2d81e,
+			        size: 40
+			    }
+		    }
+	    ];
+
+			var mychart = new YAHOO.widget.ColumnChart(chartContainerId, salesData,
+	    {
+	        series: seriesDef,
+	        xField: "month",
+	        style:
+		    {
+		        border: { color: 0x96acb4, size: 12 },
+		        font: { name: "Arial Black", size: 14, color: 0x586b71 },
+		        dataTip:
+			    {
+			        border: { color: 0x2e434d, size: 2 },
+			        font: { name: "Arial Black", size: 13, color: 0x586b71 }
+			    },
+		        xAxis:
+			    {
+			        color: 0x2e434d
+			    },
+		        yAxis:
+			    {
+			        color: 0x2e434d,
+			        majorTicks: { color: 0x2e434d, length: 4 },
+			        minorTicks: { color: 0x2e434d, length: 2 },
+			        majorGridLines: { size: 0 }
+			    }
+		    }
+	    });
+    }
+</script>

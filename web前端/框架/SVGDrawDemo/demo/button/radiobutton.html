@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>RadioButton</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+</head>
+<body>
+    <h1>RadioButton 单选按钮组</h1>
+    <p class="tip"></p>
+    
+    <a id="btn_Google" checkOnClick="true" groupName="search" class="mini-button" oncheckedchanged="onCheckedChanged" >Google</a>
+    <a id="btn_Baidu" checkOnClick="true" groupName="search" class="mini-button" oncheckedchanged="onCheckedChanged" >Baidu</a>
+    <a id="btn_Bing" checkOnClick="true" groupName="search" class="mini-button" oncheckedchanged="onCheckedChanged" >Bing</a>
+    
+    <script type="text/javascript">
+        function onCheckedChanged(e) {
+            var btn = e.sender;
+            var checked = btn.getChecked();
+            var text = btn.getText();
+
+            if(checked){
+                alert(text);
+            }
+        }
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>设置按钮的groupName和checkOnClick="true"后，多个按钮能组合单选。</p>
+    </div>
+</body>
+</html>

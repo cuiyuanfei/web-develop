@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tabs（懒加载）</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+</head>
+<body>
+    <h1>Tabs（懒加载）</h1>      
+    
+    <input type="button" value="loadTabs" onclick="loadTabs()"/>
+    <input type="button" value="addTab" onclick="addTab()"/>
+    <input type="button" value="removeTab" onclick="removeTab()"/>
+    <input type="button" value="loadTab" onclick="loadTab()"/>
+    <br />
+<div id="tabs1" class="mini-tabs" activeIndex="0" style="width:600px;height:350px;"
+    url="tabs.txt" 
+>        
+</div>
+
+    <script type="text/javascript">
+        mini.parse();
+        var tabs = mini.get("tabs1");
+
+        function loadTabs() {
+            tabs.load("tabs.txt");
+        }
+
+        var index = 1;
+        function addTab() {
+            //add tab
+            var i = index++;
+            
+            var tab = { title: "tab" + i, url: 'pages/page' + i + '.html', showCloseButton: true };
+            tab.ondestroy = function (e) {
+                var tabs = e.sender;
+                var iframe = tabs.getTabIFrameEl(e.tab);
+
+                //获取子页面返回数据
+                var pageReturnData = iframe.contentWindow.getData ? iframe.contentWindow.getData() : "";
+
+                alert(e.tab.removeAction + " : " + pageReturnData);
+                
+                //如果禁止销毁的时候，自动active一个新tab：e.autoActive = false;
+            }
+            tabs.addTab(tab);
+
+            //active tab
+            tabs.activeTab(tab);
+
+        }
+        function removeTab() {
+            var tab = tabs.getActiveTab();
+            if (tab) {
+                tabs.removeTab(tab);
+            }
+        }
+
+        function onTabDestroy(e) {
+            //alert(e.tab.removeAction);
+        }
+
+
+        function loadTab() {
+            var tab = tabs.getActiveTab();
+            tabs.loadTab("pages/page1.html", tab);
+        }
+
+
+        tabs.on("beforecloseclick", function (e) {
+            if (e.tab.title == "Tab2") {
+                alert("Tab2不能关闭");
+                e.cancel = true;
+            }
+        });
+
+    </script>
+    <div class="description">
+        <h3>Description</h3>
+        <p>
+              点击tab页签时，其相关的页面才会被“懒加载”，而且只加载一次。<br />
+              Tab1演示了，只要点击就加载，加载多次。
+        </p>
+    </div>
+</body>
+</html>

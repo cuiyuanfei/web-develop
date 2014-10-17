@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>折叠、展开节点</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+
+</head>
+<body>
+    <h1>折叠、展开节点</h1>      
+
+    
+    <input type="button" value="展开所有" onclick="expandAll()"/>
+    <input type="button" value="折叠所有" onclick="collapseAll()"/><br />
+    
+    <input type="button" value="展开第一级" onclick="expandLevel()"/>
+    <input type="button" value="折叠第一级" onclick="collapseLevel()"/><br />
+    
+    <input type="button" value="展开选中节点" onclick="expandNode()"/>
+    <input type="button" value="折叠选中节点" onclick="collapseNode()"/><br />
+
+    <input type="button" value="展开节点路径" onclick="expandPath()"/>
+    <input type="button" value="折叠节点路径" onclick="collapsePath()"/>
+    
+    <ul id="tree1" class="mini-tree" url="../data/tree.txt" style="width:200px;padding:5px;" 
+        showTreeIcon="true" textField="text" idField="id" 
+        
+        >        
+    </ul>
+
+   
+        
+    <script type="text/javascript">
+        function collapseAll() {
+            var tree = mini.get("tree1");
+            tree.collapseAll();
+        }
+        function expandAll() {
+            var tree = mini.get("tree1");
+            tree.expandAll();
+        }
+        function collapseLevel() {
+            var tree = mini.get("tree1");
+            tree.collapseLevel(0);
+        }
+        function expandLevel() {
+            var tree = mini.get("tree1");
+            tree.expandLevel(0);
+        }
+        function collapseNode() {
+            var tree = mini.get("tree1");
+            var node = tree.getSelectedNode();
+            if (node) {
+                tree.collapseNode(node);
+            }
+        }
+        function expandNode() {
+            var tree = mini.get("tree1");
+            var node = tree.getSelectedNode();
+            if (node) {
+                tree.expandNode(node);
+            }
+        }
+
+        function collapsePath() {
+            var tree = mini.get("tree1");                        
+            tree.collapsePath("datagrid");
+        }
+        function expandPath() {
+            var tree = mini.get("tree1");
+            tree.selectNode("datagrid");
+            tree.expandPath("datagrid");
+        }
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>            
+        </p>
+    </div>
+</body>
+</html>

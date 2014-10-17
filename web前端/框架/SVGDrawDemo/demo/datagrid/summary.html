@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Data Summary 汇总</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    <h1>Data Summary 汇总</h1>      
+
+    <div id="datagrid1" class="mini-datagrid" style="width:700px;height:280px;" 
+        url="../data/AjaxService.aspx?method=SearchEmployees"  idField="id"
+        showSummaryRow="true"  allowResize="true" ondrawsummarycell="onDrawSummaryCell"
+        showFilterRow="true"
+    >
+        <div property="columns">
+            <div type="indexcolumn" ></div>
+            <div name="totalColumn" field="loginname" width="120" headerAlign="center" allowSort="true" >员工帐号</div>    
+            <div field="name" width="120" headerAlign="center" allowSort="true">姓名</div>                            
+            <div field="gender" width="100" allowSort="true" renderer="onGenderRenderer" align="center" headerAlign="center">性别</div>
+            <div field="salary" summaryType="avg" dataType="currency" currencyUnit="￥" align="right" width="100" allowSort="true">薪资</div>                                    
+            <div name="ageColumn" field="age" width="100" allowSort="true" summaryType="max">年龄</div>
+        </div>
+    </div>    
+    
+    <script type="text/javascript">
+        mini.parse();
+        
+        var grid = mini.get("datagrid1");
+        grid.load();
+
+        
+        ///////////////////////////////////////////////////////       
+        var Genders = [{ id: 1, text: '男' }, { id: 2, text: '女'}];
+        function onGenderRenderer(e) {
+            for (var i = 0, l = Genders.length; i < l; i++) {
+                var g = Genders[i];
+                if (g.id == e.value) return g.text;
+            }
+            return "";
+        }
+        
+        function onDrawSummaryCell(e) {
+            var result = e.result;
+            var grid = e.sender;
+            //服务端汇总计算
+            if (e.field == "loginname") {                
+                var s = "<span style='color:Brown;'>"
+                s +=    "Total=" + result.total +"<br/>"
+                        + 'Min age=' + result.minAge + "<br/>"
+                        + 'Max age=' + result.maxAge + "<br/>"
+                        + 'Avg age=' + result.avgAge + "<br/>"
+                        + "</span>";
+                e.cellHtml = s;
+            }
+            //客户端汇总计算
+            if (e.field == "salary") {
+                e.cellHtml = "平均: " + e.cellHtml;
+            }
+            if (e.field == "age") {
+                e.cellHtml = "最大年龄: " + e.value;
+            }
+        }
+
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Dual Axes Chart</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script> 
+    
+</head>
+<body>
+    <h1>Dual Axes Chart</h1>
+    <input type="button" value="OpenChart" onclick="showChartWindow();"/>
+    <div id="win1" class="mini-window" title="Dual Axes Chart" style="width:480px;height:350px;" 
+        showModal="true" allowResize="true" 
+        >
+        <div id="chartContainer" style="width:100%;height:100%;"></div>
+    </div>
+</body>
+</html>
+<script src="YUI2/yahoo-dom-event.js" type="text/javascript"></script>
+<script src="YUI2/element-min.js" type="text/javascript"></script>
+<script src="YUI2/charts-min.js" type="text/javascript"></script>
+<script src="YUI2/datasource-min.js" type="text/javascript"></script>
+<script src="YUI2/json.js" type="text/javascript"></script>
+<script src="YUI2/swf/swf-min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    mini.parse();
+
+    var chartContainerId = "chartContainer";
+    function showChartWindow() {
+        var win = mini.get("win1");
+        win.show();
+        buildChart();
+    }
+    showChartWindow();
+    
+function buildChart(){
+    YAHOO.widget.Chart.SWFURL = "YUI2/swf/charts.swf";
+    YAHOO.namespace("demo");
+    YAHOO.demo.monthlyExpenses =
+		[
+			{ month: "January", rent: 3880.00, car: 298.68, power:56.98, cable:115.50 },
+			{ month: "February", rent: 3880.00, car: 298.68, power:68.99, cable:115.42 },
+			{ month: "March", rent: 3880.00, car: 298.68, power:46.85, cable:123.76 },
+			{ month: "April", rent: 3880.00, car: 315.71, power:42.52, cable:105.44 },
+			{ month: "May", rent: 4010.00, car: 315.71, power:59.67, cable:111.42 },
+			{ month: "June", rent: 4910.00, car: 315.71, power:68.98, cable:114.32 }
+		];
+
+		var DataSource = new YAHOO.util.DataSource( YAHOO.demo.monthlyExpenses );
+		DataSource.responseType = YAHOO.util.DataSource.TYPE_JSARRAY;
+		DataSource.responseSchema =
+		{
+			fields: [ "month", "rent", "car", "power", "cable" ]
+		};
+		
+		YAHOO.demo.formatCurrencyAxisLabel = function( value )
+		{
+			return YAHOO.util.Number.format( value,
+			{
+				prefix: "$",
+				thousandsSeparator: ",",
+				decimalPlaces: 2
+			});
+		}
+		
+		YAHOO.demo.getDataTipText = function( item, index, series )
+		{
+				var toolTipText = series.displayName + " for " + item.month;
+				toolTipText += "\n" + YAHOO.demo.formatCurrencyAxisLabel( item[series.yField] );
+				return toolTipText;
+		}
+		
+		var currencyAxis = new YAHOO.widget.NumericAxis();
+		currencyAxis.labelFunction = YAHOO.demo.formatCurrencyAxisLabel;
+		currencyAxis.alwaysShowZero = false;
+		currencyAxis.calculateByLabelSize = true;
+		currencyAxis.position = "right";
+		currencyAxis.title = "Utilities";
+		
+		var currencyAxis2 = new YAHOO.widget.NumericAxis();
+		currencyAxis2.order = "secondary";
+		currencyAxis2.position = "left";
+		currencyAxis2.title = "Rent";
+		currencyAxis2.labelFunction = YAHOO.demo.formatCurrencyAxisLabel;
+		currencyAxis2.alwaysShowZero = false;
+		
+		var axes = new Array();
+		axes.push(currencyAxis);
+		axes.push(currencyAxis2);	
+		
+		var seriesDef =
+		[
+			{ displayName: "Rent", yField: "rent", axis:"secondary", style:{color:0x6238A7, size:8}},
+			{ displayName: "Car", yField: "car", axis:"primary", style:{color:0x00E72E, size:8} },
+			{ displayName: "Power", yField:"power", axis:"primary", style:{color:0xFFA329, size:8} },
+			{ displayName: "Cable", yField:"cable", axis:"primary", style:{color:0xFF4AD8, size:8} }
+		];		
+		
+		var styleDef = {
+			padding:0,
+			border:{size:3, color:0x8899dd},
+			background:{color:0xaeb7dc}, 
+			dataTip:{font:{color:"#000000"}, background:{color:0x00E72E, alpha:.3}},
+			font:{color: "#eeeeee"},
+			yAxis:
+			{
+				labelDistance:0, 
+				titleRotation:-90, 
+				titleFont:{color:0xeeeeee}, 
+				minorTicks:{display:"none"}, 
+				majorGridLines:{color:0xeeeeee}, 
+				color:0xeeeeee, 
+				majorTicks:{color:0xeeeeee}
+			},
+			secondaryYAxis:
+			{ 
+				titleRotation:90
+			}, 
+			xAxis:
+			{
+				majorTicks:{display:"none"}, 
+				labelRotation:-45, 
+				size:0
+			}
+		}
+		
+		var mychart = new YAHOO.widget.LineChart( chartContainerId, DataSource,
+		{
+			constrainViewport:false,
+			series: seriesDef,
+			xField: "month",
+			yAxes: axes,
+			style: styleDef
+		});
+} 
+</script>

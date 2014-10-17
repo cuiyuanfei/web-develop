@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>DatePicker 日期选择框</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    
+    <h1>DatePicker 日期选择框</h1>      
+    
+    <h4>Date</h4>
+    
+    <input id="date1" class="mini-datepicker" value="2010-01-01"/>
+         
+          
+
+    <h4>Date & Time</h4>
+    <input id="date2" class="mini-datepicker" style="width:200px;" onvaluechanged="onValueChanged" nullValue="null"
+        format="yyyy-MM-dd H:mm:ss" timeFormat="H:mm:ss" showTime="true" showOkButton="true" showClearButton="false"/>
+
+    <br /><br />
+    <input type="button" value="setValue" onclick="setValue()"/>
+    <input type="button" value="getValue" onclick="getValue()"/>    
+    <input type="button" value="disable" onclick="disable()"/>
+    <input type="button" value="enable" onclick="enable()"/>
+
+    <br /><br />
+    <h4>禁止选择日期</h4>
+    <input id="date3" class="mini-datepicker" allowInput="false" showTodayButton="false" ondrawdate="onDrawDate"/>    
+
+    <script type="text/javascript">
+        function setValue() {
+            var t = mini.get("date2");
+            t.setValue(new Date());
+        }
+        function getValue() {
+            var t = mini.get("date2");
+
+            alert(t.getValue());
+        }
+        function enable() {
+            var t = mini.get("date2");
+            t.enable();
+        }
+        function disable() {
+            var t = mini.get("date2");
+            
+            t.disable();
+        }
+
+        function onValueChanged(e) {
+            alert(this.getFormValue());
+        }
+
+        ////////////////////////////
+        
+        function onDrawDate(e) {
+            var date = e.date;
+            var d = new Date();
+
+            if (date.getTime() < d.getTime()) {
+                e.allowSelect = false;
+            }
+        }
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>DatePicker用于日期下拉输入选择操作。</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>FunctionTree 权限树</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+
+</head>
+<body>
+    <h1>FunctionTree 权限树</h1>      
+
+    <ul id="tree2" class="mini-tree" url="../data/listTree.txt" style="width:300px;height:250px;padding:5px;" 
+        showTreeIcon="true" textField="text" idField="id" parentField="pid" resultAsTree="false"  
+        allowSelect="false" enableHotTrack="false" expandOnLoad="true"
+        showCheckBox="true" checkRecursive="false" autoCheckParent="true"
+        
+        
+        >
+    </ul>
+    
+    
+    <br />
+    <input type="button" value="setCheckedNodes" onclick="setCheckedNodes()"/>
+    <input type="button" value="getCheckedNodes" onclick="getCheckedNodes()"/>
+    <input type="button" value="checkAll" onclick="checkAll()"/>
+    <input type="button" value="uncheckAll" onclick="uncheckAll()"/>
+
+    <br />        
+    <script type="text/javascript">
+
+        function setCheckedNodes() {
+            var tree = mini.get("tree2");
+            //tree.setValue("ajax,json,date,control,forms");
+            tree.setValue("forms");
+        }
+        function getCheckedNodes() {
+            var tree = mini.get("tree2");
+
+            var value = tree.getValue();
+            alert(value);
+
+        }
+        function checkAll() {
+            var tree = mini.get("tree2");
+            var nodes = tree.getAllChildNodes(tree.getRootNode());
+            tree.checkNodes(nodes);
+        }
+        function uncheckAll() {
+            var tree = mini.get("tree2");
+            var nodes = tree.getAllChildNodes(tree.getRootNode());
+            tree.uncheckNodes(nodes);
+        }
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>权限树专用逻辑：</p>
+        <ol>
+            <li>选中子节点，同步选中父节点</li>
+            <li>选中（取消）父节点，同步选中（取消）所有子节点</li>
+            <li>取消选中所有子节点，同步取消选中父节点</li>
+            <li>注意设置：checkRecursive="false" autoCheckParent="true"</li>            
+        </ol>
+    </div>
+</body>
+</html>

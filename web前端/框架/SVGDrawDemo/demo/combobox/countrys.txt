@@ -1,0 +1,11 @@
+﻿[
+    { "id": "usa", "text": "美国" ,tag:"meiguo"},
+    { "id": "cn", "text": "中国" ,tag:"zhongguo"},
+    { "id": "jp", "text": "日本" ,tag:"riben"},
+    { "id": "en", "text": "英国" ,tag:"yingguo"},
+    { "id": "de", "text": "德国" ,tag:"deguo"},
+    { "id": "fr", "text": "法国" ,tag:"faguo"},
+	{ "id": "ca", "text": "加拿大" ,tag:"jiananda"},
+	{ "id": "at", "text": "奥地利" ,tag:"aodili"},
+	{ "id": "ch", "text": "瑞士" ,tag:"ruishi"}
+]

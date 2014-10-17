@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Selection 树形选择（单选）</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+
+</head>
+<body>
+    <h1>Selection 树形选择（单选）</h1>      
+
+    <ul id="tree1" class="mini-tree" url="../data/listTree.txt" style="width:200px;padding:5px;" 
+        showTreeIcon="true" textField="text" idField="id" parentField="pid" resultAsTree="false"          
+        onbeforenodeselect="onBeforeNodeSelect" 
+        showRadioButton="true" showFolderCheckBox="false"
+        >
+    </ul>
+
+    <input type="button" value="selectedNode" onclick="selectedNode()"/>
+    <input type="button" value="deselectedNode" onclick="deselectedNode()"/>
+    <input type="button" value="getSelectedNode" onclick="getSelectedNode()"/>
+    <div style="padding-top:5px;color:Red;">Note: 监听beforeselectnode，禁止选中父节点</div>
+
+    
+
+    <br />        
+    <script type="text/javascript">
+        mini.parse();
+        var tree = mini.get("tree1");
+        tree.selectNode("base");
+
+        function selectedNode() {            
+            tree.selectNode("forms");
+        }
+        function deselectedNode() {
+            tree.selectNode(null);
+        }
+        function getSelectedNode() {
+            var tree = mini.get("tree1");
+            var node = tree.getSelectedNode();
+            if (node) {
+                alert(node.text);
+            }
+        }
+
+        //--------------------------------
+        function onBeforeNodeSelect(e) {
+            
+            var tree = e.sender;
+            var node = e.node;
+            if (tree.hasChildren(node)) {
+                e.cancel = true;
+            }
+        }
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>            
+        </p>
+    </div>
+</body>
+</html>

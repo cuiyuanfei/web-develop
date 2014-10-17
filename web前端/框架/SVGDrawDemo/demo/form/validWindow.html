@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+</head>
+<body>     
+<div id="form1" >
+    <table>
+        <tr>
+            <td><label for="username$text">帐号：</label></td>
+            <td>
+                <input name="username" vtype="email" class="mini-textbox" required="true" requiredErrorText="帐号不能为空"/>
+            </td>    
+        </tr>
+        <tr>
+            <td><label for="pwd$text">密码：</label></td>
+            <td>
+                <input name="pwd" class="mini-password" vtype="minLength:5" required="true" minLengthErrorText="密码不能少于5个字符" />
+            </td>
+        </tr>            
+        <tr>
+            <td></td>
+            <td>
+                <input value="Login" type="button" onclick="submitForm()" />
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+    <script type="text/javascript">
+        function showErrorTexts(errorTexts) {
+            var s = errorTexts.join('<br/>');
+
+            var win = window.open('', "", 'height=200,width=400,top=200,left=400,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no, titlebar=no');
+            win.document.open('text/html', 'replace');
+            win.document.write(s);
+            win.document.close();
+        }
+
+        function submitForm() {
+            var form = new mini.Form("#form1");
+
+            form.validate();
+            if (form.isValid() == false) {
+
+                var errorTexts = form.getErrorTexts();
+                showErrorTexts(errorTexts);
+
+                return;
+            }
+
+
+            //提交数据
+            var data = form.getData();
+            var json = mini.encode(data);
+            alert("提交成功");
+        }
+
+    </script>
+
+</body>
+</html>

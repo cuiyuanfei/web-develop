@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CellEdit2 单元格切换编辑 </title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link href="../demo.css" rel="stylesheet" type="text/css" />
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script> 
+    
+    <!--引入皮肤样式-->
+    <link href="../../scripts/miniui/themes/blue/skin.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+    <h1>CellEdit2 单元格切换编辑</h1>
+    
+    <div id="datagrid1" class="mini-datagrid" style="width:300px;height:170px;" 
+        url="data3.txt" idField="id"
+        allowResize="true" showPager="false"
+        allowCellEdit="true" allowCellSelect="true"  allowColumnSort="false"
+    >
+        <div property="columns">
+            <div type="indexcolumn"></div>
+            <div field="name" allowResize="false" width="120" headerAlign="center" allowSort="true">属性</div>
+            <div field="value" width="100" allowSort="true" >值</div>    
+        </div>
+    </div>
+
+    <div style="display:none;">
+        <input class="mini-textbox" id="textboxEditor" />
+        <input class="mini-spinner" id="spinnerEditor" />
+        <input class="mini-datepicker" id="datepickerEditor" />
+        <input class="mini-timespinner" id="timeEditor" />
+        <input class="mini-combobox" id="booleanEditor" data="booleanData"/>
+        <input class="mini-combobox" id="countrysEditor" url="../data/countrys.txt"/>
+    </div>
+    <script type="text/javascript">
+        var booleanData = [
+				{ text: "是", id: true },
+				{ text: "否", id: false }
+			];
+        
+        mini.parse();
+
+        var grid = mini.get("datagrid1");
+        grid.load();
+
+        //////////////////////////////////////////////////////
+        function getEditor(record){
+            var id = record.editor +"Editor";
+            var editor = mini.get(id);
+            return editor;
+        }
+        grid.on("cellbeginedit", function (e) {
+            if (e.field == "value") {
+                var editor = getEditor(e.record);
+                e.editor = editor;
+                e.column.editor = editor;
+            }
+        });
+        grid.on("cellcommitedit", function (e) {
+            var record = e.record;
+            if (e.field == "value") {
+                var format = e.record.format;
+                if (format) {
+                    e.value = mini.formatDate(e.value, format);
+                }
+
+            }
+        });
+
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <ul>
+        </ul>
+    </div>
+</body>
+</html>

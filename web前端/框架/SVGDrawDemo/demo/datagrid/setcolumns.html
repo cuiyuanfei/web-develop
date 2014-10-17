@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>无标题页</title>
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+</head>
+<body>
+
+        
+    <input type="button" onclick="createGrid()" value="动态设置列"/>
+    <div id="datagrid1" class="mini-datagrid" style="width:700px;height:280px;"
+        url="../data/AjaxService.aspx?method=SearchEmployees"
+        allowCellEdit="true"allowCellSelect="true"
+    >
+    </div>
+    
+
+</body>
+</html>
+<script type="text/javascript">
+
+var Genders = [{ id: 1, text: '男' }, { id: 2, text: '女'}];
+
+mini.parse();
+var grid = mini.get("datagrid1");
+
+function createGrid() {
+
+    grid.set({
+        columns: [
+            { type: "indexcolumn" },
+            { field: "loginname", width: 120, headerAlign: "center", allowSort: true, header: "员工账号", editor: { type: "textbox", minValue: 0, maxValue: 200, value: 25} },
+            { field: "age", width: 100, headerAlign: "center", allowSort: true, header: "年龄", editor: { type: "spinner"} },
+            { field: "birthday", width: 100, headerAlign: "center", dateFormat: "yyyy-MM-dd H:mm", allowSort: true, header: "生日", editor: { type: "datepicker"} },
+            { field: "remarks", width: 120, headerAlign: "center", allowSort: true, header: "备注", editor: { type: "textarea"} },
+            { field: "gender", type: "comboboxcolumn", autoShowPopup: true, width: 100, headerAlign: "center", header: "性别", editor: { type: "combobox", data: Genders} },
+            { field: "country", type: "comboboxcolumn", width: 100, headerAlign: "center", header: "国家", editor: { type: "combobox", url: "../data/countrys.txt"} },
+            { field: "married", trueValue: 1, falseValue: 0, type: "checkboxcolumn", width: 60, headerAlign: "center", header: "婚否" }
+        ]
+    });
+    
+    grid.load();
+}
+
+
+</script>

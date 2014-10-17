@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>LazyTree 懒加载树形</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+
+</head>
+<body>
+    <h1>LazyTree 懒加载树形</h1>      
+    
+    <input type="button" value="刷新节点" onclick="refreshNode()"/>
+<ul id="tree1" class="mini-tree" url="../data/TreeService.aspx?method=LoadNodes" style="width:300px;height:200px;padding:5px;" 
+    showTreeIcon="true" textField="name" onbeforeload="onBeforeTreeLoad" 
+    idField="id" parentField="pid" resultAsTree="false"
+        >        
+</ul>
+
+    
+    <script type="text/javascript">
+    mini.parse();
+        
+    function onBeforeTreeLoad(e) {
+        var tree = e.sender;    //树控件
+        var node = e.node;      //当前节点
+        var params = e.params;  //参数对象
+        
+        //可以传递自定义的属性
+        params.myField = "123"; //后台：request对象获取"myField"
+    }
+
+    function refreshNode() {
+        var tree = mini.get("tree1");
+        var node = tree.getSelectedNode();
+        if (node) {
+            tree.loadNode(node);
+        }
+    }
+
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>
+        </p>
+    </div>
+</body>
+</html>

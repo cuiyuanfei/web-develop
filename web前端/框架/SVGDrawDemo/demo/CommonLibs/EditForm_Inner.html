@@ -1,0 +1,28 @@
+﻿<div class="form" style="padding:5px;">
+    <input class="mini-hidden" name="id"/>
+    <table style="width:100%;">
+        <tr>
+            <td style="width:80px;">员工帐号：</td>
+            <td style="width:150px;"><input name="loginname" class="mini-textbox" emptyText="请输入帐号" /></td>
+            <td style="width:80px;">姓名：</td>
+            <td style="width:150px;"><input name="name" class="mini-textbox"  emptyText="请输入姓名"/></td>
+            <td style="width:80px;">薪资：</td>
+            <td style="width:150px;"><input name="salary" class="mini-textbox" /></td>
+        </tr>
+        <tr>
+            <td>性别：</td>
+            <td><input name="gender" class="mini-combobox" url="mini_JSPath + '../../demo/data/genders.txt'"/></td>
+            <td>年龄：</td>
+            <td><input name="age" class="mini-spinner" minValue="0" maxValue="200" value="25"  /></td>
+            <td>出生日期：</td>
+            <td><input name="birthday" class="mini-datepicker"  emptyText="请输入日期"/></td>
+        </tr>
+        <tr>
+            <td style="text-align:right;padding-top:5px;padding-right:20px;" colspan="6">
+                <a class="Update_Button" href="#">Update</a> 
+                <a class="Cancel_Button" href="#">Cancel</a>
+            </td>                
+        </tr>
+       
+    </table>
+</div>

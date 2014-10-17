@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>表单验证错误提示</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script> 
+    
+    
+    
+    
+</head>
+<body>   
+
+<h1>表单验证错误提示</h1>
+                
+<div id="form1">
+    <table>
+        <tr>
+            <td><label for="username$text">帐号：</label></td>
+            <td>
+                <input id="username"  name="username" vtype="email" class="mini-textbox" required="true" requiredErrorText="帐号不能为空"/>
+                
+            </td>    
+        </tr>
+        <tr>
+            <td><label for="pwd$text">密码：</label></td>
+            <td>
+                <input id="pwd" name="pwd" class="mini-password" vtype="minLength:5" required="true" minLengthErrorText="密码不能少于5个字符" />
+
+            </td>
+        </tr>            
+        <tr>
+            <td></td>
+            <td>
+                <input value="Login" type="button" onclick="submitForm()" />
+            </td>
+        </tr>
+    </table>
+</div>
+
+    
+    <script type="text/javascript">
+        mini.parse();
+
+        function submitForm() {
+            
+            var form = new mini.Form("#form1");
+
+            form.validate();
+            if (form.isValid() == false) return;
+
+            alert("提交表单");
+        }
+        var tip = new mini.ToolTip();
+        tip.set({
+            target: document,
+            selector: '[data-tooltip], [title]'
+        });
+    </script>
+
+    
+</body>
+</html>

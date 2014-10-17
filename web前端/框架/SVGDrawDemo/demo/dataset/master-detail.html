@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Master-Detail 主从表维护</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script> 
+    
+    
+          
+</head>
+<body style="font-size:13px;">
+
+    <div id="dept_grid" class="mini-datagrid" style="width:500px;height:180px;" 
+        url="../data/AjaxService.aspx?method=GetDepartments"  idField="id"
+        resultAsData="true"
+    >
+        <div property="columns">            
+            <div field="id" width="20" headerAlign="center" >ID</div>                                        
+            <div field="name" width="120" headerAlign="left" >部门名称</div>          
+        </div>
+    </div> 
+  
+    <br />
+<div style="padding-top:5px;padding-bottom:5px;">
+    
+    <input type="button" value="Add" onclick="addRow()"/>         
+    <input type="button" value="Remove" onclick="removeRow()" />   
+
+    
+    <input type="button" value="Save" onclick="saveData()" style="margin-left:430px;"/>  
+    
+    <input type="button" value="getDataSet" onclick="getDataSet()" />  
+</div>
+
+<div id="employee_grid" class="mini-datagrid" style="width:700px;height:250px;"
+    url="../data/AjaxService.aspx?method=GetDepartmentEmployees"  
+    idField="id" allowResize="true" multiSelect="true" pageSize="20"
+    allowCellEdit="true" allowCellSelect="true"
+>
+    <div property="columns">
+        <div type="checkcolumn"></div>
+        <div type="indexcolumn"></div>
+        <div field="loginname" width="120" headerAlign="center" allowSort="true">员工帐号
+            <!--textbox editor-->
+            <input property="editor" class="mini-textbox" style="width:100%;"/>
+        </div>
+        <div field="name" width="120" allowSort="true">姓名
+            <!--textbox editor-->
+            <input property="editor" class="mini-textbox" style="width:100%;"/>
+        </div>
+        <div field="age" width="60" allowSort="true">年龄
+            <!--spinner editor-->
+            <input property="editor" class="mini-spinner" 
+                minValue="0" maxValue="200" value="25" style="width:100%;"/>
+        </div>
+        <div field="birthday" width="100" dateFormat="yyyy-MM-dd">出生日期
+            <!--datepicker editor-->
+            <input property="editor" class="mini-datepicker" style="width:100%;"/>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
+<script type="text/javascript">      
+    mini.parse();
+
+    var dept_grid = mini.get("dept_grid");
+    var grid = mini.get("employee_grid");
+
+    dept_grid.load();
+
+    ////////////////////////////
+    var dataSet = new mini.DataSet();
+
+    dataSet.add("table1", dept_grid);
+    dataSet.add("table2", grid);
+
+    dataSet.addLink("table1", "table2", "dept_id");
+
+    ////////////////////////////
+    function addRow() {
+        var newRow = { name: "New Row" };
+        grid.addRow(newRow, 0);
+        grid.beginEditRow(newRow);
+    }
+
+    function deleteRow() {
+        var rows = grid.getSelecteds();
+        if (rows.length > 0) {
+            grid.deleteRows(rows);
+        }
+    }
+    function removeRow() {
+        var rows = grid.getSelecteds();
+        if (rows.length > 0) {
+            grid.removeRows(rows, true);
+        }
+    }
+    function saveData() {
+        
+    }
+    function getDataSet() {
+        var map = dataSet.getData();
+        var data = map["table2"];
+
+        var addCount = 0, modifyCount = 0, deleteCount = 0, removeCount = 0;
+        for (var i = 0, l = data.length; i < l; i++) {
+            var row = data[i];
+            if (row._state == "added") addCount++;
+            if (row._state == "modified") modifyCount++;
+            if (row._state == "deleted") deleteCount++;
+            if (row._state == "removed") removeCount++;
+        }
+        var s = String.format(" added:{0}\n modified:{1}\n deleted:{2}\n removed:{3}", addCount, modifyCount, deleteCount, removeCount);
+        alert(s);
+    }
+
+</script>

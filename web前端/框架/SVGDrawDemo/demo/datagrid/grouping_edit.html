@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Grouping 分组编辑表格</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    <h1>Grouping 分组编辑表格</h1>
+
+    <div style="padding-bottom:5px;">
+        
+        <span>员工姓名：</span><input type="text" id="key"  />
+        <input type="button" value="查找" onclick="search()"/>
+        
+        
+    </div>
+<div id="datagrid1" class="mini-datagrid" style="width:700px;height:280px;" 
+    url="../../demo/data/AjaxService.aspx?method=SearchEmployees"  idField="id" allowResize="true"
+    ondrawgroup="onDrawGroup"
+    allowCellEdit="true" allowCellSelect="true" multiSelect="true"
+>
+    <div property="columns">
+        <div type="checkcolumn"></div>            
+        <div field="loginname" width="120" headerAlign="center" allowSort="true">员工帐号
+            <input property="editor" class="mini-textbox" style="width:100%;"/>
+        </div>                
+        <div field="gender" width="100" renderer="onGenderRenderer" align="center" headerAlign="center">性别
+            <input property="editor" class="mini-combobox" style="width:100%;" data="Genders"/>                
+        </div>
+        <div field="age" width="100" allowSort="true" >年龄
+            <input property="editor" class="mini-spinner" minValue="0" maxValue="200" value="25" style="width:100%;"/>
+        </div>
+        <div field="birthday" width="100" allowSort="true" dateFormat="yyyy-MM-dd">出生日期
+            <input property="editor" class="mini-datepicker" style="width:100%;"/>
+        </div>    
+        <div field="remarks" width="120" headerAlign="center" allowSort="true">备注
+            <input property="editor" class="mini-textarea" style="width:100%;" minHeight="80"/>
+        </div>                                 
+        <div field="createtime" width="100" headerAlign="center" dateFormat="yyyy-MM-dd" allowSort="true">创建日期</div>
+    </div>
+</div>   
+   
+    <script type="text/javascript">
+        mini.parse();       
+
+
+        var grid = mini.get("datagrid1");
+
+        grid.groupBy("gender", "asc");
+
+        grid.load();        
+
+        
+        //对"createtime"字段，进行降级排序
+        grid.sortBy("createtime", "desc");
+
+        function search() {
+            var key = document.getElementById("key").value;
+            grid.load({ key: key });
+        }
+        $("#key").bind("keydown", function (e) {
+            if (e.keyCode == 13) {
+                search();
+            }
+        });
+        ///////////////////////////////////////////////////////
+        var Genders = [{ id: 1, text: '男' }, { id: 2, text: '女'}];
+        function getGenderText(id) {
+            for (var i = 0, l = Genders.length; i < l; i++) {
+                var g = Genders[i];
+                if (g.id == id) return g.text;
+            }
+            return "";
+        }
+        function onGenderRenderer(e) {
+            return getGenderText(e.value);
+        }
+
+        function onDrawGroup(e) {        
+            e.cellHtml = "性别：" + getGenderText(e.value);
+        }
+
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        
+    </div>
+
+
+  
+
+</body>
+</html>

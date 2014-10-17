@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ComboBox关联选择</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+        `
+</head>
+<body>
+    <h1>ComboBox关联选择</h1>      
+    
+    <div style="padding-bottom:5px;">
+            <input type="button" onclick="editTask()" value="编辑任务"/>            
+            <input type="button" onclick="cancelTask()" value="取消编辑"/>
+            <input type="button" onclick="saveTask()" value="保存编辑"/>
+    </div>
+
+    <div id="grid1" class="mini-datagrid" style="width:500px;height:250px;">
+        <div property="columns">
+            <div name="country" field="country" width="150" renderer="countryRenderer" >国家
+               <input property="editor" class="mini-combobox" data="countrys" idField="id" textField="name" width="100%" onvaluechanged="onCountryChanged" />
+            </div>  
+            <div name="city" field="city" width="160" renderer="cityRenderer" editor="{type: 'combobox', idField: 'id', textField: 'name', width: '100%'}">城市</div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        mini.parse();
+
+        var grid = mini.get("grid1");
+        grid.loadData([
+            { country: "usa", city: "5", countryName: "美国", cityName: "芝加哥" },
+            { country: "cn", city: "2", countryName: "中国", cityName: "上海" }
+        ]);
+
+        function countryRenderer(e) {
+            return e.record.countryName;
+        }
+        function cityRenderer(e) {
+            return e.record.cityName;
+        }
+
+        function editTask() {
+            var row = grid.getSelected();
+            if (row) {
+                grid.beginEditRow(row);
+            } else {
+                alert("请选中记录");
+            }
+        }
+        function saveTask() {
+            var rows = grid.getEditData();
+            var json = mini.encode(rows);
+            alert(json);
+            //UpdateTask_Action(tasks, gantt);
+        }
+        function cancelTask() {
+            grid.cancelEdit();
+        }
+    </script>
+    
+        <script type="text/javascript">
+            function onCountryChanged(e) {
+                var countryCombo = e.sender;
+                var id = countryCombo.getValue();
+                
+                var row = grid.getEditorOwnerRow(countryCombo);       //获取此编辑器所属的行对象
+                var cityCombo = grid.getCellEditor(row, "city");  //获取行中指定列的编辑器对象
+
+                //这里延迟填充数据，模拟ajax异步特性
+                setTimeout(function () {
+                    var cs = getCitys(id);
+                    cityCombo.load(cs);
+                }, 100);
+
+            }
+        var countrys = [
+            { id: "", name: "" },
+            { id: "usa", name: "美国" },
+            { id: "cn", name: "中国" },
+            { id: "jp", name: "日本" }
+        ];
+            var citys = [
+            { id: 1, name: '北京', cid: "cn" },
+            { id: 2, name: '上海', cid: "cn" },
+            { id: 3, name: '苏州', cid: "cn" },
+            { id: 4, name: '成都', cid: "cn" },
+            { id: 5, name: '芝加哥', cid: "usa" },
+            { id: 6, name: '纽约', cid: "usa" },
+            { id: 7, name: '洛杉矶', cid: "usa" },
+            { id: 8, name: '东京', cid: "jp" },
+            { id: 9, name: '大阪', cid: "jp" }
+        ];
+        function getCitys(cid) {
+            var cs = [];
+            for (var i = 0, l = citys.length; i < l; i++) {
+                var city = citys[i];
+                if (city.cid == cid) {
+                    cs.push(city);
+                }
+            }
+            return cs;
+        }
+    
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        
+    </div>
+</body>
+</html>

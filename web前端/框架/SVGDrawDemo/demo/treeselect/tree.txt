@@ -1,0 +1,13 @@
+﻿[
+	{id: "1", text: "系统管理", tag: "xitongguanli"},
+	
+	{id: "2", text: "日志管理", pid: "1", tag: "rizhiguanli"},
+	{id: "3", text: "字典管理", pid: "1", tag: "zidianguanli"},
+	{id: "4", text: "部门管理", pid: "1", tag: "bumenguanli"},
+
+	{id: "5", text: "权限管理", tag: "quanxianguanli"},
+
+	{id: "6", text: "用户管理", pid: "5", tag: "yonghuguanli"},
+	
+	{id: "7", text: "角色管理", pid: "5", tag: "jueseguanli"}
+]

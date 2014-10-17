@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Client Sorting 客户端列排序</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+        
+</head>
+<body>
+    <h1>Client Sorting 客户端列排序</h1>
+
+   <div style="padding-bottom:8px;">
+    选择列：
+    <select id="sortField" style="margin-right:25px;">
+        <option value="loginname">员工帐号</option>
+        <option value="name">姓名</option>
+        <option value="gender">性别</option>
+        <option value="salary">薪资</option>
+        <option value="age">年龄</option>
+        <option value="createtime">创建日期</option>        
+    </select>
+    排序方向：    
+    <select id="sortOrder" style="margin-right:25px;">
+        <option value="asc">Asc</option>
+        <option value="desc">Desc</option>       
+    </select>
+    <input type="button" value="Apply" onclick="applySort()"/>
+    <input type="button" value="Clear Sort" onclick="clearSort()"/>
+    </div>
+    
+    <div id="datagrid1" class="mini-datagrid" style="width:700px;height:280px;" 
+        url="../data/AjaxService.aspx?method=SearchEmployees"  idField="id"
+        sortMode="client"
+    >
+        <div property="columns">
+            <div type="indexcolumn" ></div>
+            <div field="loginname" width="120" headerAlign="center" allowSort="true">员工帐号</div>    
+            <div field="name" width="120" headerAlign="center" allowSort="true">姓名</div>                            
+            <div field="gender" width="100" allowSort="true" renderer="onGenderRenderer" align="center" headerAlign="center">性别</div>
+            <div field="salary" dataType="float" width="100" allowSort="true">薪资</div>                                    
+            <div field="age" dataType="int" width="100" allowSort="true">年龄</div>
+            <div field="birthday" dataType="date" width="100" headerAlign="center" dateFormat="yyyy-MM-dd" allowSort="true">出生日期</div>                
+        </div>
+    </div>    
+    
+    <script type="text/javascript">
+        mini.parse();
+        
+        var grid = mini.get("datagrid1");
+        grid.load();
+
+        function applySort() {
+            var sortField = document.getElementById("sortField").value;
+            var sortOrder = document.getElementById("sortOrder").value;
+            grid.sortBy(sortField, sortOrder);
+        }
+        function clearSort() {
+            grid.clearSort();
+        }
+        
+        ///////////////////////////////////////////////////////       
+        var Genders = [{ id: 1, text: '男' }, { id: 2, text: '女'}];
+        function onGenderRenderer(e) {
+            for (var i = 0, l = Genders.length; i < l; i++) {
+                var g = Genders[i];
+                if (g.id == e.value) return g.text;
+            }
+            return "";
+        }
+
+        
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>设置sortMode="client"，表格就客户端排序了。</p>
+        <p>可以设置列的dataType，更精准排序。dataType值有：string,int,boolean,date。</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<style type="text/css">
+#datagrid1 .mini-grid-headerCell   
+{
+    font-weight:bold;
+}
+</style>
+<div id="datagrid1" class="mini-datagrid" style="width:100%;height:100%;" 
+    url="../data/AjaxService.aspx?method=SearchEmployees"  valueField="id" autoLoad="true" 
+    borderStyle="border:0;"  
+>
+    <div property="columns">
+        <div type="indexcolumn" ></div>
+        <div field="loginname" width="120" headerAlign="center" allowSort="true">员工帐号</div>    
+        <div field="name" width="120" headerAlign="center" allowSort="true">姓名</div>                            
+        <div field="gender" width="100" renderer="onGenderRenderer" align="center" headerAlign="center">性别</div>
+        <div field="salary" width="100" allowSort="true">薪资</div>                                    
+        <div field="age" width="100" allowSort="true">年龄</div>
+        <div field="createtime" width="100" headerAlign="center" dateFormat="yyyy-MM-dd" allowSort="true">创建日期</div>                
+    </div>
+</div>
+<script type="text/javascript">
+    
+    var Genders = [{ id: 1, text: '男' }, { id: 2, text: '女'}];
+    function onGenderRenderer(e) {
+        for (var i = 0, l = Genders.length; i < l; i++) {
+            var g = Genders[i];
+            if (g.id == e.value) return g.text;
+        }
+        return "";
+    }    
+    
+</script>

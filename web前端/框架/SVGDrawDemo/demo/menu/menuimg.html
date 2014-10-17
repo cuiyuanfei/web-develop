@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>MenuImg</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+
+    <style type="text/css">
+    .mymenu .mini-menu-float
+    {
+        float:right;
+    }
+    </style>
+    
+</head>
+<body>
+    <h1>MenuImg 菜单图标</h1>
+    
+
+
+<ul id="menu1" class="mini-menubar" style="width:100%;"
+     idField="id" parentField="pid"
+     imgPath="../tree/imgs/"
+     >
+</ul>
+
+    <script type="text/javascript">
+        mini.parse();
+
+        var list = [
+	        { id: "base", text: "Base", img: 'add.gif' },
+	        { id: "ajax", text: "Ajax", pid: "base", img: 'add.gif' },
+	        { id: "json", text: "JSON", pid: "base", img: 'edit.gif' },
+	        { id: "date", text: "Date", pid: "base", img: 'lock.png' },
+	        { id: "control", text: "Control", pid: "base" },
+	        { id: "forms", text: "Forms", pid: "base" },
+	        { id: "button", text: "Button", pid: "forms" },
+	        { id: "listbox", text: "ListBox", pid: "forms" },
+	        { id: "checkboxlist", text: "CheckBoxList", pid: "forms" },
+            { id: "lists", text: "Lists" },
+	        { id: "datagrid", text: "DataGrid", pid: "lists" },
+	        { id: "tree", text: "Tree", pid: "lists" },
+	        { id: "treegrid", text: "TreeGrid ", pid: "lists" }
+        ];
+        var menu1 = mini.get("menu1");
+        menu1.loadList(list, "id", "pid");
+            
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <ol>
+            <li>设置Menu的imgPath属性</li>
+            <li>设置节点对象的img属性</li>
+        </ol>
+    </div>    
+</body>
+</html>

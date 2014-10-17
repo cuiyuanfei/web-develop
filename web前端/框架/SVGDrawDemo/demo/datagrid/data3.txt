@@ -1,0 +1,8 @@
+﻿[
+	{id:"1", name: "字符串", value: "abc", editor: "textbox"},	
+	{id:"2", name: "数值", value: 1, editor: "spinner"},
+	{id:"3", name: "布尔值", value: true, editor: "boolean"},
+	{id:"4", name: "日期", value: "2010-11-12", editor: "datepicker", format: 'yyyy-MM-dd' },
+	{id:"4", name: "时间", value: "10:11:12", editor: "time", format: 'HH:mm:ss' },
+	{id:"5", name: "选择", value: "cn", editor: "countrys"}
+]

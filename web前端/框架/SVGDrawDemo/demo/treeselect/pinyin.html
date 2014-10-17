@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TreeSelect 树形选择框</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    <h1>拼音过滤：输入 “zidian”试试 </h1>
+    
+    <input id="select1" class="mini-treeselect" url="tree.txt" 
+        textField="text" valueField="id" parentField="pid"         
+        popupWidth="200" allowInput="true" pinyin="tag"
+    />
+    
+    
+    <div class="description">
+        <h3>Description</h3>
+        <ol>
+            <li>设置treeselect的pinyinField="tag"</li>
+            <li>数据对象要有"pinyin"属性，数据文件<a href="tree.txt" target="_blank">tree.txt</a>。</li>
+        </ol>
+    </div>
+</body>
+</html>

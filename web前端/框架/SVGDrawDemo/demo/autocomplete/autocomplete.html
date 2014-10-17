@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AutoComplete</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript">
+
+    </script>
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+</head>
+<body>
+   
+<input id="tbl1" name="tb" class="mini-autocomplete" required="true" style="width:200px;"
+    valueField="id" textField="text" 
+        url="../data/AjaxService.aspx?method=FilterCountrys2" value="cn" text="中国" 
+        
+/>
+
+   <br /><br />
+    <input type="button" value="setValue" onclick="setValue()"/>
+    <input type="button" value="getValue" onclick="getValue()"/>    
+    <input type="button" value="disable" onclick="disable()"/>
+    <input type="button" value="enable" onclick="enable()"/>
+
+    <br /><br />
+    <h4>多列</h4>
+    <div class="mini-autocomplete" style="width:250px;"  popupWidth="400" textField="text" valueField="id" 
+        url="../data/AjaxService.aspx?method=FilterCountrys2" value="cn" text="中国"  onvaluechanged="onValueChanged">     
+        <div property="columns">
+            <div header="ID" field="id" width="30"></div>
+            <div header="国家" field="text"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        
+        function setValue() {
+            var t = mini.get("tbl1");
+            
+            t.setValue("1");
+            t.setText("张三");
+        }
+        function getValue() {
+            var t = mini.get("tbl1");
+            alert(t.getValue());
+        }
+        function enable() {
+            var t = mini.get("tbl1");
+            t.enable();
+        }
+        function disable() {
+            var t = mini.get("tbl1");
+
+            t.disable();
+        }
+
+        function onValueChanged(e) {
+            
+            var item = e.selected;
+            if (item) { 
+                alert(item.id + ":" + item.text);   //获取选中行更多属性
+            }
+        }
+
+        
+
+    </script>
+</body>
+</html>

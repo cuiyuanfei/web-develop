@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tabs</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    <link href="../../scripts/miniui/themes/blue/skin.css" rel="stylesheet" type="text/css" />
+
+    <link href="fontcss.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+    <h1>调整控件字体CSS</h1>      
+    
+<p>参考<a href="fontcss.css">fontcss.css</a></p>   
+<ul id="menu1" class="mini-menubar" style="width:350px;"
+        url="../data/listTree.txt" 
+        textField="text" idField="id" parentField="pid" 
+    >
+</ul>
+<br />
+<div id="tabs1" class="mini-tabs" activeIndex="0" style="width:350px;height:200px;" plain="false">
+    <div title="Tab1" >
+        
+        <input class="mini-textbox" value="textbox"/>
+        <input class="mini-buttonedit" text="buttonedit"/>
+        <a class="mini-button" iconCls="icon-add">按钮</a>
+        
+    </div>
+    <div title="Tab2" iconCls="icon-cut" >
+        2
+    </div>
+    <div title="Tab3" showCloseButton="true">
+        3
+    </div>
+</div>
+    <br />
+    <div id="datagrid1" class="mini-datagrid" style="width:350px;height:200px;" 
+        url="../data/AjaxService.aspx?method=SearchEmployees" idField="id" 
+        allowResize="true" pageSize="20" 
+        allowCellEdit="true" allowCellSelect="true" multiSelect="true" 
+        editNextOnEnterKey="true"
+    >
+        <div property="columns">
+            <div type="indexcolumn"></div>
+            <div type="checkcolumn"></div>
+            <div name="LoginName" field="loginname" width="120" headerAlign="center" allowSort="true">员工帐号
+                <input property="editor" class="mini-textbox" style="width:100%;" minWidth="200"/>
+            </div>
+            <div field="age" width="100" allowSort="true" >年龄
+                <input property="editor" class="mini-spinner"  minValue="0" maxValue="200" value="25" style="width:100%;"/>
+            </div>            
+            <div name="birthday" field="birthday" width="100" allowSort="true" dateFormat="yyyy-MM-dd">出生日期
+                <input property="editor" class="mini-datepicker" style="width:100%;"/>
+            </div>    
+            <div field="remarks" width="120" headerAlign="center" allowSort="true">备注
+                <input property="editor" class="mini-textarea" style="width:200px;" minWidth="200" minHeight="50"/>
+            </div>                     
+            <!--ComboBox：远程数据-->
+            <div type="comboboxcolumn" field="country" width="100" headerAlign="center" >国家
+                <input property="editor" class="mini-combobox" style="width:100%;" url="../data/countrys.txt" />                
+            </div>   
+            <div type="checkboxcolumn" field="married" trueValue="1" falseValue="0" width="60" headerAlign="center">婚否</div>                        
+        </div>
+    </div>
+
+</body>
+</html>
+<script>
+    mini.parse();
+    var grid = mini.get('datagrid1');
+    grid.load();
+
+</script>

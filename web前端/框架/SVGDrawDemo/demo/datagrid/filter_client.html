@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>FilterRow 客户端过滤行</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+        
+</head>
+<body>
+    <h1>FilterRow 客户端过滤行</h1>
+    
+    <a href="javascript:clearFilter()" style="font-size:13px;color:#1B3F91;font-family:Verdana;">Clear Filter</a>
+    <br /><br />
+    <div id="datagrid1" class="mini-datagrid" style="width:700px;height:280px;" 
+        url="../data/AjaxService.aspx?method=SearchEmployees"  idField="id"
+        showFilterRow="true"  allowResize="true"
+    >
+        <div property="columns">
+            <div type="indexcolumn" ></div>
+            <div field="loginname" width="120" headerAlign="center" allowSort="true">员工帐号</div>    
+            <div field="name" width="120" headerAlign="center" allowSort="true">姓名
+                <input id="nameFilter" property="filter" class="mini-textbox" style="width:100%;" 
+                    onvaluechanged="onFilterChanged"
+                />
+            </div>                            
+            <div field="gender" width="100" allowSort="true" renderer="onGenderRenderer" align="center" headerAlign="center">性别</div>
+            <div field="salary" width="100" allowSort="true">薪资</div>                                    
+            <div name="ageColumn" field="age" width="100" allowSort="true">年龄
+                <input id="ageFilter" property="filter" class="mini-filteredit" filterData="ageFilters" style="width:100%;" 
+                    onvaluechanged="onFilterChanged" showClose="true"
+                />
+            </div>            
+        </div>
+    </div> 
+    
+    <script type="text/javascript">
+        var ageFilters = [{ text: '大于', value: '>' }, { text: '小于', value: '<' }, { text: '等于', value: '=='}];
+
+        mini.parse();
+        
+        var grid = mini.get("datagrid1");
+        grid.load();
+
+        
+        ///////////////////////////////////////////////////////       
+        var Genders = [{ id: 1, text: '男' }, { id: 2, text: '女'}];
+        function onGenderRenderer(e) {
+            for (var i = 0, l = Genders.length; i < l; i++) {
+                var g = Genders[i];
+                if (g.id == e.value) return g.text;
+            }
+            return "";
+        }
+
+        function onFilterChanged(e) {
+            var namebox = mini.get("nameFilter");
+            var agebox = mini.get("ageFilter");
+
+            var name = namebox.getValue().toLowerCase();
+            var age = parseInt(agebox.getValue().toLowerCase());
+            var ageFilter = agebox.getFilterValue().toLowerCase();
+
+            //多条件组合过滤
+            grid.filter(function (row) {
+
+                //name
+                var r1 = true;
+                if (name) {
+                    r1 = String(row.name).toLowerCase().indexOf(name) != -1;
+                }
+
+                //age
+                var r2 = true;
+                if (!isNaN(age) && ageFilter) {
+                    r2 = false;
+                    if (ageFilter == ">" && row.age > age) r2 = true;
+                    if (ageFilter == "<" && row.age < age) r2 = true;
+                    if (ageFilter == "==" && row.age == age) r2 = true;
+                }
+
+                return r1 && r2;
+            });
+        }
+
+
+        function clearFilter() {
+            var namebox = mini.get("nameFilter");
+            var agebox = mini.get("ageFilter");
+
+            namebox.setValue("");
+            agebox.setValue("");
+            agebox.setFilterValue("");
+
+            grid.clearFilter();
+        }
+
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        
+    </div>
+</body>
+</html>

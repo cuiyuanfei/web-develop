@@ -1,0 +1,10 @@
+﻿[
+	{ id: "user", text: "用户管理", iconCls: "icon-add"},
+	{ id: "addUser", pid: "user", text: "增加用户", iconCls: "icon-add", url: "../datagrid/celledit.html" },
+	{ id: "editUser", pid: "user", text: "修改用户", iconCls: "icon-edit", url: "../datagrid/rowedit.html" },
+	{ id: "removeUser", pid: "user", text: "删除用户", iconCls: "icon-remove", url: "../datagrid/datagrid.html" },
+		
+	{ id: "right", text: "权限管理"},
+	{ id: "addRight", pid: "right", text: "查询权限", iconCls: "Note", url: "../tree/detailgrid.html", iconPosition: "top" },
+	{ id: "editRight", pid: "right", text: "操作权限", iconCls: "Reports", url: "../buttonedit/selectGrid.html", iconPosition: "top" }		
+]

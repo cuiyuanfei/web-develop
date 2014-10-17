@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Inline DetailGrid 内嵌子表格</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    <style type="text/css">
+        .New_Button, .Edit_Button, .Delete_Button, .Update_Button, .Cancel_Button
+        {
+            font-size:11px;color:#1B3F91;font-family:Verdana;  
+            margin-right:5px;          
+        }
+       
+                
+    </style>        
+</head>
+<body>
+    <h1>Inline DetailGrid 内嵌子表格</h1>      
+
+    <div id="dept_grid" class="mini-datagrid" style="width:700px;height:auto;" allowResize="true"
+        url="../data/AjaxService.aspx?method=GetDepartments"  idField="id"
+        
+        onshowrowdetail="onShowRowDetail"
+    >
+        <div property="columns">            
+            <div type="expandcolumn" >#</div>
+            <div field="id" width="80" headerAlign="center" >ID</div>                                        
+            <div field="name" width="320" headerAlign="left" >部门名称</div>          
+        </div>
+    </div> 
+
+    <div id="detailGrid_Form" style="display:none;">
+        <div id="employee_grid" class="mini-datagrid" style="width:100%;height:150px;" 
+            url="../data/AjaxService.aspx?method=GetDepartmentEmployees"   
+        >
+            <div property="columns">
+                <div field="loginname" width="120" headerAlign="center" allowSort="true">员工帐号
+                    <input property="editor" class="mini-textbox" />
+                </div>                
+                <div field="gender" width="100" allowSort="true" renderer="onGenderRenderer" align="center" headerAlign="center">性别
+                
+                </div>            
+                <div field="age" width="100" allowSort="true">年龄
+                
+                </div>
+                <div field="birthday" width="100" allowSort="true" dateFormat="yyyy-MM-dd">出生日期
+                
+                </div>                                    
+                <div field="createtime" width="100" headerAlign="center" dateFormat="yyyy-MM-dd" allowSort="true">创建日期</div>                
+            </div>
+        </div>    
+    </div>
+    
+
+    <script type="text/javascript">
+        var Genders = [{ id: 1, text: '男' }, { id: 2, text: '女'}];
+
+        mini.parse();
+
+        var dept_grid = mini.get("dept_grid");
+        var employee_grid = mini.get("employee_grid");
+        var detailGrid_Form = document.getElementById("detailGrid_Form");
+
+        dept_grid.load();
+        
+        ///////////////////////////////////////////////////////       
+        
+        function onGenderRenderer(e) {
+            for (var i = 0, l = Genders.length; i < l; i++) {
+                var g = Genders[i];
+                if (g.id == e.value) return g.text;
+            }
+            return "";
+        }
+
+        function onShowRowDetail(e) {
+            var grid = e.sender;
+            var row = e.record;
+            
+            var td = grid.getRowDetailCellEl(row);
+            td.appendChild(detailGrid_Form);
+            detailGrid_Form.style.display = "block";
+
+            employee_grid.load({ dept_id: row.id });
+        }
+    
+        
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        
+    </div>
+</body>
+</html>

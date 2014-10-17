@@ -1,0 +1,171 @@
+﻿html, body 
+{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    border:0;
+    
+}
+
+.mini-desktop
+{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:relative;
+    z-index:1;
+}
+.mini-desktop-viewport
+{
+    background:url(images/default.jpg) no-repeat 0 0;
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    height:100%;
+}
+.mini-desktop-taskbar
+{
+    background:url(images/taskbar.gif) repeat-x 0 0;
+    position:absolute;    
+    height:40px;
+    left:0;
+    bottom:0;
+    width:100%;
+    z-index:99999999;
+    overflow:hidden;
+}
+.mini-desktop-startbutton
+{
+    position:absolute;left:2px;top:2px;width:38px;height:38px;
+    background:url(images/start.jpg) no-repeat 50% 50%;
+    cursor:pointer;display:block;
+}
+a.mini-desktop-startbutton:hover
+{
+    background:url(images/starth.jpg) no-repeat 50% 50%;
+}
+.mini-desktop-taskbar-inner
+{
+    position:relative;overflow:hidden;   height:100%;
+    margin-left:50px;
+}
+.mini-desktop-bars
+{
+    width:2000px;position:relative;
+}
+.mini-desktop-taskbar-showarrow .mini-desktop-taskbar-inner
+{
+    margin-right:80px;
+}
+.mini-desktop-bars-leftarrow, .mini-desktop-bars-rightarrow
+{
+    position:absolute;right:0;top:0;width:30px;height:40px;display:none;
+    cursor:pointer;
+    background:url(images/btn_right.png) no-repeat 50% 50%;
+}
+.mini-desktop-bars-leftarrow
+{
+    right:35px;
+    background:url(images/btn_left.png) no-repeat 50% 50%;
+}
+.mini-desktop-taskbar-showarrow .mini-desktop-bars-leftarrow,
+.mini-desktop-taskbar-showarrow .mini-desktop-bars-rightarrow
+{
+    display:block;
+}
+
+.mini-desktop-modules
+{
+    margin:20px;
+}
+.mini-desktop-modules-list
+{
+    float:left;
+    padding-right:20px;
+}
+.mini-desktop-module
+{
+    width:75px;
+    height:80px;
+    margin-bottom:15px;
+    cursor:pointer;
+    overflow:hidden;
+    background:none;
+}
+.mini-desktop-module-icon
+{
+    width:50px;
+    height:45px;
+    margin:auto;
+    background:url(images/deskicon.png) no-repeat 50% 50%;
+    margin-bottom:3px;
+}
+.mini-desktop-module-text
+{
+    text-align:center;
+    font-family:Tahoma,Verdana,宋体;
+    font-size:12px;    
+    color:White;
+    line-height:16px;
+}
+
+.mini-desktop-bar
+{
+    float:left;
+    width:160px;
+    height:40px;
+    background:url(images/btn.gif) no-repeat right 0;
+    cursor:pointer;
+    overflow:hidden;
+    text-decoration:none;
+    outline:none;
+}
+a:hover.mini-desktop-bar
+{
+    background:url(images/btn-over.gif) no-repeat right 0;    
+}
+.mini-desktop-bar-active
+{
+    background:url(images/btn-active.gif) no-repeat right 0;    
+}
+.mini-desktop-bar-text
+{
+    padding-left:30px;
+    padding-right:20px;
+    line-height:40px;
+    font-family:Tahoma,Verdana,宋体;
+    font-size:12px;    
+    color:White;
+}
+
+
+.mini-desktop-proxy
+{
+    position:absolute;
+    overflow:hidden;
+    z-index:100000000;
+    background:gray;
+    opacity: .2;-moz-opacity: .2;filter: alpha(opacity=20);    
+}
+
+
+/* mini-ux-window */
+.mini-ux-window
+{
+    border:solid 1px #333;
+}
+.mini-ux-window .mini-panel-header
+{
+    height:29px;
+    overflow:hidden;
+    position:relative;
+    background:url(images/header.gif) repeat-x 0 0;
+    border-bottom:solid 1px #b6bec5;
+}
+.mini-ux-window .mini-tools
+{
+    top:7px;
+    right:6px;
+}

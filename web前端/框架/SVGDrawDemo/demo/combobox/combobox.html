@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ComboBox 下拉选择框</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+</head>
+<body>
+    <h1>ComboBox 下拉选择框 </h1>
+    
+    <h4>单选</h4>
+    
+<input id="combo1" class="mini-combobox" style="width:150px;" textField="text" valueField="id" emptyText="请选择..."
+    url="../data/countrys.txt" value="cn"  required="true" allowInput="true" showNullItem="true" nullItemText="请选择..."/>         
+
+    <br /><br />
+    <input type="button" value="setValue" onclick="setValue()"/>
+    <input type="button" value="getValue" onclick="getValue()"/>    
+    <input type="button" value="disable" onclick="disable()"/>
+    <input type="button" value="enable" onclick="enable()"/>
+
+    <h4>多选 + 多列</h4>
+<div id="combobox2" class="mini-combobox" style="width:250px;"  popupWidth="400" textField="text" valueField="id" 
+    url="../data/countrys.txt" value="cn,usa" multiSelect="true"  showClose="true" oncloseclick="onCloseClick" >     
+    <div property="columns">
+        <div header="ID" field="id"></div>
+        <div header="国家" field="text"></div>
+    </div>
+</div>
+
+    <h4>限制输入下拉数据</h4>
+<input id="combobox3" class="mini-combobox" style="width:150px;" textField="text" valueField="id" 
+    url="../data/countrys.txt" value="cn" showNullItem="true" required="true" allowInput="true"
+    onvalidation="onComboValidation" 
+/>        
+    <input type="button" value="getValue" onclick="getValue2()"/>    
+
+    <script type="text/javascript">
+//        mini.parse();
+//        var obj = mini.get("combo1");
+//        obj.select(0);
+        function setValue() {
+            var obj = mini.get("combo1");
+            obj.setValue("usa");
+
+        }
+        function getValue() {
+            var obj = mini.get("combo1");
+            alert(obj.getValue() +":"+ obj.getText());
+        }
+        function enable() {
+            var obj = mini.get("combo1");
+            obj.enable();
+        }
+        function disable() {
+            var obj = mini.get("combo1");
+            obj.disable();
+        }
+
+        function getValue2() {
+            var obj = mini.get("combobox3");
+            alert(obj.getValue() + ":" + obj.getText());            
+        }
+        function onComboValidation(e) {
+            var items = this.findItems(e.value);
+            if (!items || items.length == 0) {
+                e.isValid = false;
+                e.errorText = "输入值不在下拉数据中";
+            }
+        }
+
+        function onCloseClick(e) {
+            var obj = e.sender;
+            obj.setText("");
+            obj.setValue("");
+        }
+    </script>
+    <div class="description">
+        <h3>Description</h3>
+        <p>ComboBox显示一个下拉列表选择框。下拉框支持多列显示。       
+        </p>
+        <p>valueField是值字段；textField是文本字段。</p>
+    </div>
+</body>
+</html>

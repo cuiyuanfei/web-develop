@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>表单验证规则总结</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+    <style type="text/css">
+    .td1
+    {
+        text-align:right;
+    }
+    .td2
+    {
+        padding-left:15px;
+        font-size:13px;
+        font-family:Tahoma;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>表单验证规则总结</h1>      
+        
+<div id="form1" >
+    <table>
+        <tr>
+            <td class="td1">不允许为空：</td>
+            <td>
+                <input class="mini-textbox" required="true" />
+            </td>             
+            <td class="td2">required="true"</td>
+        </tr>
+        <tr>
+            <td class="td1">必须是邮箱地址：</td>
+            <td>
+                <input class="mini-textbox" vtype="email" required="true"/>
+            </td>                 
+            <td class="td2">vtype="email"</td>    
+        </tr>
+        <tr>
+            <td class="td1">必须是URL：</td>
+            <td>
+                <input class="mini-textbox" vtype="url" required="true"/>
+            </td>                 
+            <td class="td2">vtype="url"</td>    
+        </tr>
+        <tr>
+            <td class="td1">必须是整数(int)：</td>
+            <td>
+                <input class="mini-textbox" vtype="int" required="true"/>
+            </td>                 
+            <td class="td2">vtype="int"</td>    
+        </tr>  
+        <tr>
+            <td class="td1">必须是数字(float)：</td>
+            <td>
+                <input class="mini-textbox" vtype="float" required="true"/>
+            </td>               
+            <td class="td2">vtype="float"</td>      
+        </tr>  
+        <tr>
+            <td class="td1">字符串长度（<= 6）：</td>
+            <td>
+                <input class="mini-textbox" vtype="maxLength:6" required="true"/>
+            </td>             
+            <td class="td2">vtype="maxLength:6"</td>        
+        </tr>  
+        <tr>
+            <td class="td1">字符串长度（>= 2）：</td>
+            <td>
+                <input  class="mini-textbox" vtype="minLength:2" required="true"/>
+            </td>               
+            <td class="td2">vtype="minLength:2"</td>      
+        </tr>          
+        <tr>
+            <td class="td1">字符串长度（2-6）：</td>
+            <td>
+                <input class="mini-textbox" vtype="rangeLength:2,6" required="true"/>
+            </td>               
+            <td class="td2">vtype="rangeLength:2,6"</td>      
+        </tr>  
+        <tr>
+            <td class="td1">字符数个数（2-6）：</td>
+            <td>
+                <input class="mini-textbox" vtype="rangeChar:2,6" required="true"/>
+            </td>               
+            <td class="td2">vtype="rangeChar:2,6"</td>      
+        </tr> 
+        <tr>
+            <td class="td1">数字范围（0-100）：</td>
+            <td>
+                <input class="mini-textbox" vtype="range:0,100" required="true"/>
+            </td>          
+            <td class="td2">vtype="range:0,100"</td>           
+        </tr>  
+        <tr>
+            <td class="td1">必须是日期格式（如yyyy-MM-dd）：</td>
+            <td>
+                <input class="mini-textbox" vtype="date:yyyy-MM-dd" required="true"/>
+            </td>            
+            <td class="td2">vtype="date:yyyy-MM-dd"</td>         
+        </tr> 
+        <tr>
+            <td class="td1">必须是日期格式（如MM/dd/yyyy）：</td>
+            <td>
+                <input class="mini-textbox" vtype="date:MM/dd/yyyy" required="true"/>
+            </td>        
+            <td class="td2">vtype="date:MM/dd/yyyy"</td>             
+        </tr>   
+        <tr>
+            <td class="td1" style="color:Red;">邮箱格式，5~20个字符（组合）：</td>
+            <td>
+                <input class="mini-textbox" vtype="email;rangeLength:5,20;" required="true"/>
+            </td>        
+            <td class="td2">vtype="email;rangeLength:5,20;"</td>             
+        </tr>   
+        <tr>
+            <td class="td1" style="color:Red;">必须输入英文（自定义）：</td>
+            <td>
+                <input class="mini-textbox" onvalidation="onEnglishValidation" />
+            </td>        
+            <td class="td2">onvalidation="onEnglishValidation"</td>             
+        </tr>   
+        <tr>
+            <td class="td1" style="color:blue;">必须输入英文（自定义vtype）：</td>
+            <td>
+                <input class="mini-textbox" vtype="english"/>
+            </td>        
+            <td class="td2">vtype="english"</td>             
+        </tr>   
+        <tr>
+            <td class="td1" style="color:Red;">必须输入英文+数字（自定义）：</td>
+            <td>
+                <input class="mini-textbox" onvalidation="onEnglishAndNumberValidation" />
+            </td>        
+            <td class="td2">onvalidation="onEnglishAndNumberValidation"</td>             
+        </tr>  
+        <tr>
+            <td class="td1" style="color:Red;">必须输入中文（自定义）：</td>
+            <td>
+                <input class="mini-textbox" onvalidation="onChineseValidation" />
+            </td>        
+            <td class="td2">onvalidation="onChineseValidation"</td>
+        </tr>   
+        <tr>
+            <td class="td1" style="color:Red;">身份证验证15~18位（自定义）：</td>
+            <td>
+                <input class="mini-textbox" onvalidation="onIDCardsValidation" />
+            </td>        
+            <td class="td2">onvalidation="onIDCardsValidation"</td>
+        </tr>   
+        <tr>
+            <td></td>
+            <td>
+                <input value="Login" type="button" onclick="submitForm()" />
+            </td>
+        </tr>
+    </table>
+</div>
+    
+    <script type="text/javascript">
+        mini.parse();
+
+        function submitForm() {
+            var form = new mini.Form("#form1");
+
+            form.validate();
+            if (form.isValid() == false) return;
+
+            //提交数据
+            var data = form.getData();      
+            var json = mini.encode(data);  
+            $.ajax({
+                url: "../data/FormService.aspx?method=SaveData",
+                type: "post",
+                data: { submitData: json },
+                success: function (text) {
+                    alert("提交成功，返回结果:" + text);
+                }
+            });
+        }
+        ////////////////////////////////////////
+        function onEnglishValidation(e) {
+            if (e.isValid) {
+                if (isEnglish(e.value) == false) {
+                    e.errorText = "必须输入英文";
+                    e.isValid = false;
+                }
+            }
+        }
+        function onEnglishAndNumberValidation(e) {
+            if (e.isValid) {
+                if (isEnglishAndNumber(e.value) == false) {
+                    e.errorText = "必须输入英文+数字";
+                    e.isValid = false;
+                }
+            }
+        }
+        function onChineseValidation(e) {
+            if (e.isValid) {
+                if (isChinese(e.value) == false) {
+                    e.errorText = "必须输入中文";
+                    e.isValid = false;
+                }
+            }
+        }
+        function onIDCardsValidation(e) {
+            if (e.isValid) {
+                var pattern = /\d*/;
+                if (e.value.length < 15 || e.value.length > 18 || pattern.test(e.value) == false) {
+                    e.errorText = "必须输入15~18位数字";
+                    e.isValid = false;
+                }
+            }
+        }
+
+        ////////////////////////////////////
+        /* 是否英文 */
+        function isEnglish(v) {
+            var re = new RegExp("^[a-zA-Z\_]+$");
+            if (re.test(v)) return true;
+            return false;
+        }
+
+        /* 是否英文+数字 */
+        function isEnglishAndNumber(v) {
+            
+            var re = new RegExp("^[0-9a-zA-Z\_]+$");
+            if (re.test(v)) return true;
+            return false;
+        }
+
+        /* 是否汉字 */
+        function isChinese(v) {
+            var re = new RegExp("^[\u4e00-\u9fa5]+$");
+            if (re.test(v)) return true;
+            return false;
+        }
+
+        /*自定义vtype*/
+        mini.VTypes["englishErrorText"] = "请输入英文";
+        mini.VTypes["english"] = function (v) {
+            var re = new RegExp("^[a-zA-Z\_]+$");
+            if (re.test(v)) return true;
+            return false;
+        }
+
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>
+            
+        </p>        
+    </div>
+</body>
+</html>

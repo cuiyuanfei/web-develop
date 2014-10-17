@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Form操作ButtonEdit的text</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+</head>
+<body>
+    <h1>Form操作ButtonEdit的text</h1>      
+    
+    <div id="form1">
+        <input name="country" textName="countryName" class="mini-buttonedit"/>
+        <!--<input name="select1" textName="select1Name" class="mini-treeselect" url="../data/listTree.txt" multiSelect="true" 
+        textField="text" valueField="id" parentField="pid" checkRecursive="true" 
+        showFolderCheckBox="false"-->
+    </div> 
+    
+    <br /><br />
+    <input type="button" value="setValue" onclick="setValue()"/>
+    <input type="button" value="getValue" onclick="getValue()"/> 
+
+    <script type="text/javascript">
+        
+        function setValue() {
+            var data = {
+                country: "cn",
+                countryName: "中国"
+            };
+            var form = new mini.Form("#form1");
+            form.setData(data);
+        }
+
+        function getValue() {
+            var form = new mini.Form("#form1");
+            var data = form.getData();
+            var json = mini.encode(data);
+            alert(json);
+        }
+        
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>ButtonEdit显示为文本按钮的输入框。通过监听处理"buttonclick"事件，可以显示弹出框或下拉框等。</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Binding 数据绑定</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+           
+</head>
+<body>
+    <h1>Binding 数据绑定</h1>      
+
+<div style="padding-top:5px;padding-bottom:5px;">
+    
+    <input type="button" value="Add" onclick="addRow()"/>         
+    <input type="button" value="Remove" onclick="removeRow()" />   
+
+    
+    <input type="button" value="Save" onclick="saveData()" style="margin-left:100px;"/>  
+    
+</div>
+         
+    
+    <div id="datagrid1" class="mini-datagrid" style="width:725px;height:250px;" 
+        url="../data/AjaxService.aspx?method=SearchEmployees"  idField="id"
+        multiSelect="true" allowResize="true"
+    >
+        <div property="columns">            
+            <div type="checkcolumn"></div>            
+            <div field="loginname" width="120" headerAlign="center" allowSort="true">员工帐号</div>                
+            <div field="gender" width="100" allowSort="true" renderer="onGenderRenderer" align="center" headerAlign="center">性别</div>            
+            <div field="age" width="100" allowSort="true">年龄</div>
+            <div field="birthday" width="100" allowSort="true" dateFormat="yyyy-MM-dd">出生日期</div>                                    
+            <div field="createtime" width="100" headerAlign="center" dateFormat="yyyy-MM-dd" allowSort="true">创建日期</div>                
+        </div>
+    </div> 
+    <fieldset style="width:700px;border:solid 1px #aaa;margin-top:8px;position:relative;">
+        <legend>员工详细信息</legend>
+        <div id="editForm1" style="padding:5px;">
+            <input class="mini-hidden" name="id"/>
+            <table style="width:100%;">
+                <tr>
+                    <td style="width:80px;">员工帐号：</td>
+                    <td style="width:150px;"><input id="loginname" name="loginname" class="mini-textbox" /></td>
+                    <td style="width:80px;">姓名：</td>
+                    <td style="width:150px;"><input id="name" name="name" class="mini-textbox" /></td>
+                    <td style="width:80px;">薪资：</td>
+                    <td style="width:150px;"><input name="salary" class="mini-textbox" /></td>
+                </tr>
+                <tr>
+                    <td>性别：</td>
+                    <td><input id="gender" name="gender" class="mini-combobox" data="Genders"/></td>
+                    <td>年龄：</td>
+                    <td><input id="age" name="age" class="mini-spinner" minValue="0" maxValue="200" value="25"  /></td>
+                    <td>出生日期：</td>
+                    <td><input id="birthday" name="birthday" class="mini-datepicker" /></td>
+                </tr>
+            </table>
+        </div>
+    </fieldset>
+
+    <script type="text/javascript">
+        var Genders = [{ id: 1, text: '男' }, { id: 2, text: '女'}];
+
+        mini.parse();
+
+        var grid = mini.get("datagrid1");
+        grid.load();
+
+        //绑定表单
+        var db = new mini.DataBinding();
+        
+        db.bindForm("editForm1", grid);
+
+        
+        ///////////////////////////////////////////////////////
+        function onGenderRenderer(e) {
+            for (var i = 0, l = Genders.length; i < l; i++) {
+                var g = Genders[i];
+                if (g.id == e.value) return g.text;
+            }
+            return "";
+        }
+
+                
+        //////////////////////////////////////////////////////
+        function addRow() {
+            var newRow = { name: "New Row" };
+            grid.addRow(newRow, 0);
+
+            grid.deselectAll();
+            grid.select(newRow);
+        }
+        function removeRow() {
+            var rows = grid.getSelecteds();
+            if (rows.length > 0) {
+                grid.removeRows(rows, true);
+            }
+        }
+        function saveData() {
+            var data = grid.getChanges();
+            var json = mini.encode(data);
+            grid.loading("保存中，请稍后......");
+            $.ajax({
+                url: "../data/AjaxService.aspx?method=SaveEmployees",
+                data: { data: json },
+                type: "post",
+                success: function (text) {
+                    grid.reload();
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert(jqXHR.responseText);
+                }
+            });
+        }
+
+       
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        
+    </div>
+</body>
+</html>

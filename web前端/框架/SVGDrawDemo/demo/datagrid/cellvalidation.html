@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CellValidation 单元格编辑验证 </title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script> 
+    
+    <!--引入皮肤样式-->
+    <link href="../../scripts/miniui/themes/blue/skin.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <h1>CellValidation 单元格编辑验证</h1>
+    
+    <div style="width:800px;">
+        <div class="mini-toolbar" style="border-bottom:0;padding:0px;">
+            <table style="width:100%;">
+                <tr>
+                    <td style="width:100%;">
+                        <a class="mini-button" iconCls="icon-add" onclick="addRow()" plain="true">增加</a>
+                        <a class="mini-button" iconCls="icon-remove" onclick="removeRow()" plain="true">删除</a>
+                        <span class="separator"></span>
+                        <a class="mini-button" iconCls="icon-save" onclick="saveData()" plain="true">保存</a>            
+                    </td>
+                    
+                </tr>
+            </table>           
+        </div>
+    </div>
+    <div id="datagrid1" class="mini-datagrid" style="width:800px;height:280px;" 
+        url="../data/AjaxService.aspx?method=SearchEmployees" idField="id"
+        allowResize="true" pageSize="20" 
+        allowCellEdit="true" allowCellSelect="true" multiSelect="true"
+        allowCellValid="true" oncellvalidation="onCellValidation" 
+    >
+        <div property="columns">
+            <div type="checkcolumn"></div>
+            <div field="loginname" vtype="required;email" width="120" headerAlign="center" allowSort="true">员工帐号
+                <input property="editor" class="mini-textbox" style="width:100%;" />
+            </div>                
+            <div field="gender" vtype="required" width="100" renderer="onGenderRenderer" align="center" headerAlign="center">性别
+                <input property="editor" class="mini-combobox" style="width:100%;" data="Genders"/>                
+            </div>
+            <div field="age" vtype="required;int" width="100" allowSort="true" >年龄
+                <input property="editor" class="mini-spinner" minValue="0" maxValue="200" value="25" style="width:100%;"/>
+            </div>
+            <div field="birthday" vtype="required" width="100" allowSort="true" dateFormat="yyyy-MM-dd">出生日期
+                <input property="editor" class="mini-datepicker" style="width:100%;"/>
+            </div>    
+            <div field="remarks"  width="120" headerAlign="center" allowSort="true">备注
+                <input property="editor" class="mini-textarea" style="width:100%;" minHeight="80"/>
+            </div>                                 
+            <div field="createtime" vtype="required;date" width="100" headerAlign="center" dateFormat="yyyy-MM-dd" allowSort="true">创建日期</div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        mini.parse();
+
+        var grid = mini.get("datagrid1");
+        grid.load();
+
+        ///////////////////////////////////////////////////////
+        
+           
+        var Genders = [{ id: 1, text: '男' }, { id: 2, text: '女'}];
+        function onGenderRenderer(e) {
+            for (var i = 0, l = Genders.length; i < l; i++) {
+                var g = Genders[i];
+                if (g.id == e.value) return g.text;
+            }
+            return "";
+        }
+
+        function addRow() {
+            var newRow = { name: "New Row" };
+            grid.addRow(newRow, 0);
+            grid.validateRow(newRow);   //加入新行，马上验证新行
+        }
+        function removeRow() {
+            var rows = grid.getSelecteds();
+            if (rows.length > 0) {
+                grid.removeRows(rows, true);
+            }
+        }
+        function saveData() {
+            grid.validate();
+            if (grid.isValid() == false) {
+                //alert("请校验输入单元格内容");
+                var error = grid.getCellErrors()[0];
+                grid.beginEditCell(error.record, error.column);
+                return;
+            }
+
+            var data = grid.getChanges();
+            var json = mini.encode(data);
+
+            grid.loading("保存中，请稍后......");
+            $.ajax({
+                url: "../data/AjaxService.aspx?method=SaveEmployees",
+                data: { data: json },
+                type: "post",
+                success: function (text) {
+                    grid.reload();
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert(jqXHR.responseText);
+                }
+            });
+        }
+        function onCellValidation(e) {
+            if (e.field == "age") {
+            
+                if (e.value < 20) {
+                    e.isValid = false;
+                    e.errorText = "年龄必须大于20岁";
+                }
+            }
+            if (e.field == "gender") {
+                if (e.value == 0) {
+                    e.isValid = false;
+                    e.errorText = "不能为空";
+                }
+            }
+        }
+
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <ol>
+            <li>表格设置allowCellValid="true"。当单元格编辑后，会自动验证单元格规则。</li>
+            <li>列可以设置 vtype 属性，验证规则类似<a href="../form/rules.html" target="_blank">表单验证规则</a>。</li>
+            <li>表格通过监听处理oncellvalidation事件，实现vtype之外的自定义验证规则。比如本例实现的，年龄必须大于20岁。</li>
+             <li>表格有validate、isValid方法。提交时验证，如果验证未通过，则不允许保存。</li>
+        </ol>
+    </div>
+</body>
+</html>

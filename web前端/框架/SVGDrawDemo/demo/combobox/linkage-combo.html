@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ComboBox 联动下拉选择</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+</head>
+<body>
+    <h1>ComboBox 联动下拉选择 </h1>
+    
+    <span>部门</span><br />
+    <input id="deptCombo" class="mini-combobox" style="width:150px;" textField="name" valueField="id" 
+        onvaluechanged="onDeptChanged" url="../data/AjaxService.aspx?method=GetDepartments"
+        showNullItem="true"
+         />         
+    <br /><br />
+
+    <span>职位</span><br />
+    <input id="positionCombo" class="mini-combobox" style="width:150px;" textField="name" valueField="id" />         
+
+    <script type="text/javascript">
+        mini.parse();
+
+        var deptCombo = mini.get("deptCombo");
+        var positionCombo = mini.get("positionCombo");
+
+        function onDeptChanged(e) {
+            var id = deptCombo.getValue();
+
+            positionCombo.setValue("");
+            
+            var url = "../data/AjaxService.aspx?method=GetPositionsByDepartmenId&id=" + id
+            positionCombo.setUrl(url);
+            
+            positionCombo.select(0);
+        }
+
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>选择"国家"ComboBox后，将动态调整"城市"ComboBox可选择的下拉框列表数据。     
+        </p>
+    </div>
+</body>
+</html>

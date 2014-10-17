@@ -1,0 +1,14 @@
+﻿{
+    "Age": 30,
+    "countrys2": "cn",
+    "Area": "多行输入",
+    "Pwd": "mima",
+    "BirthDay": "2010-11-01T00:00:00",
+    "TreeSelect": "listbox",
+    "countrys3": "cn",
+    "Time": "1970-01-01T10:00:00",
+    "Married": "Y",
+    "countrys": "usa,ca,fr",
+    "UserName": "用户",
+    "Country": "en"
+}

@@ -1,0 +1,16 @@
+﻿[
+	{id: "base", text: "Base", expanded: false,
+		children: [
+			{id: "ajax", text: "Ajax", url: "../../docs/api/ajax.html", target:"_blank"},
+			{id: "json", text: "JSON", url: "../../docs/api/ajax.html", target:"_blank"}			
+		]
+	},
+	{id: "forms", text: "Forms", expanded: false,
+		children: [
+			{id: "button", text: "Button", url: "../../docs/api/button.html", target:"_blank"},
+			{id: "listbox", text: "ListBox", url: "../../docs/api/listbox.html", target:"_blank"},
+			{id: "checkboxlist", text: "CheckBoxList", url: "../../docs/api/checkboxlist.html", target:"_blank"},
+			{id: "radiolist", text: "RadioList", url: "../../docs/api/radiolist.html", target:"_blank"}
+		]
+	}
+]

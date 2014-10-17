@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Spinner 数值调节器</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+</head>
+<body>
+    <h1>Spinner 数值调节器</h1>      
+    
+    <input id="sp1" changeOnMousewheel="false" class="mini-spinner"  minValue="200" maxValue="250" onvaluechanged="onValueChanged"/>
+        
+    
+    <br /><br />
+    <input type="button" value="setValue" onclick="setValue()"/>
+    <input type="button" value="getValue" onclick="getValue()"/>    
+    <input type="button" value="disable" onclick="disable()"/>
+    <input type="button" value="enable" onclick="enable()"/>
+
+    <script type="text/javascript">
+        var count = 0;
+        function onValueChanged(e) {
+            
+            count++;
+            document.title = count;
+        }
+        function setValue() {
+            var t = mini.get("sp1");
+            t.setValue("222");
+        }
+        function getValue() {
+            var t = mini.get("sp1");
+            alert(t.getValue());
+        }
+        function enable() {
+            var t = mini.get("sp1");
+            t.enable();
+        }
+        function disable() {
+            var t = mini.get("sp1");
+            t.disable();
+        }
+    </script>
+
+    <h1>小数点、千分位</h1>      
+    
+    <input id="sp2" class="mini-spinner" value="123456.123" minValue="-1000000" maxValue="1000000" format="n2"/>
+
+    <br /><br />
+    <h1>货币</h1>
+    <input class="mini-spinner" value="123456.123" minValue="-1000000" maxValue="1000000" format="c4"/>
+
+    <br /><br />
+    <h1>百分比</h1>
+    <input class="mini-spinner" increment="0.01" value="0.123" minValue="0" maxValue="1" format="p2"/>
+
+    <br /><br />
+    <h1>自定义</h1>
+    <input class="mini-spinner" value="123456.123" minValue="-1000000" maxValue="1000000" format="¥#,0.00"/>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>Spinner实现数字的输入，format实现数字格式化：</p>
+        <ul>
+            <li>小数点和千分位：format="n"</li>
+            <li>货币格式：format="c"。</li>
+            <li>百分比格式：format="p"。</li>
+            <li>自定义格式：format="¥#,0.00"。</li>            
+        </ul>
+    </div>
+</body>
+</html>

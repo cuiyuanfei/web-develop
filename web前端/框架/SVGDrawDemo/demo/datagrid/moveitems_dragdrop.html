@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>两个DataGrid之间选择移动项</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+       
+
+</head>
+<body>
+    <h1>两个DataGrid之间选择移动项 </h1>      
+    <input type="button" value="Save" onclick="saveData()" style="width:55px;"/>
+    <table >
+        <tr>
+            <td >
+                <div id="grid1" class="mini-datagrid" style="width:180px;height:200px;"
+                    idField="id" multiSelect="true" 
+                    url="../data/countrys.txt" resultAsData="true" showPager="false"
+                    allowDrag="true" allowDrop="true" 
+                    >
+                    <div property="columns">
+                        <div type="checkcolumn" ></div>
+                        <div header="国家" field="text" allowDrag="true"></div>
+                    </div>
+                </div>
+            </td>
+            <td style="width:60px;text-align:center;">
+                <input type="button" value=">" onclick="adds()" style="width:40px;"/><br />
+                <input type="button" value=">>" onclick="addAll()" style="width:40px;"/><br />
+                <input type="button" value="&lt;&lt;" onclick="removeAll()" style="width:40px;"/><br />
+                <input type="button" value="&lt;" onclick="removes()" style="width:40px;"/><br />
+
+            </td>
+            <td>
+                <div id="grid2" class="mini-datagrid" style="width:250px;height:200px;"                     
+                    idField="id"  multiSelect="true" showPager="false"
+                    allowCellEdit="true" allowCellSelect="true"  
+                    allowDrag="true" allowDrop="true" 
+                >
+                    <div property="columns">
+                        <div type="checkcolumn" ></div>
+                        <div header="ID" field="id" width="30" allowDrag="true"></div>
+                        <div header="国家" field="text" allowDrag="true">
+                            <input property="editor" class="mini-textbox" style="width:100%"/>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td style="width:50px;text-align:center;vertical-align:bottom">
+                <input type="button" value="Up" onclick="upItem()" style="width:55px;"/>
+                <input type="button" value="Down" onclick="downItem()" style="width:55px;"/>
+
+            </td>
+        </tr>
+    
+    </table>    
+    
+    <script type="text/javascript">
+        mini.parse();
+        var grid1 = mini.get("grid1");
+        var grid2 = mini.get("grid2");
+
+        grid1.load();
+
+        function adds() {
+        
+            var items = grid1.getSelecteds();
+            grid1.removeRows(items);
+            grid2.addRows(items);
+        }
+        function addAll() {
+            var items = grid1.getData();       
+            grid1.removeRows(items);
+            grid2.addRows(items);
+        }
+        function removes() {
+            var items = grid2.getSelecteds();
+            grid2.removeRows(items);
+            grid1.addRows(items);
+        }
+        function removeAll() {
+            var items = grid2.getData();
+            grid2.removeRows(items);
+            grid1.addRows(items);
+        }
+        function upItem() {
+            var items = grid2.getSelecteds();
+            grid2.moveUp(items);
+        }
+        function downItem() {
+
+            var items = grid2.getSelecteds();
+            grid2.moveDown(items);
+        }
+        function saveData() {
+            var data = grid2.getData();
+            var json = mini.encode(data);
+            alert(json);
+        }
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>演示在两个DataGrid之间，移动数据。
+        </p>
+    </div>
+</body>
+</html>

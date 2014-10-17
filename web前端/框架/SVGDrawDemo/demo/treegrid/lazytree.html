@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>LazyTree 懒加载TreeGrid</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+
+</head>
+<body>
+    <h1>LazyTree 懒加载TreeGrid</h1>      
+    
+<div id="treegrid1" class="mini-treegrid" style="width:600px;height:250px;"     
+    url="../data/TreeService.aspx?method=LoadNodes" showTreeIcon="true" textField="text" idField="id" 
+    treeColumn="filename" onbeforeload="onBeforeTreeLoad" ondrawcell="OnDrawCell"
+>
+    <div property="columns">
+        <div type="indexcolumn"></div>
+        <div name="filename" field="name" width="150">名称</div>
+        <div field="type" width="100">类型</div>
+        <div field="size" width="100" >大小</div>
+        <div field="createdate" width="100" >创建日期</div>
+    </div>
+</div>
+    
+    <script type="text/javascript">
+    function onBeforeTreeLoad(e) {
+        var tree = e.sender;    //树控件
+        var node = e.node;      //当前节点
+        var params = e.params;  //参数对象
+
+        //可以传递自定义的属性
+        params.myField = "123"; //后台：request对象获取"myField"
+    }
+
+    function OnDrawCell(e) {
+        
+        if (e.field == "createdate") {
+            if (e.value && e.value.getFullYear) {
+                e.cellHtml = mini.formatDate(e.value, "yyyy年MM月dd日");
+            }else{
+                e.cellHtml = "";
+            }
+        }
+    }
+
+
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>
+        </p>
+    </div>
+</body>
+</html>

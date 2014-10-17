@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ListBox</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+       
+
+</head>
+<body>
+    <h1>ListBox </h1>      
+    
+    <h4>单选</h4>
+
+<div id="listbox1" class="mini-listbox" style="width:150px;height:100px;"
+    textField="text" valueField="id" 
+    url="../data/countrys.txt">
+</div>
+
+
+    <h4>多选 + 多列</h4>
+<div id="listbox2" class="mini-listbox" style="width:400px;height:120px;" 
+    value="cn" onvaluechanged="onListBoxValueChanged" 
+    url="../data/countrys.txt" showCheckBox="true" multiSelect="true" >     
+    <div property="columns">
+        <div header="ID" field="id"></div>
+        <div header="国家" field="text"></div>
+    </div>
+</div>
+    
+    <script type="text/javascript">
+        function onListBoxValueChanged(e) {
+            var listbox = e.sender;
+            var value = listbox.getValue();
+            alert(value);
+        }
+
+  
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>
+        </p>
+    </div>
+</body>
+</html>

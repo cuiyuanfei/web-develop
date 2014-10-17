@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>MenuButton</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+</head>
+<body>
+    <h1>MenuButton 菜单按钮</h1>
+    <p class="tip"></p>
+    
+    <a class="mini-menubutton " menu="#popupMenu" >选择...</a>
+
+    <ul id="popupMenu" class="mini-menu" style="display:none;">
+        <li>
+		    <span >操作</span>
+		    <ul>
+		        <li iconCls="icon-new" onclick="onItemClick">新建</li>
+                <li class="separator"></li>
+                <li iconCls="icon-add" onclick="onItemClick">增加</li>	
+			    <li iconCls="icon-edit" onclick="onItemClick">修改</li>
+	            <li iconCls="icon-remove" onclick="onItemClick">删除</li>	 	             
+		    </ul>
+	    </li>
+        <li class="separator"></li>
+	    <li iconCls="icon-open" >打开</li>
+	    <li iconCls="icon-remove" >关闭</li>
+    </ul>
+    
+    <script type="text/javascript">
+        function onItemClick(e) {
+            var text = this.getText();
+            alert(text);
+        }
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>MiniUI MenuButton能设置menu属性，显示下拉菜单。</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿[
+    {
+        UID: 1,                                 //唯一标识符
+        Name: 'task1',                          //任务名称
+        Start: '2009-01-02T00:00:00',            //开始日期
+        Finish: '2009-01-05T00:00:00',           //完成日期
+        Critical: 1,                            //关键任务
+        PercentComplete: 80,
+        Duration: 24
+    },
+    {        
+		UID: 2,
+        Name: 'task2',                          //任务名称
+        Start: '2009-01-02T00:00:00',            //开始日期
+        Finish: '2009-01-03T00:00:00',           //完成日期
+        Critical: 1,                            //关键任务
+        PercentComplete: 80,                    //完成百分比
+        Duration: 8,
+        Summary: 1,                             
+
+		isLeaf: false,							//是否叶子节点：+和-号
+        expanded: false							//节点处于收缩状态
+    },
+    {
+		UID: 3,
+        Name: 'task3',
+        Milestone: 1,                   //里程碑
+        PercentComplete: 100,
+        Duration: 0,
+        Start: '2009-01-03T00:00:00',
+        Finish: '2009-01-03T00:00:00',
+        PredecessorLink: [              //前置任务
+            {
+                PredecessorUID: 1,      //前置任务UID
+                Type: 1                 //任务相关性类型
+            }
+        ]
+    },
+    {        
+		UID: 4,
+        Name: 'task4',                          //任务名称
+        Start: '2009-01-04T00:00:00',            //开始日期
+        Finish: '2009-01-05T00:00:00',           //完成日期
+        Critical: 1,                            //关键任务
+        PercentComplete: 80,                    //完成百分比
+        Duration: 8,
+		Summary: 1,                     
+
+		isLeaf: false,
+        expanded: false							//节点处于收缩状态
+    }    
+]
+

@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tree 树形控件</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+
+</head>
+<body>
+    <h1>Tree 树形控件</h1>
+    
+    <div style="font-weight:bold;">当前选中节点：<span id="nodeText" style="color:Blue;"></span></div>
+    <table>
+        <tr>
+            <td valign="top" style="width:300px;">
+                <ul id="tree1" class="mini-tree" url="../data/tree.txt" style="width:300px;padding:5px;"
+                    showTreeIcon="true" textField="text" idField="id" value="base" expandOnNodeClick="true">        
+                </ul>
+                
+            </td>
+            <td valign="top">
+                <div style="line-height:22px"><input type="checkbox" id="AllowSelect" checked onclick="setAllowSelect(this.checked)"/><label for="AllowSelect">AllowSelect</label></div>
+                <div style="line-height:22px"><input type="checkbox" id="ShowCheckBox" onclick="setShowCheckBox(this.checked)"/><label for="ShowCheckBox">ShowCheckBox</label></div>
+                <div id="ShowFolderCheckBox_div" style="line-height:22px;display:none;margin-left:30px;"><input type="checkbox" checked id="ShowFolderCheckBox" onclick="setShowFolderCheckBox(this.checked)"/><label for="ShowFolderCheckBox">ShowFolderCheckBox</label></div>
+                <div id="CheckRecursive_div" style="line-height:22px;display:none;margin-left:30px;"><input type="checkbox" id="CheckRecursive" onclick="setCheckRecursive(this.checked)"/><label for="CheckRecursive">CheckRecursive</label></div>
+                <div style="line-height:22px"><input type="checkbox" id="ShowExpandButtons" checked onclick="setShowExpandButtons(this.checked)"/><label for="ShowExpandButtons">ShowExpandButtons</label></div>
+                <div style="line-height:22px"><input type="checkbox" id="ShowTreeIcon" checked onclick="setShowTreeIcon(this.checked)"/><label for="ShowTreeIcon">ShowTreeIcon</label></div>
+                <div style="line-height:22px"><input type="checkbox" id="ShowTreeLines" checked onclick="setShowTreeLines(this.checked)"/><label for="ShowTreeLines">ShowTreeLines</label></div>         
+                <div style="line-height:22px"><input type="checkbox" id="EnableHotTrack" checked onclick="setEnableHotTrack(this.checked)"/><label for="EnableHotTrack">EnableHotTrack</label></div>
+                
+                
+                <br />
+                <input type="button" value="getSelectedNode" onclick="getSelectedNode()"/>
+                <br /><br />
+                <input type="button" value="getCheckedNodes" onclick="getCheckedNodes()"/>
+
+                <br /><br />
+                <input type="button" value="findNodes" onclick="findNodes()"/>
+
+            </td>
+        </tr>
+    </table>
+    
+
+        
+    <script type="text/javascript">
+
+        
+        
+        function setAllowSelect(checked) {
+            var tree = mini.get("tree1");
+            tree.setAllowSelect(checked);
+        }
+        function setShowCheckBox(checked) {
+            var tree = mini.get("tree1");
+            tree.setShowCheckBox(checked);
+
+            var d = document.getElementById("ShowFolderCheckBox_div");
+            d.style.display = checked ? "block" : "none";
+
+            var d = document.getElementById("CheckRecursive_div");
+            d.style.display = checked ? "block" : "none";
+        }
+        function setShowFolderCheckBox(checked) {
+            var tree = mini.get("tree1");
+            tree.setShowFolderCheckBox(checked);
+        }
+        
+        function setShowExpandButtons(checked) {
+            var tree = mini.get("tree1");
+            tree.setShowExpandButtons(checked);
+        }
+        function setShowTreeIcon(checked) {
+            var tree = mini.get("tree1");
+            tree.setShowTreeIcon(checked);
+        }
+        function setShowTreeLines(checked) {
+            var tree = mini.get("tree1");
+            tree.setShowTreeLines(checked);
+        }
+        function setAllowSelect(checked) {
+            var tree = mini.get("tree1");
+            tree.setAllowSelect(checked);
+        }
+        function setEnableHotTrack(checked) {
+            var tree = mini.get("tree1");
+            tree.setEnableHotTrack(checked);
+        }
+        function setCheckRecursive(checked) {
+            var tree = mini.get("tree1");
+            tree.setCheckRecursive(checked);
+        }
+
+        function getSelectedNode() {
+            var tree = mini.get("tree1");
+            var node = tree.getSelectedNode();
+            if (node) {
+                alert(node.text);
+            } else {
+                alert("请选中节点");
+            }
+        }
+        function getCheckedNodes() {
+            var tree = mini.get("tree1");
+            var nodes = tree.getCheckedNodes();
+            alert("Checked Nodes : " + nodes.length);
+        }
+
+        function onSelectNode(e) {
+            var tree = e.sender;
+            var node = tree.getSelectedNode();
+            document.getElementById("nodeText").innerHTML = node.text;
+        }
+
+        function findNodes() {        
+            var tree = mini.get("tree1");
+            var nodes = tree.findNodes(function (node) {
+                if (node.id == "button") return true;
+            });
+            alert("find: "+nodes[0].text);
+        }
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>            
+        </p>
+    </div>
+</body>
+</html>

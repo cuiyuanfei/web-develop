@@ -1,0 +1,19 @@
+﻿{list: [
+	{ id: "1", a: {text: "文件(F)"}},		
+	'-',
+	{ id: "2", a: {text: "新建"}, iconCls: "icon-new", pid: "1"},	
+		{ id: "3", a: {text: "文件"}, pid: "2"},
+		{ id: "4", a: {text: "文件夹"}, pid: "2"},		
+	{ id: "5", a: {text: "打开"}, iconCls: "icon-folderopen", pid: "1"},
+	{ id: "6", a: {text: "保存"}, pid: "1"},
+	{ id: "7", a: {text: "关闭"}, pid: "1"},
+		
+	{ id: "8", a: {text: "编辑(E)"}},
+		{ id: "9", a: {text: "剪切"}, iconCls: "icon-cut", pid: "8"},
+		{ id: "10", a: {text: "复制"}, pid: "8"},
+		{ id: "11", a: {text: "粘贴"}, pid: "8"},
+		
+	{ id: "12", a: {text: "查看(V)"}},
+	{ id: "13", a: {text: "帮助(H)"}, iconCls: "icon-help"}
+]
+}

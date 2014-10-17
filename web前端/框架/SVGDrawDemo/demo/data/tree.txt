@@ -1,0 +1,51 @@
+﻿[
+	{id: "base", text: "Base", 
+		children: [
+			{id: "ajax", text: "Ajax"},
+			{id: "json", text: "JSON"},
+			{id: "date", text: "Date"},
+			{id: "control", text: "Control"},
+			{id: "messagebox", text: "MessageBox"},
+			{id: "window", text: "Window"}
+		]
+	},
+	{id: "forms", text: "Forms", 
+		children: [
+			{id: "button", text: "Button"},
+			{id: "listbox", text: "ListBox"},
+			{id: "checkboxlist", text: "CheckBoxList"},
+			{id: "radiolist", text: "RadioList"},
+			{id: "calendar", text: "Calendar"},
+			{id: "textbox", text: "TextBox"},
+			{id: "password", text: "Password"},
+			{id: "textarea", text: "TextArea"},
+			{id: "combobox", text: "ComboBox"},
+			{id: "datepicker", text: "DatePicker"},
+			{id: "spinner", text: "Spinner"},
+			{id: "treeselect", text: "TreeSelect"},
+			{id: "fileupload", text: "FileUpload"}
+		]
+	},
+	{id: "lists", text: "Lists", 
+		children: [
+			{id: "datagrid", text: "DataGrid"},			
+			{id: "tree", text: "Tree"},
+			{id: "treegrid", text: "TreeGrid "}
+		]
+	},
+	{id: "layouts", text: "Layouts", 
+		children: [
+			{id: "panel", text: "Panel"},
+			{id: "splitter", text: "Splitter"},
+			{id: "layout", text: "Layout "}
+		]
+	},
+	{id: "navigations", text: "Navigations", 
+		children: [
+			{id: "pager", text: "Pager"},
+			{id: "tabs", text: "Tabs"},
+			{id: "outlookbar", text: "OutlookBar"},
+			{id: "menu", text: "Menu"}
+		]
+	}
+]

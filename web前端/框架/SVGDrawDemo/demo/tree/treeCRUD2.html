@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tree 实时操作实时保存</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    <h1>Tree 实时操作实时保存</h1>
+    <input type="button" value="插入节点(前)" onclick="onAddBefore()"/>
+    <input type="button" value="插入节点(后)" onclick="onAddAfter()"/>
+    <input type="button" value="插入节点(子节点)" onclick="onAddNode()"/>
+    <br />
+    <input type="button" value="编辑节点" onclick="onEditNode()"/>
+    <input type="button" value="编辑节点(弹出面板)" onclick="onEditNode2()"/>
+    <input type="button" value="删除节点" onclick="onRemoveNode()"/>
+    
+    
+    <ul id="tree1" class="mini-tree" url="../data/TreeService.aspx?method=LoadTree" style="width:300px;height:300px;padding:5px;" 
+    showTreeIcon="true" textField="name" expandOnLoad="0" onendedit="saveData" ondrop="saveData" allowDrag="true" allowDrop="true" allowLeafDropIn="true"
+    idField="id" parentField="pid" resultAsTree="false"
+        >        
+</ul>     
+</ul>
+
+</body>
+</html>
+<script type="text/javascript">
+mini.parse();
+
+function onAddBefore(e) {
+    var tree = mini.get("tree1");
+    var node = tree.getSelectedNode();
+    var newNode = {};
+    tree.addNode(newNode, "before", node);
+    saveData();
+}
+
+function onAddAfter(e) {
+    var tree = mini.get("tree1");
+    var node = tree.getSelectedNode();
+
+    var newNode = {};
+    tree.addNode(newNode, "after", node);
+    saveData();
+}
+
+function onAddNode(e) {
+    var tree = mini.get("tree1");
+    var node = tree.getSelectedNode();
+
+    var newNode = {};
+    tree.addNode(newNode, "add", node);
+    saveData();
+}
+
+function onEditNode(e) {
+    var tree = mini.get("tree1");
+    var node = tree.getSelectedNode();
+    
+    tree.beginEdit(node);
+}
+
+function upDateNode(options){
+    var tree = mini.get("tree1");
+    var node = tree.getSelectedNode();
+    options = mini.clone(options);
+    tree.updateNode(node,options)
+    saveData();
+}
+
+function onEditNode2(e) {
+    var tree = mini.get("tree1");
+    var node = tree.getSelectedNode();
+    
+    mini.open({
+	url: bootPATH+ "../demo/tree/taskPanel/taskPanel.html",
+        title: "任务面板", width: 500, height: 300,
+        onload: function () {
+            var iframe = this.getIFrameEl();
+            iframe.contentWindow.SetData(node);
+        }
+    })
+}
+
+function onRemoveNode(e) {
+
+    var tree = mini.get("tree1");
+    var node = tree.getSelectedNode();
+
+    if (node) {
+        if (confirm("确定删除选中节点?")) {
+            tree.removeNode(node);
+            saveData();
+        }
+    }
+}
+
+function saveData() {
+    var tree = mini.get("tree1");
+
+    var data = tree.getData();
+    var removed = tree.getChanges("removed");
+    var paramsObj = {
+        data: mini.encode(data),
+        removed: mini.encode(removed)
+    }
+
+    var msgid = mini.loading("数据保存中，请稍后......", "保存数据");
+    $.ajax({
+        url: "../data/TreeService.aspx?method=SaveTree",
+        data: paramsObj,
+        type: "post",
+        success: function (text) {
+            mini.hideMessageBox(msgid);
+            tree.load("../data/TreeService.aspx?method=LoadTree");
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.responseText);
+        }
+    });
+}
+</script>

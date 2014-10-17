@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>RadioButtonList</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+       
+
+</head>
+<body>
+    <h1>RadioButtonList 单选框组</h1>      
+    
+<div id="rbl" class="mini-radiobuttonlist" repeatItems="2" repeatLayout="table" repeatDirection="vertical"
+    textField="text" valueField="id" value="cn" 
+    url="../data/countrys.txt" >
+</div>    
+<script type="text/javascript">
+    mini.parse();
+    var rbl = mini.get("rbl");
+    rbl.on("valuechanged", function (e) {
+        alert(this.getValue());
+    });
+</script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>RadioButtonList用于对多个选择项进行单选操作。
+        </p>
+        <p>repeatItems、repeatLayout、repeatDirection等属性用于控制多个选择项的排布方式。</p>
+    </div>
+</body>
+</html>

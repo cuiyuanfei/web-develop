@@ -1,0 +1,98 @@
+﻿[
+	{ id: 'sys', name: '系统配置' },
+	{ id: 'dept', name: '部门管理', pid: 'sys',
+		functions: [
+			{ action: 'add', name: '新增', checked: true},
+			{ action: 'remove', name: '删除', checked: true},
+			{ action: 'edit', name: '编辑', checked: false},
+			{ action: 'search', name: '查询', checked: false},
+			{ action: 'addlist', name: '批量新增', checked: false},
+			{ action: 'submit', name: '提交表单', checked: true}
+		]
+	 },
+	{ id: 'user', name: '用户管理' , pid: 'sys',
+		functions: [
+			{ action: 'add', name: '新增', checked: false},
+			{ action: 'remove', name: '删除', checked: false},
+			{ action: 'edit', name: '编辑', checked: false},
+			{ action: 'search', name: '查询', checked: false},
+			{ action: 'addlist', name: '批量新增', checked: false},
+			{ action: 'disable', name: '禁用/启用', checked: true},
+			{ action: 'pwdinit', name: '密码初始化', checked: true}
+		]
+	},
+	{ id: 'menu', name: '菜单配置' , pid: 'sys',
+		functions: [
+			{ action: 'add', name: '新增', checked: true},
+			{ action: 'remove', name: '删除', checked: true},
+			{ action: 'reset', name: '重置表单', checked: false},
+			{ action: 'view', name: '查看', checked: false},
+			{ action: 'submit', name: '提交表单', checked: true}
+		]
+	},
+	{ id: 'role', name: '角色管理' , pid: 'sys',
+		functions: [
+			{ action: 'add', name: '新增', checked: true},
+			{ action: 'remove', name: '删除', checked: true},
+			{ action: 'save', name: '保存', checked: false},
+			{ action: 'edit', name: '编辑', checked: false},
+			{ action: 'removelist', name: '批量删除', checked: false}
+		]
+	},
+	{ id: 'backup', name: '备份数据' , pid: 'sys',
+		functions: [
+			{ action: 'submit', name: '提交表单', checked: true},
+			{ action: 'reset', name: '重置表单', checked: false}
+		]
+	},
+	{ id: 'args', name: '基本参数' , pid: 'sys',
+		functions: [
+			{ action: 'add', name: '新增', checked: true},
+			{ action: 'remove', name: '删除', checked: true},
+			{ action: 'save', name: '保存', checked: false},
+			{ action: 'edit', name: '编辑', checked: false},
+			{ action: 'submit', name: '提交表单', checked: false}
+		]
+	},
+	{ id: 'fun', name: '功能管理' , pid: 'sys',
+		functions: [
+			{ action: 'add', name: '新增', checked: true},
+			{ action: 'remove', name: '删除', checked: true},
+			{ action: 'edit', name: '编辑', checked: false},
+			{ action: 'search', name: '查询', checked: false},
+			{ action: 'removelist', name: '批量删除', checked: false}
+		]
+	},
+	{ id: 'reduction', name: '还原数据' , pid: 'sys',
+		functions: [
+			{ action: 'submit', name: '提交表单', checked: true},
+			{ action: 'reset', name: '重置表单', checked: false}
+		]
+	},
+	{ id: 'sql', name: '执行SQL' , pid: 'sys',
+		functions: [
+			{ action: 'search', name: '查询', checked: false}
+		]
+	},
+	{ id: 'dictionary', name: '字典管理' , pid: 'sys',
+		functions: [
+			{ action: 'add', name: '新增', checked: false},
+			{ action: 'remove', name: '删除', checked: false},
+			{ action: 'edit', name: '编辑', checked: false},
+			{ action: 'search', name: '查询', checked: false},
+			{ action: 'addlist', name: '批量新增', checked: false},
+			{ action: 'disable', name: '禁用/启用', checked: true}
+		]
+		
+	},
+	{ id: 'icon', name: '图标管理' , pid: 'sys',
+		functions: [
+			{ action: 'add', name: '新增', checked: false},
+			{ action: 'remove', name: '删除', checked: false},
+			{ action: 'save', name: '保存', checked: false},
+			{ action: 'edit', name: '编辑', checked: false},
+			{ action: 'search', name: '查询', checked: false},
+			{ action: 'addlist', name: '批量新增', checked: false}
+		]
+	}
+]

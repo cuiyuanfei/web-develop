@@ -1,0 +1,9 @@
+﻿CommonLibs是可以被任何业务页面调用的资源。
+
+一般是一些自定义类，如UserSelectWindow.js。
+
+还有一些是页面:
+	1）编辑表单：EmployeeWindow.html。
+	2）弹出选择：selectGrid.html、selectTree.html
+
+

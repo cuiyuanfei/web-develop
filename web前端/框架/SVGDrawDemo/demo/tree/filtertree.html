@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>FilterTree 树过滤</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />    
+
+    <script src="../../scripts/boot.js" type="text/javascript"></script>    
+
+</head>
+<body>
+    <h1>FilterTree 树过滤</h1>      
+    <div>
+          <label >名称：</label>
+          <input id="key" class="mini-textbox" style="width:150px;" onenter="onKeyEnter"/>
+          <a class="mini-button" style="width:60px;" onclick="search()">查询</a>    
+    </div>
+
+    <ul id="tree1" class="mini-tree" url="../data/tree.txt" style="width:250px;padding:5px;height:250px;" 
+        showTreeIcon="true" textField="text" idField="id" 
+        expandOnLoad="true"
+        >        
+    </ul>
+
+   
+        
+    <script type="text/javascript">
+        mini.parse();
+        var tree = mini.get("tree1");
+
+        function search() {
+            var key = mini.get("key").getValue();
+            if (key == "") {
+                tree.clearFilter();
+            } else {
+                key = key.toLowerCase();                
+                tree.filter(function (node) {
+                    var text = node.text ? node.text.toLowerCase() : "";
+                    if (text.indexOf(key) != -1) {
+                        return true;
+                    }
+                });
+            }
+        }
+        function onKeyEnter(e) {
+            search();
+        }
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>            
+        </p>
+    </div>
+</body>
+</html>

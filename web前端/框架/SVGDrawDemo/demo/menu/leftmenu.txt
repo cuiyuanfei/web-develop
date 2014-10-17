@@ -1,0 +1,8 @@
+﻿[
+	{ id: "addUser",  text: "增加用户", iconCls: "icon-add", url: "../datagrid/celledit.html" },
+	{ id: "editUser",  text: "修改用户", iconCls: "icon-edit", url: "../datagrid/rowedit.html" },
+	{ id: "removeUser",  text: "删除用户", iconCls: "icon-remove", url: "../datagrid/datagrid.html" },
+		
+	{ id: "addRight", text: "查询权限", iconCls: "icon-user", url: "../tree/detailgrid.html" },
+	{ id: "editRight", text: "操作权限", iconCls: "icon-addnew", url: "../buttonedit/selectGrid.html" }		
+]

@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>编辑静态表格</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    <style type="text/css">
+        .New_Button, .Edit_Button, .Delete_Button, .Update_Button, .Cancel_Button
+        {
+            font-size:11px;color:#1B3F91;font-family:Verdana;  
+            margin-right:5px;
+        }
+        
+        .actionIcons span
+        {
+            width:16px;
+            height:16px;
+            display:inline-block;
+            background-position:50% 50%;
+            cursor:pointer;
+        }
+                
+    </style> 
+</head>
+<body>
+    <h1>编辑静态表格</h1>      
+
+    <div style="padding-bottom:8px;">        
+        <a class="mini-button" iconCls="icon-save" onclick="saveData">保存</a>        
+        <a class="mini-button" iconCls="icon-add" onclick="newRow">新增记录</a>
+    </div>
+    
+    <div id="datagrid1" class="mini-datagrid" style="width:700px;height:280px;" 
+        idField="id" showFooter="false" allowSortColumn="false"
+    >
+        <div property="columns">
+            <div type="checkcolumn"></div>
+            <div cellCls="actionIcons" name="action" width="40" headerAlign="center" align="center" renderer="onActionRenderer" cellStyle="padding:0;">#</div>
+            <div field="loginname" width="120" headerAlign="center" allowSort="true">员工帐号
+                <input property="editor" class="mini-textbox" style="width:100%;"/>
+            </div>                
+            <div field="gender" width="100" allowSort="true" renderer="onGenderRenderer" align="center" headerAlign="center">性别
+                <input property="editor" class="mini-combobox" style="width:100%;" data="Genders"/>                
+            </div>            
+            <div field="age" width="100" allowSort="true">年龄
+                <input property="editor" class="mini-spinner" minValue="0" maxValue="200" value="25" style="width:100%;"/>
+            </div>
+            <div field="birthday" width="100" allowSort="true" dateFormat="yyyy-MM-dd">出生日期
+                <input property="editor" class="mini-datepicker" style="width:100%;"/>
+            </div>                                                
+        </div>
+    </div>   
+   
+    <script type="text/javascript">
+        mini.parse();
+        var grid = mini.get("datagrid1");
+
+        function saveData() {
+            var data = grid.getEditData(true);
+            var json = mini.encode(data);
+            alert("提交的编辑数据：" + json);
+            //$.ajax 发送到服务端保存
+
+        }
+
+        function newRow() {        
+            var row = {};
+            grid.addRow(row);
+            grid.beginEditRow(row);
+        }              
+        function delRow(row_uid) {
+            var row = grid.getRowByUID(row_uid);
+            if (row) {
+                grid.removeRow(row);
+            }
+        }
+        
+        /////////////////////////
+        var Genders = [{ id: 1, text: '男' }, { id: 2, text: '女'}];
+        function onGenderRenderer(e) {
+            for (var i = 0, l = Genders.length; i < l; i++) {
+                var g = Genders[i];
+                if (g.id == e.value) return g.text;
+            }
+            return "";
+        }
+
+        function onActionRenderer(e) {
+            var grid = e.sender;
+            var record = e.record;
+            var uid = record._uid;
+            var rowIndex = e.rowIndex;
+
+            var s = '<span class="icon-remove" title="删除记录" onclick="delRow('+uid+')"></span>';
+            return s;
+        }
+        
+
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        
+    </div>
+
+
+  
+
+</body>
+</html>

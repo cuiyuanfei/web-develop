@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>OutlookBar</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>OutlookBar 导航面板</h1>
+    <div style="margin-bottom:8px;">
+        风格：
+        <select onchange="changeStyle(this.value)" style="width:100px;">
+            <option value="">Default</option>
+            <option value="mini-outlookbar-view2">风格2</option>
+            <option value="mini-outlookbar-view3">风格3</option>
+        </select>
+    </div>
+    <div id="outlookbar1" class="mini-outlookbar " activeIndex="0"  style="width:180px;height:200px;" autoCollapse="true">
+        <div title="权限管理">
+            1
+        </div>
+        <div title="用户管理">
+            2
+        </div>
+    </div>
+    <a class="mini-button" onclick="addgroup">setGroups()</a>
+    
+    <script type="text/javascript">
+        mini.parse();
+
+        function changeStyle(cls) {
+            var outlookbar1 = mini.get("outlookbar1");
+
+            outlookbar1.removeCls("mini-outlookbar-view2");
+            outlookbar1.removeCls("mini-outlookbar-view3");
+
+            outlookbar1.addCls(cls);
+
+            outlookbar1.doLayout();
+        }
+    	function setGroups(){
+    		var outlookbar1 = mini.get("outlookbar1");
+    		var menu='[{"name":"test001","title":"测试menu001"}]';
+			outlookbar1.setGroups(mini.decode(menu));
+    	}
+    	
+    	function addgroup(){
+            var outlookbar1 = mini.get("outlookbar1");
+            
+            var menu='[{"name":"test001","title":"测试menu001"}]';
+            
+            outlookbar1.setGroups(mini.decode(menu));
+        }
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>     MiniUI NavBar一般用于左侧的导航菜单。       
+        </p>
+        
+    </div>
+</body>
+</html>

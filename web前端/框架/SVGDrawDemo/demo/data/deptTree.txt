@@ -1,0 +1,10 @@
+﻿[
+	{"name":"行政部", "id":"xz", expanded: true},
+	{"name":"人事部", "id":"rs", "pid": "xz"},
+	{"name":"财务部","id":"cw", "pid": "xz"},
+
+	{"name":"业务部", "id":"yw", expanded: true},
+	{"name":"市场销售部", "id":"sc", "pid": "yw"},	
+	{"name":"技术部", "id":"js", "pid": "yw"}
+	
+]

@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>DrawCell 绘制单元格</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+        
+    <style type="text/css">
+    .icon-boy, .icon-female
+    {
+        width:16px;height:16px;overflow:hidden;margin:auto;
+        background:url(user.gif) no-repeat;
+        text-align:center;
+        display:block;
+    }
+    .icon-female
+    {
+        background:url(user_female.gif) no-repeat;
+    }
+    .myrow
+    {
+        background:#fceee2;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>DrawCell 绘制单元格 </h1>      
+
+   <div style="padding-bottom:8px;">
+        
+    </div>
+    
+    <div id="datagrid1" class="mini-datagrid" style="width:700px;height:250px;" 
+        url="../data/AjaxService.aspx?method=SearchEmployees"  idField="id"
+    >
+        <div property="columns">            
+            <div field="loginname" width="120" headerAlign="center" allowSort="true">员工帐号</div>                
+            <div field="gender" width="100" allowSort="true" renderer="onGenderRenderer" align="center" headerAlign="center">性别</div>
+            <div field="salary" width="100" allowSort="true">薪资</div>
+            <div field="birthday" width="100" headerAlign="center" allowSort="true">出生日期</div>                
+            <div field="educational" width="100">学历</div>
+            <div name="action" width="100" headerAlign="center">#</div>
+        </div>
+    </div>    
+    
+    <script type="text/javascript">
+        mini.parse();
+        
+        var grid = mini.get("datagrid1");
+        grid.load();
+        grid.sortBy("loginname", "desc");
+
+        function applySort() {
+            var sortField = document.getElementById("sortField").value;
+            var sortOrder = document.getElementById("sortOrder").value;
+            grid.sortBy(sortField, sortOrder);
+        }
+
+        ///////////////////////////////////////////////////////    
+        //通过renderer返回的字符串，就是e.cellHtml   
+        var Genders = [{ id: 1, text: '男' }, { id: 2, text: '女'}];
+//        function onGenderRenderer(e) {
+//            for (var i = 0, l = Genders.length; i < l; i++) {
+//                var g = Genders[i];
+//                if (g.id == e.value) return g.text;
+//            }
+//            return "";
+//        }
+
+        grid.on("drawcell", function (e) {
+            var record = e.record,
+        column = e.column,
+        field = e.field,
+        value = e.value;
+
+            //格式化日期
+            if (field == "birthday") {
+                if (mini.isDate(value)) e.cellHtml = mini.formatDate(value, "yyyy-MM-dd");
+
+            }
+
+            //给年龄，增加"岁"字符串
+            if (field == "age") {
+                e.cellHtml = value + "岁";
+            }
+
+            //给帐号列，增加背景色
+            if (field == "loginname") {
+                e.cellStyle = "background:#ecedef";
+            }
+
+            //超过1万工资，红色标识
+            if (field == "salary" && value >= 10000) {
+                e.cellStyle = "color:red;font-weight:bold;";
+            }
+
+            //显示学历
+            if (field == "educational") {
+                for (var i = 0, l = Educationals.length; i < l; i++) {
+                    var edu = Educationals[i];
+                    if (edu.id == value) {
+                        e.cellHtml = edu.name;
+                        break;
+                    }
+                }
+            }
+
+            //action列，超连接操作按钮
+            if (column.name == "action") {
+                e.cellStyle = "text-align:center";
+                e.cellHtml = '<a href="javascript:edit(\'' + record.id + '\')">Edit</a>&nbsp; '
+                    + '<a href="javascript:del(\'' + record.id + '\')">Delete</a>'
+            }
+
+            //将性别文本替换成图片
+            if (column.field == "gender") {
+                if (e.value == 1) {
+                    e.cellHtml = "<span class='icon-female'></span>"
+                } else {
+                    e.cellHtml = "<span class='icon-boy'></span>"
+                }
+            }
+
+            //设置行样式
+            if (record.gender == 1) {
+                e.rowCls = "myrow";
+            }
+
+        });
+
+        var Educationals = [
+            { id: 1, name: "大专" },
+            { id: 2, name: "本科" },
+            { id: 3, name: "研究生" },
+            { id: 4, name: "博士" }
+        ];
+
+        function edit(rowid) {
+            alert("编辑: " + rowid);
+        }
+        function del(rowid) {
+            alert("删除: " + rowid);
+        }
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <ol>
+            <li>开发者可以定义列Column的renderer函数，或监听Grid的drawcell事件，来自定义显示单元格内容。</li>
+            <li>单元格内容是一个html字符串，可以是：文本、图标、超链接、按钮等任意HTML元素。</li>
+            <li>本例显示如下类型格式化处理：
+                <ol>
+                    <li>String：员工帐号，设置背景色</li>
+                    <li>Boolean：性别，用图片标识男、女。</li>
+                    <li>Number：薪资，超过10000，红色高亮显示。</li>
+                    <li>Date：出生日期，格式化日期字符串显示。</li>
+                    <li>Array：学历，通过id显示文本。</li>
+                    <li>最后一列显示超链接。</li>
+                </ol>
+            </li>
+            
+        </ol>
+    </div>
+</body>
+</html>

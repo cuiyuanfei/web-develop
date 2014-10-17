@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CheckBoxTree</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+
+</head>
+<body>
+    <h1>CheckBoxTree</h1>      
+
+    <ul id="tree2" class="mini-tree" url="../data/listTree.txt" style="width:200px;padding:5px;" 
+        showTreeIcon="true" textField="text" idField="id" parentField="pid" resultAsTree="false"  
+        showCheckBox="true" checkRecursive="true" 
+        onbeforenodecheck="onBeforeNodeCheck" allowSelect="false" enableHotTrack="false"
+        
+        >
+    </ul>
+    
+    <div style="padding-top:5px;color:Red;">Note: checkRecursive决定是否联动选择节点</div>
+    <br />
+    <input type="button" value="setCheckedNodes" onclick="setCheckedNodes()"/>
+    <input type="button" value="getCheckedNodes" onclick="getCheckedNodes()"/>
+    <input type="button" value="getCheckedNodes(含父节点)" onclick="getCheckedNodes2()"/>
+    <input type="button" value="getCheckedNodes(不含父节点)" onclick="getCheckedNodes3()"/>
+    <input type="button" value="checkAll" onclick="checkAll()"/>
+    <input type="button" value="uncheckAll" onclick="uncheckAll()"/>
+
+    <br />        
+    <script type="text/javascript">
+
+        function setCheckedNodes() {
+            var tree = mini.get("tree2");
+            //tree.setValue("ajax,json,date,control,forms");
+            tree.setValue("forms");
+        }
+        function getCheckedNodes() {
+            var tree = mini.get("tree2");
+
+            var value = tree.getValue();
+            alert(value);
+
+        }
+        function getCheckedNodes2() {
+            var tree = mini.get("tree2");
+            var value = tree.getValue(true);
+            alert(value);
+        }
+        function getCheckedNodes3() {
+            var tree = mini.get("tree2");
+            var value = tree.getValue(false);
+            alert(value);
+        }
+        function checkAll() {
+            var tree = mini.get("tree2");
+            var nodes = tree.getAllChildNodes(tree.getRootNode());
+            tree.checkNodes(nodes);
+        }
+        function uncheckAll() {
+            var tree = mini.get("tree2");
+            var nodes = tree.getAllChildNodes(tree.getRootNode());
+            tree.uncheckNodes(nodes);
+        }
+        //--------------------------------
+        function onBeforeNodeCheck(e) {
+            var tree = e.sender;
+            var node = e.node;
+            if (tree.hasChildren(node)) {
+                //e.cancel = true;
+            }
+        }
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>            
+        </p>
+    </div>
+</body>
+</html>

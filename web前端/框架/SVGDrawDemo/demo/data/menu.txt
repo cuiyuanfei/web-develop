@@ -1,0 +1,26 @@
+﻿[
+	{ text: "文件", 
+		children: [
+			{ text: "新建", iconCls: "icon-new",
+				items: [
+					{ text: "文件"},
+					{ text: "文件夹"}
+				]
+			},
+			{ text: "打开", iconCls: "icon-folderopen"},
+			{ text: "保存"},
+			{ text: "关闭"}
+		]
+	},
+	{text: "编辑",
+		children: [	
+			{ text: "剪切", iconCls: "icon-cut"},
+			{ text: "复制"},
+			{ text: "粘贴"}
+		]
+	},
+	{text: "查看"
+	},
+	{text: "帮助", iconCls: "icon-help"
+	}
+]

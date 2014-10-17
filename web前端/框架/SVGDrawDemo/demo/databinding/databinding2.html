@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>测试buttonedit的value和text是否联动绑定</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+           
+</head>
+<body>
+    <h1>测试buttonedit的value和text是否联动绑定</h1>      
+
+<div style="padding-top:5px;padding-bottom:5px;">
+    
+    <input type="button" value="Add" onclick="addRow()"/>         
+    <input type="button" value="Remove" onclick="removeRow()" />   
+
+    
+    <input type="button" value="Save" onclick="saveData()" style="margin-left:100px;"/>  
+    
+</div>
+         
+    
+    <div id="datagrid1" class="mini-datagrid" style="width:725px;height:250px;" 
+        url="../data/AjaxService.aspx?method=SearchEmployees"  idField="id"
+        multiSelect="true" allowResize="true"
+    >
+        <div property="columns">            
+            <div type="checkcolumn"></div>            
+            <div field="name" width="120" headerAlign="center" allowSort="true">名称</div>                
+            <div field="gender" width="100" allowSort="true" renderer="onGenderRenderer" align="center" headerAlign="center">性别</div>            
+            <div field="age" width="100" allowSort="true">年龄</div>
+            <div field="birthday" width="100" allowSort="true" dateFormat="yyyy-MM-dd">出生日期</div>                                    
+            <div field="createtime" width="100" headerAlign="center" dateFormat="yyyy-MM-dd" allowSort="true">创建日期</div>                
+        </div>
+    </div> 
+    <fieldset style="width:700px;border:solid 1px #aaa;margin-top:8px;position:relative;">
+        <legend>员工详细信息</legend>
+        <div id="editForm1" style="padding:5px;">
+            <input class="mini-hidden" name="id"/>
+            <table style="width:100%;">
+                
+                <tr>
+                    <td>用户：</td>
+                    <td><input name="id" textName="name" class="mini-buttonedit" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="getData" onclick="getData()"/></td>
+                </tr>
+            </table>
+        </div>
+    </fieldset>
+
+    <script type="text/javascript">
+        var Genders = [{ id: 1, text: '男' }, { id: 2, text: '女'}];
+
+        mini.parse();
+
+        var grid = mini.get("datagrid1");
+        grid.load();
+
+        //绑定表单
+        var db = new mini.DataBinding();
+        db.bindForm("editForm1", grid);
+
+        //测试buttonedit的value和text是否联动绑定
+        function getData() {
+            var form = new mini.Form("#editForm1");
+            var data = form.getData();
+            var json = mini.encode(data);
+            alert(json);
+        }
+        
+        ///////////////////////////////////////////////////////
+        function onGenderRenderer(e) {
+            for (var i = 0, l = Genders.length; i < l; i++) {
+                var g = Genders[i];
+                if (g.id == e.value) return g.text;
+            }
+            return "";
+        }
+
+                
+        
+       
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        
+    </div>
+</body>
+</html>

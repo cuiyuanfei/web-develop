@@ -1,0 +1,8 @@
+﻿{list: [
+	{a: {title: "Tab1"}, url: "../tabs/pages/page1.html", refreshOnClick: true},
+	{a: {title: "Tab2"}, url: "../tabs/pages/page2.html", showCloseButton: true},
+	{a: {title: "Tab3"}, url: "../tabs/pages/page3.html"},
+	{a: {title: "Tab4"}, url: "../tabs/pages/page4.html"},
+	{a: {title: "Tab5"}, url: "../tabs/pages/page5.html"}
+]
+}

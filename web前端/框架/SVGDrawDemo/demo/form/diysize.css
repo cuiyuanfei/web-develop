@@ -1,0 +1,52 @@
+﻿/* button */
+.mini-button-text
+{
+    padding-top:1px;
+    padding-bottom:2px;
+    
+    padding-top:3px\9;
+    padding-bottom:1px\9;
+}
+
+/* textbox */        
+.mini-textbox
+{
+    height:19px;
+}
+.mini-textbox-border
+{
+    height:17px;    
+}
+.mini-textbox-input
+{
+    height:17px;
+    line-height:15px;
+}
+/* buttonedit */        
+.mini-buttonedit
+{
+    height:19px;
+}
+.mini-buttonedit-border
+{
+    height:17px;
+}
+.mini-buttonedit-input
+{
+    height:17px;
+    line-height:15px;
+}
+.mini-buttonedit-button
+{
+    height:13px;
+}
+.mini-buttonedit-icon
+{
+       
+    width:15px;
+    height:14px;
+}
+.mini-datepicker .mini-buttonedit-icon
+{
+    background-position:50% 1px;
+}

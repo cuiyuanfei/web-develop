@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Form</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    <style type="text/css">
+    .asLabel .mini-textbox-border,
+    .asLabel .mini-textbox-input,
+    .asLabel .mini-buttonedit-border,
+    .asLabel .mini-buttonedit-input,
+    .asLabel .mini-textboxlist-border
+    {
+        border:0;background:none;cursor:default;
+    }
+    .asLabel .mini-buttonedit-button,
+    .asLabel .mini-textboxlist-close
+    {
+        display:none;
+    }
+    .asLabel .mini-textboxlist-item
+    {
+        padding-right:8px;
+    }    
+    </style>
+
+</head>
+<body>
+    <h1>asLabel 文本、只读表单</h1>      
+       
+
+    <div id="form1" >
+
+        <input name="id" class="mini-hidden" />
+        <table>
+            <tr>
+                <td>
+                    
+                </td>
+                <td>
+                    <input value="文本只读模式" type="button" onclick="labelModel()" />
+                    <input value="输入框模式" type="button" onclick="inputModel()" />
+                </td>
+            </tr>            
+            <tr>
+                <td>
+                    <label for="textbox1$text">TextBox：</label>
+                </td>
+                <td>
+                    <input id="textbox1"  name="username" class="mini-textbox asLabel" readOnly="true" value="textbox" required="true" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pwd1$text">Password：</label>
+                </td>
+                <td>
+                    <input id="pwd1" name="Pwd" class="mini-password" required="true" value="password"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="textarea1$text">TextArea：</label>
+                </td>
+                <td>
+                    <input id="textarea1" name="Area" class="mini-textarea" required="true" value="textarea"/>
+                </td>
+            </tr>
+            <tr>
+                <td>                   
+                    <label for="date1$text">DatePicker：</label>
+                </td>
+                <td>
+                    <input id="date1" name="BirthDay" class="mini-datepicker" value="2010-10-12" required="true" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Spinner：
+                </td>
+                <td>
+                    <input name="Age" class="mini-spinner" value="22" minValue="10" maxValue="50" />
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    TimeSpinner：
+                </td>
+                <td>
+                    <input name="Time" class="mini-timespinner" format="H:mm" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ComboBox：
+                </td>
+                <td>
+                    <input name="Country" showNullItem="true" class="mini-combobox" url="../data/countrys.txt" value="cn" textField="text" valueField="id" />
+                    <br />
+                    <span id="combobox_error" style="color:Red;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    TreeSelect：
+                </td>
+                <td>                    
+                    <input name="TreeSelect"  class="mini-treeselect" url="../data/listTree.txt" multiSelect="true" 
+                            textField="text" valueField="id" parentField="pid" checkRecursive="true"
+                            value="ajax,button"
+                        />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    AutoComplete：
+                </td>
+                <td>                    
+                    <input id="tbl1" name="tb" class="mini-autocomplete" required="true" style="width:200px;"
+                        valueField="id" textField="text" 
+                            url="../data/AjaxService.aspx?method=FilterCountrys2" value="cn" text="中国"
+                    />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    TextBoxList：
+                </td>
+                <td>                    
+                        <input id="Text1" class="mini-textboxlist" name="tbl" textName="tblName" required="true" style="width:250px;"
+                                url="../data/AjaxService.aspx?method=FilterCountrys" value="cn,usa" text="中国,美国"
+                                valueField="id" textField="text" 
+                        />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript">
+        mini.parse();
+
+        var form = new mini.Form("form1");
+
+        function labelModel() {
+            var fields = form.getFields();                
+            for (var i = 0, l = fields.length; i < l; i++) {
+                var c = fields[i];
+                if (c.setReadOnly) c.setReadOnly(true);     //只读
+                if (c.setIsValid) c.setIsValid(true);      //去除错误提示
+                if (c.addCls) c.addCls("asLabel");          //增加asLabel外观
+            }
+        }
+        function inputModel() {
+            var fields = form.getFields();
+            for (var i = 0, l = fields.length; i < l; i++) {
+                var c = fields[i];
+                if (c.setReadOnly) c.setReadOnly(false);
+                if (c.removeCls) c.removeCls("asLabel");
+            }
+            mini.repaint(document.body);
+        }
+    </script>
+    
+    
+
+</body>
+</html>

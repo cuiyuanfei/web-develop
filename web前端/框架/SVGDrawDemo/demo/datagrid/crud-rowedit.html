@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CRUD</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script> 
+    
+    
+          
+</head>
+<body style="font-size:13px;">
+<div style="padding-bottom:5px;">        
+    <span>员工姓名：</span><input type="text" id="key"  />
+    <input type="button" value="Search" onclick="search()"/>
+    <input type="button" value="Add" onclick="addRow()" style="margin-left:60px;"/>     
+    <input type="button" value="Edit" onclick="editRow()" />      
+    <input type="button" value="Save" onclick="saveData()"/>  
+    <input type="button" value="Delete" onclick="deleteRow()" style="margin-left:60px;"/>   
+</div>
+<div id="datagrid1" class="mini-datagrid" style="width:700px;height:250px;"
+    url="../data/AjaxService.aspx?method=SearchEmployees"  
+    idField="id" allowResize="true" multiSelect="true"
+>
+    <div property="columns">
+        <div type="checkcolumn"></div>
+        <div type="indexcolumn"></div>
+        <div field="loginname" width="120" headerAlign="center" allowSort="true">员工帐号
+            <!--textbox editor-->
+            <input property="editor" class="mini-textbox" style="width:100%;"/>
+        </div>
+        <div field="name" width="120" allowSort="true">姓名
+            <!--textbox editor-->
+            <input property="editor" class="mini-textbox" style="width:100%;"/>
+        </div>
+        <div field="age" width="60" allowSort="true">年龄
+            <!--spinner editor-->
+            <input property="editor" class="mini-spinner" 
+                minValue="0" maxValue="200" value="25" style="width:100%;"/>
+        </div>
+        <div field="birthday" width="100" dateFormat="yyyy-MM-dd">出生日期
+            <!--datepicker editor-->
+            <input property="editor" class="mini-datepicker" style="width:100%;"/>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    mini.parse();
+    var grid = mini.get("datagrid1");
+    grid.load();
+    function search() {
+        var key = document.getElementById("key").value;
+        grid.load({ key: key });
+    }
+    $("#key").bind("keydown", function (e) {
+        if (e.keyCode == 13) {
+            search();
+        }
+    });
+    function addRow() {
+        var newRow = {name: "New Row"};
+        grid.addRow(newRow, 0);
+        grid.beginEditRow(newRow);
+    }
+    function editRow() {
+        var row = grid.getSelected();
+        if (row) {            
+            grid.beginEditRow(row);
+        }
+    }
+    function deleteRow() {
+        var rows = grid.getSelecteds();
+        if (rows.length > 0) {
+            if (confirm("确定删除选中记录？")) {
+                var ids = [];
+                for (var i = 0, l = rows.length; i < l; i++) {
+                    var r = rows[i];
+                    ids.push(r.id);
+                }
+                var id = ids.join(',');
+                grid.loading("操作中，请稍后......");
+                $.ajax({
+                    url: "../data/AjaxService.aspx?method=RemoveEmployees&id=" + id,
+                    success: function (text) {
+                        grid.reload();
+                    },
+                    error: function () {
+                    }
+                });
+            }
+        } else {
+            alert("请选中一条记录");
+        }
+    }
+    function saveData() {
+
+        grid.commitEdit();
+        var data = grid.getChanges();
+        var json = mini.encode(data);
+        grid.loading("保存中，请稍后......");
+        $.ajax({
+            url: "../data/AjaxService.aspx?method=SaveEmployees",
+            data: { data: json },
+            type: "post",
+            success: function (text) {
+                grid.reload();
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert(jqXHR.responseText);
+            }
+        });
+    }
+</script>          
+</body>
+</html>

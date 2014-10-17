@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    <title></title>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <meta name="keywords" content="jquery,datagrid,grid,表格控件,ajax,web开发,java开发,.net开发,tree,table,treegrid" />
+    <meta name="description" content="jQuery MiniUI - 快速开发WebUI。jQuery MiniUI是使用Javascript实现的前端Ajax组件库，支持所有浏览器，可以跨平台开发，如Java、.Net、PHP等。" />
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+
+    <style type="text/css">
+    html,html body
+    {
+        font-size:13px;
+        padding:0;border:0;margin:0;
+        width:100%;
+        height:100%;
+        overflow:hidden;
+    }
+    </style>
+</head>
+<body>
+<div id="full" style="width:100%;overflow:hidden;padding-top:25px;height:300px;">
+    <div style="height:25px;position:absolute;top:0;left:0;">
+        <input id="btn" type="button" value="运行代码" onclick="runCode()"/>
+        
+    </div>
+    <textarea id="code" style="width:100%;height:100%;border:0;"></textarea>
+</div>  
+</body>
+</html>
+<!-- codemirror -->
+<link rel="stylesheet" href="../CodeMirror/lib/codemirror.css">
+<script src="../CodeMirror/lib/codemirror.js" type="text/javascript"></script>
+<script src="../CodeMirror/mode/xml/xml.js" type="text/javascript"></script>
+<script src="../CodeMirror/mode/javascript/javascript.js" type="text/javascript"></script>
+<script src="../CodeMirror/mode/css/css.js" type="text/javascript"></script>
+<script src="../CodeMirror/mode/htmlmixed/htmlmixed.js" type="text/javascript"></script>
+<style type="text/css">
+    .CodeMirror
+    {
+        height:100%;width:100%;
+    }
+.CodeMirror .CodeMirror-scroll
+{
+    height:100%;width:100%;
+}
+</style>
+
+
+<script type="text/javascript">
+    
+    var ss = location.href.split("?url=");
+    var url = ss[1];
+
+    var codeEditor = null;
+    $.ajax({
+        url: url,
+        success: function (text) {
+            document.getElementById("code").value = text;
+
+            codeEditor = CodeMirror.fromTextArea(document.getElementById("code"), { mode: "text/html", tabMode: "indent", height: "100%", width: "100%" });
+            
+//            setTimeout(function () {
+//            
+//                var d = jQuery(".CodeMirror-scroll")[0];
+//                d.style.width = "100%";
+//            }, 100);
+        }
+    });
+
+    /////////////////////////////////
+    function runCode() {    
+        var text = codeEditor.getValue();
+
+        var winname = window.open(bootPATH + '../demo/runCode/index.html', "_blank", '');
+        winname.document.open('text/html', 'replace');
+        winname.document.write(text);
+        winname.document.close();
+    }
+
+    function autoHeight() {
+        
+        var h = jQuery(window).height();
+        if (h < 25) h = 25;
+        document.getElementById("full").style.height = (h - 25) + "px";
+
+    }
+    
+    autoHeight();
+    
+    window.onresize = function () {
+        autoHeight();
+    }
+</script>

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TreeSelect 树形选择框</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    <h1>TreeSelect 树形选择框</h1>
+    
+    <h4>多选</h4>
+    <input id="select1" class="mini-treeselect" url="../data/listTree.txt" multiSelect="true" 
+        textField="text" valueField="id" parentField="pid" checkRecursive="true" 
+        showFolderCheckBox="false"  expandOnLoad="true" showClose="true" oncloseclick="onCloseClick"
+        popupWidth="200" 
+    />
+    <br /><br />
+    <input type="button" value="setValue" onclick="setValue()"/>
+    <input type="button" value="getValue" onclick="getValue()"/>    
+    <input type="button" value="disable" onclick="disable()"/>
+    <input type="button" value="enable" onclick="enable()"/>
+
+    <h4>单选：禁止选中父节点</h4>
+    <input id="select2" class="mini-treeselect" url="../data/listTree.txt" multiSelect="false"  valueFromSelect="false"
+        textField="text" valueField="id" parentField="pid" value="control"  onbeforenodeselect="beforenodeselect" allowInput="true"
+        showRadioButton="true" showFolderCheckBox="false"
+    />
+    
+    <script type="text/javascript">
+        function setValue() {
+            var obj = mini.get("select1");
+            obj.setValue("base,button,ajax");
+        }
+        function getValue() {
+            var obj = mini.get("select1");
+            alert(obj.getValue() + ":" + obj.getText());
+        }
+        function enable() {
+            var obj = mini.get("select1");
+            obj.enable();
+        }
+        function disable() {
+            var obj = mini.get("select1");
+            obj.disable();
+        }
+
+        function beforenodeselect(e) {
+            //禁止选中父节点
+            if (e.isLeaf == false) e.cancel = true;
+        }
+
+        function onCloseClick(e) {
+            var obj = e.sender;
+            obj.setText("");
+            obj.setValue("");
+        }
+    </script>
+</body>
+</html>

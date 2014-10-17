@@ -1,0 +1,1 @@
+﻿<%@ Page ValidateRequest="false" Language="C#" AutoEventWireup="true" CodeFile="AjaxService.aspx.cs" Inherits="demo_data_AjaxService"  %>

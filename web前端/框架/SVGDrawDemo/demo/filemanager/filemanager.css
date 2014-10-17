@@ -1,0 +1,56 @@
+﻿.filesView
+{
+    padding:10px;
+}
+
+.file
+{
+
+    width:90px;
+    height:88px;
+    margin-right:10px;
+    margin-bottom:10px;
+    border:solid 1px white;
+    display:inline;
+    float:left;
+    text-align:center;
+    text-decoration:none;
+    outline:none;
+}
+.file-image
+{
+    width:70px;
+    height:70px;
+    background:url(filetype/file.png) no-repeat 50% 50%;
+    border:0;
+    display:block;
+    margin:auto;
+}
+.file-rtf
+{
+    background-image:url(filetype/rtf.png);
+}
+.file-txt
+{
+    background-image:url(filetype/txt.png);
+}
+
+.file-text
+{
+    text-align:center;
+    color:#2E3139;
+    line-height:14px;
+    font-size:9pt;
+    font-family:Tahoma,Verdana,宋体;
+}
+
+a:hover.file
+{
+    border:1px solid #A9ACB5;
+    background:#dde6fe url(images/hover.png) repeat-x 0 0;  
+}
+.file-selected, a:hover.file-selected
+{
+    border:1px solid #A9ACB5;
+    background:#EBEDF2 url(images/button.png) repeat-x 0 0;
+}

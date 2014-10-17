@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>数据验证</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script> 
+    
+    
+    
+    
+</head>
+<body>
+    <h1>Html表单提交</h1>      
+        
+                
+<form id="form1" action="data.php" method="get" onsubmit="return onSubmit()">
+    <label for="username$text">帐号：</label>
+    <input name="username" class="mini-textbox" required=true />
+    <br />
+<!--    <label for="pwd$text">密码：</label>       
+    <input name="pwd" class="mini-password" />
+    <br />-->
+<!--    <label for="date$text">日期：</label>       
+    <input name="date" class="mini-datepicker"  required=true />
+    <br />-->
+    <input value="Login" type="submit" />      
+</form>
+
+    
+    <script type="text/javascript">
+        mini.parse();
+
+        function onSubmit() {
+            
+            var form = new mini.Form("form1");
+            form.validate();
+            if (form.isValid()) return true;
+            return false;
+        }
+        
+
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>
+            监听处理表单控件的"validation"事件。在此验证事件函数中，可以对控件值做任意逻辑规则的验证。
+        </p>
+        <p>使用Form控件的validate方法，可以对表单元素之内的所有控件进行批量验证。</p>
+    </div>
+</body>
+</html>

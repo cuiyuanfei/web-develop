@@ -1,0 +1,39 @@
+﻿{ list: 
+	[
+		{id: "base", a: {text: "Base"}},
+	
+		{id: "ajax", a: {text: "Ajax"}, pid: "base"},
+		{id: "json", a: {text: "JSON"}, pid: "base"},
+		{id: "date", a: {text: "Date"}, pid: "base", checked: true},
+		{id: "control", a: {text: "Control"}, pid: "base"},
+
+		{id: "forms", a: {text: "Forms"}, pid: "base", isLeaf: false},
+	
+		{id: "button", a: {text: "Button"}, pid: "forms"},
+		{id: "listbox", a: {text: "ListBox"}, pid: "forms"},
+		{id: "checkboxlist", a: {text: "CheckBoxList"}, pid: "forms"},
+	
+		{id: "lists", a: {text: "Lists"}},
+	
+		{id: "datagrid", a: {text: "DataGrid"}, pid: "lists"},			
+		{id: "tree", a: {text: "Tree"}, pid: "lists"},
+		{id: "treegrid", a: {text: "TreeGrid "}, pid: "lists"},
+
+		{id: "layouts", a: {text: "Layouts"}},
+	
+		{id: "panel", a: {text: "Panel"}, pid: "layouts"},
+		{id: "splitter", a: {text: "Splitter"}, pid: "layouts"},
+		{id: "layout", a: {text: "Layout "}, pid: "layouts"},
+
+		{id: "navigations", a: {text: "Navigations"}},
+			
+		{id: "toolbar", a: {text: "Toolbar"}, pid: "navigations"},
+		{id: "tabs", a: {text: "Tabs"}, pid: "navigations"},
+		{id: "outlookbar", a: {text: "OutlookBar"}, pid: "navigations"},
+		{id: "menu", a: {text: "Menu"}, pid: "navigations"},
+		{id: "pager", a: {text: "Pager"}, pid: "navigations"},
+
+		{id: "other", a: {text: "Other"}, isLeaf: false, asyncLoad: false}
+
+	]
+}

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TreeGrid DragDrop</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+
+</head>
+<body>
+    <h1>TreeGrid DragDrop</h1>      
+<div id="treegrid1" class="mini-treegrid" style="width:600px;height:280px;"     
+    url="../data/tasks.txt" showTreeIcon="true" 
+    treeColumn="taskname" idField="UID" parentField="ParentTaskUID" resultAsTree="false"
+    allowDrag="true" allowDrop="true" 
+>
+    <div property="columns">
+        <div type="indexcolumn"></div>
+        <div name="taskname" field="Name" width="200">任务名称</div>
+        <div field="Duration" width="100">工期</div>
+        <div field="Start" width="100" dateFormat="yyyy-MM-dd">开始日期</div>
+        <div field="Finish" width="100" dateFormat="yyyy-MM-dd">完成日期</div>
+    </div>
+</div>
+
+</body>
+</html>

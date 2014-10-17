@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ToolTip</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    
+    <a class="mini-button" iconCls="icon-save" plain="true" tooltip="保存提示" data-placement="bottomright"></a>
+    <a class="mini-button mini-button-iconTop" iconCls="icon-close" tooltip="退出系统" data-placement="right"  plain="true" >退出</a>
+    <div style="padding:50px;padding-left:100px;padding-bottom:0;">
+        <input type="button" value="left" data-tooltip="Tooltip left" data-placement="left"/>
+        <input type="button" value="top" data-tooltip="Tooltip top" data-placement="top"/>        
+        <input type="button" value="bottom" title="Tooltip bottom" data-placement="bottom"/>
+        <input type="button" value="right" title="Tooltip right" data-placement="right"/>
+        
+    </div>
+
+     <div style="padding:50px;padding-left:100px;">
+        <input type="button" value="bottomleft" title="Tooltip bottomleft" data-placement="bottomleft"/>
+        <input type="button" value="bottomright" title="Tooltip bottomright" data-placement="bottomright"/>
+        <input type="button" value="topleft" title="Tooltip topleft" data-placement="topleft"/>
+        <input type="button" value="topright" title="Tooltip topright" data-placement="topright"/>
+        
+    </div>
+
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>
+              设置元素的title、data-tooltip、data-placement。
+        </p>
+    </div>
+</body>
+</html>
+<script>
+
+var tip = new mini.ToolTip();
+tip.set({
+    target: document,
+    selector: '[data-tooltip], [title]'
+});
+
+</script>

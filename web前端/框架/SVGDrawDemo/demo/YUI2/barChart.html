@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>BarChart</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script> 
+    
+</head>
+<body>
+    <h1>BarChart</h1>
+    
+    <input type="button" value="OpenChart" onclick="showChartWindow();"/>
+    <div id="win1" class="mini-window" title="BarChart" style="width:480px;height:350px;" 
+        showModal="true" allowResize="true" 
+        >
+        <div id="chartContainer" style="width:100%;height:100%;"></div>
+    </div>
+    
+</body>
+</html>
+<script src="YUI2/yahoo-dom-event.js" type="text/javascript"></script>
+<script src="YUI2/element-min.js" type="text/javascript"></script>
+<script src="YUI2/charts-min.js" type="text/javascript"></script>
+<script src="YUI2/datasource-min.js" type="text/javascript"></script>
+<script src="YUI2/json.js" type="text/javascript"></script>
+<script src="YUI2/swf/swf-min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    mini.parse();
+
+    var chartContainerId = "chartContainer";
+    function showChartWindow() {
+        var win = mini.get("win1");
+        win.show();
+        buildChart();
+    }
+    showChartWindow();  //页面打开，马上显示图表面板
+
+    //----------------------------------------------
+    function buildChart() {
+        YAHOO.widget.Chart.SWFURL = "YUI2/swf/charts.swf";
+        YAHOO.namespace("demo");
+        YAHOO.demo.data = [
+		    { month: "January", utilities: 941.68 },
+		    { month: "February",utilities: 901.35 },
+		    { month: "March", utilities: 789.32 },
+		    { month: "April",utilities: 684.71 },
+		    { month: "May",utilities: 779.811 },
+		    { month: "June",utilities: 897.95 },
+		    { month: "July", utilities: 919.811 },
+		    { month: "August", utilities: 937.95 },
+		    { month: "September", utilities: 779.811 },
+		    { month: "October", utilities: 697.95 },
+		    { month: "November", utilities: 679.811 },
+		    { month: "December", utilities: 897.95 }
+	    ];
+        var DataSource = new YAHOO.util.DataSource(YAHOO.demo.data);
+        DataSource.responseType = YAHOO.util.DataSource.TYPE_JSARRAY;
+        DataSource.responseSchema = {
+            fields: ["month", "utilities"]
+        };
+
+        var seriesDef = [
+		    {
+		        displayName: "Utilities",
+		        yField: "utilities",
+		        style: { size: 10 }
+		    }
+	    ];
+
+        var currencyAxis = new YAHOO.widget.NumericAxis();
+        var categoryAxis = new YAHOO.widget.CategoryAxis();
+        //chartContainerId为图表DOM元素id
+        var mychart = new YAHOO.widget.ColumnChart(chartContainerId, DataSource,
+	    {
+	        series: seriesDef,
+	        xField: "month",
+	        yAxis: currencyAxis,
+	        xAxis: categoryAxis
+	    });
+    }
+
+    
+
+</script>

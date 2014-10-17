@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ContextMenu Tabs右键菜单</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+</head>
+<body>
+    <h1>ContextMenu Tabs右键菜单</h1>      
+    
+<div id="tabs1" class="mini-tabs" activeIndex="0" style="width:350px;height:200px;"
+    contextMenu="#tabsMenu"
+>
+    <div name="first" title="Tab1">
+        1
+    </div>
+    <div title="Tab2">
+        2
+    </div>
+    <div title="Tab3">
+        3
+    </div>
+    <div title="Tab4">
+        4
+    </div>
+    <div title="Tab5">
+        5
+    </div>
+</div>
+    
+    <ul id="tabsMenu" class="mini-contextmenu" onbeforeopen="onBeforeOpen">        
+        <li onclick="closeTab">关闭标签页</li>                
+	    <li onclick="closeAllBut">关闭其他标签页</li>
+	    <li onclick="closeAll">关闭所有标签页</li>        
+        <li onclick="closeAllButFirst">关闭其他[首页除外]</li>   
+    </ul>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>            
+            右键点击Tabs头部
+        </p>
+    </div>
+    <script type="text/javascript">
+        mini.parse();
+
+        var tabs = mini.get("tabs1");
+        var currentTab = null;
+
+        function onBeforeOpen(e) {
+            currentTab = tabs.getTabByEvent(e.htmlEvent);
+            if (!currentTab) {
+                e.cancel = true;                
+            }
+        }
+
+        ///////////////////////////
+        function closeTab() {
+            tabs.removeTab(currentTab);
+        }
+        function closeAllBut() {
+            tabs.removeAll(currentTab);
+        }
+        function closeAll() {
+            tabs.removeAll();
+        }
+        function closeAllButFirst() {
+            var but = [currentTab];            
+            but.push(tabs.getTab("first"));
+            tabs.removeAll(but);
+        }
+    </script>
+
+</body>
+</html>

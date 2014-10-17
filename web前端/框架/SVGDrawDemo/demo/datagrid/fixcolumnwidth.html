@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Fix Column Width  固定列宽度</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="../../scripts/boot.js" type="text/javascript"></script>
+    
+        
+</head>
+<body >
+    <h1>Fix Column Width  固定列宽度</h1>      
+
+<div id="datagrid1" class="mini-datagrid" style="width:700px;height:280px;" 
+    url="../data/AjaxService.aspx?method=SearchEmployees"  idField="id" allowResize="true"
+    fitColumns="false"
+>
+    <div property="columns">
+        <div type="indexcolumn" ></div>
+        <div field="loginname" width="150" headerAlign="center" allowSort="true">员工帐号</div>    
+        <div field="name" width="120" headerAlign="center" allowSort="true">姓名</div>                            
+        <div field="gender" width="100" renderer="onGenderRenderer" align="center" headerAlign="center">性别</div>        
+        <div field="createtime" width="100" headerAlign="center" dateFormat="yyyy-MM-dd" allowSort="true">创建日期</div>                
+    </div>
+</div>   
+   
+    <script type="text/javascript">
+        mini.parse();       
+
+
+        var grid = mini.get("datagrid1");
+
+        grid.load();
+        
+
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>fitColumns="false"后，列宽度不会撑满表格。</p>
+    </div>
+
+
+  
+
+</body>
+</html>
