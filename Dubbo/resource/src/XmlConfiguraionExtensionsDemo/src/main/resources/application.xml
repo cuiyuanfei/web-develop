@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubboxx="http://www.evada.com/schema/dubboxx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.evada.com/schema/dubboxx http://www.evada.com/schema/dubboxx/dubboxx.xsd">
+        <dubboxx:admin id="admin" uname="zhangsan" age="32" sex="男" enable="true"></dubboxx:admin>
+</beans>
