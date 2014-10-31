@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TreeGrid 树形表格</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+
+    <script type="text/javascript" src="miniui/jquery.js"></script>
+    <script type="text/javascript" src="miniui/miniui.js"></script>
+    <link href="miniui/miniui/themes/default/miniui.css" rel="stylesheet" type="text/css" />
+    <link href="miniui/miniui/themes/icons.css" rel="stylesheet" type="text/css" />
+    <link href="miniui/miniui/themes/blue/skin.css" rel="stylesheet" type="text/css" />
+</head>
+<body >
+
+<h4>Tree大数据量：10000</h4>
+<div id="treegrid1" class="mini-treegrid" style="width:100%;height:350px;"
+     showTreeIcon="true"
+     treeColumn="taskname" idField="UID" parentField="ParentTaskUID" resultAsTree="false"
+        >
+    <div property="columns">
+        <div type="indexcolumn"></div>
+        <div name="taskname" field="Name" width="200">任务名称</div>
+        <div field="Duration" width="100">工期</div>
+        <div field="PercentComplete" width="100">进度</div>
+        <div field="Start" width="100" dateFormat="yyyy-MM-dd">开始日期</div>
+        <div field="Finish" width="100" dateFormat="yyyy-MM-dd">完成日期</div>
+        <div field="Duration" width="100">工期</div>
+        <div field="PercentComplete" width="100">进度</div>
+        <div field="Start" width="100" dateFormat="yyyy-MM-dd">开始日期</div>
+        <div field="Finish" width="100" dateFormat="yyyy-MM-dd">完成日期</div>
+    </div>
+
+</div>
+<div style="width:100px;height:20px;text-overflow:ellipsis; ">a b c d e f g h i j k l , msa sd sd sa w df f </div> 　　
+
+<div style="width:100px;height:40px;text-overflow:ellipsis; white-space:nowrap; overflow:hidden; ">a b c d e f g h  i j k l , msa sd sd sa w df f </div> 　
+</body>
+</html>
+<script type="text/javascript">
+    window.alert = function(){};
+    //    var sss = new Date();
+    //    window.onload = function () {
+    //        setTimeout(function () {
+    //            alert(new Date() - sss);
+    //        }, 1);
+    //    };
+
+    mini.parse();
+
+    //造10000个节点：4个层级，每层级10节点
+    function createTreeData() {
+        var index = 0;
+        function create(pid, level) {
+            var data = [];
+            for (var i = 0, l = 10; i < l; i++) {
+                var o = {};
+                index++;
+
+                var o = {
+                    "UID": index,
+                    "ParentTaskUID": pid,
+                    "Name": "Node" + (index),
+                    "Duration": 5,
+                    "Start": "2007-01-01",
+                    "Finish": "2007-01-05",
+                    "PercentComplete": 0,
+                    "Summary": 1,
+                    "Critical": 0,
+                    "Milestone": 0,
+                    "PredecessorLink": []
+                };
+
+                if (level > 0) {
+                    o.children = create(o.UID, level - 1);
+                }
+
+                data.push(o);
+            }
+            return data;
+        }
+        var data = create("", 3);
+        return data;
+    }
+
+    var data = createTreeData();
+    var tree = mini.get("treegrid1");
+//    data = mini.arrayToTree(data,"children","UID","ParentTaskUID")     ;
+    tree.on("beforeexpand",function(evt,node){
+//        var node1 = tree.getSelectedNode();
+        var o = [{
+            "UID": 1,
+            "ParentTaskUID": evt.node.UID,
+            "Name": "Node" + (1),
+            "Duration": 5,
+            "Start": "2007-01-01",
+            "Finish": "2007-01-05",
+            "PercentComplete": 0,
+            "Summary": 1,
+            "Critical": 0,
+            "Milestone": 0,
+            "PredecessorLink": []
+        },{
+            "UID": 1,
+            "ParentTaskUID": evt.node.UID,
+            "Name": "Node" + (1),
+            "Duration": 5,
+            "Start": "2007-01-01",
+            "Finish": "2007-01-05",
+            "PercentComplete": 0,
+            "Summary": 1,
+            "Critical": 0,
+            "Milestone": 0,
+            "PredecessorLink": []
+        },{
+            "UID": 1,
+            "ParentTaskUID": evt.node.UID,
+            "Name": "Node" + (1),
+            "Duration": 5,
+            "Start": "2007-01-01",
+            "Finish": "2007-01-05",
+            "PercentComplete": 0,
+            "Summary": 1,
+            "Critical": 0,
+            "Milestone": 0,
+            "PredecessorLink": []
+        },{
+            "UID": 1,
+            "ParentTaskUID": evt.node.UID,
+            "Name": "Node" + (1),
+            "Duration": 5,
+            "Start": "2007-01-01",
+            "Finish": "2007-01-05",
+            "PercentComplete": 0,
+            "Summary": 1,
+            "Critical": 0,
+            "Milestone": 0,
+            "PredecessorLink": []   ,
+            "expanded":true
+        }];
+
+
+//        var nodes = mini.arrayToTree(o,"children","UID","ParentTaskUID")   ;
+//        evt.node.children =o;
+        tree.addNode(o[0],0,evt.node);
+//        tree.loadNode(evt.node);
+
+
+//        tree.loadNode(evt.node);
+        console.log(node+"3333333333333333");
+    });
+    tree.on('nodeclick', function(data) {
+        console.log(data.node);
+    });
+
+    tree.setData(data);
+
+
+</script>
+

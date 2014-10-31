@@ -1,0 +1,1469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="39d44960-fcae-4852-80d6-719e3f47c1ca" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/outlookmenu/Notes_Large.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/outlookmenu/Reports_Large.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fileupload/TestImageNoText_65x29.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/button/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tree/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/treegrid/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/treegrid/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/buttonedit/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tree/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/_help.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/buttonedit/_icon3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/panel/add.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/imgs/add.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/add.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/addfolder.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/addnew.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tabs/allow_left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tabs/allow_right.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/buttonedit/arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/buttonedit/arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/menu/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/menu/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/arrow_blue_down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/arrow_blue_left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/arrow_blue_right.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/arrow_blue_up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/buttonedit/arrow_down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/buttonedit/arrow_down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/buttonedit/arrow_down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/arrow_red_down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/arrow_red_left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/arrow_red_right.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/arrow_red_up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/buttonedit/arrow_up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/buttonedit/arrow_up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/buttonedit/arrow_up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/buttonedit/arrow_up_hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/buttonedit/arrow_up_pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/buttonedit/arrowbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/buttonedit/arrowbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/buttonedit/arrowbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supertree/arrows.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/arrows.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/baseline-milestone.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/rgantt/bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/menu/bottom-arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/images/btn-active.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/buttonedit/btn-hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/buttonedit/btn-hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/buttonedit/btn-hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/buttonedit/btn-hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/buttonedit/btn-hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/images/btn-over.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/buttonedit/btn-pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/buttonedit/btn-pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/buttonedit/btn-pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/buttonedit/btn-pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/buttonedit/btn-pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/images/btn.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/buttonedit/btn.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/buttonedit/btn.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/buttonedit/btn.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/buttonedit/btn.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/btn.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/buttonedit/btn.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/splitter/btn.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/splitter/btn2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/images/btn_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/images/btn_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/button/button.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/button/button.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/menu/button.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/button/button.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/calendar/button.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/tree/button.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/button/button.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/calendar/button.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/tree/button.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/button/button.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/buttonedit/button.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/calendar/button.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/button/button.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/filemanager/images/button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/button/button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/buttonedit/button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/calendar/button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/splitter/buttons.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/rgantt/cancel.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/cancel.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/YUI2/swf/charts.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/button/checked.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/menu/checked.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/menu/checked.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/tools/close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/tools/close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/buttonedit/close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tabs/close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/textboxlist/close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tools/close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/tools/close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tools/close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/grid/col-move-bottom.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/col-move-bottom.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/grid/col-move-top.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/col-move-top.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/toolbar/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tree/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/treegrid/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/tree/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/treegrid/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/navbar/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/tools/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/treegrid/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/navbar/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/tools/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/treegrid/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/grid/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supertree/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tools/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/treegrid/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/navbar/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tools/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tree/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/treegrid/collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tree/collapseLine.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/collapseLine.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tree/collapseLine.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/constraint-finish.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/constraint-start.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/cut.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/datagrid_header_bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/datagrid_row_collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/datagrid_row_expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/datagrid_sort_asc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/datagrid_sort_desc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/datagrid_title_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/buttonedit/date.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/buttonedit/date.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/buttonedit/date.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/datepicker/date.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/date.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/images/default.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/images/deskicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/grid/dirty.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/dirty.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/button/disabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/button/disabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/button/disabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/button/disabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/button/disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/buttonedit/down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/downgrade.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/download.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/download.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/dragdrop/drop-add.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/dragdrop/drop-between.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/dragdrop/drop-no.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/dragdrop/drop-over.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/dragdrop/drop-under.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/dragdrop/drop-yes.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/layout/east.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/layout/east.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/layout/east.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/layout/east.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/layout/east.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/layout/east.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/panel/edit.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/imgs/edit.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/edit.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/buttonedit/error.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/listbox/error.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/textbox/error.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/textboxlist/error.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/buttonedit/error.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/toolbar/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tree/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/treegrid/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/tree/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/treegrid/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/navbar/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/tools/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/treegrid/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/navbar/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/tools/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/treegrid/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/grid/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supertree/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tools/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/treegrid/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/navbar/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tools/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tree/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/treegrid/expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tree/expandLine.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/expandLine.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tree/expandLine.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supertree/file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/filemanager/filetype/file.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/treegrid/file.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/treegrid/file.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/file.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/treegrid/file.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/filter.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/buttonedit/filter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/find.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/finished.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/pager/first.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/pager/first.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/pager/first.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/pager/first.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/_pager/first.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/pager/first.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/pager/first.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tree/firstAndlastcollapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/firstAndlastcollapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tree/firstAndlastcollapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tree/firstAndlastexpand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/firstAndlastexpand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tree/firstAndlastexpand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tree/firstCollapseNode.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/firstCollapseNode.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tree/firstCollapseNode.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tree/firstExpandNode.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/firstExpandNode.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tree/firstExpandNode.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/folder-open.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/tree/folder-open.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/tree/folder-open.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supertree/folder-open.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/folder-open.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/folder-open.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/folder.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/tree/folder.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/treegrid/folder.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/tree/folder.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/treegrid/folder.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supertree/folder.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/folder.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/treegrid/folder.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/folder.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/calendar/footer.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/grid/footer.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/calendar/footer.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/grid/footer.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/grid/footer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/window/footer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/goto.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/gvdp.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/menu/hallow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/menu/hallow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/rgantt/hdbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/header-hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/header-pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/images/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/calendar/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/grid/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/layout/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/listbox/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/navbar/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/panel/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/toolbar/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/treegrid/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/window/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/grid/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/layout/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/listbox/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/menu/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/navbar/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/panel/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/toolbar/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/treegrid/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/window/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/calendar/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/grid/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/layout/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/navbar/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/panel/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/window/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/calendar/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/grid/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/layout/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/navbar/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/panel/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/window/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/calendar/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/grid/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/layout/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/listbox/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/navbar/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/panel/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/toolbar/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/treegrid/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/window/header.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/listbox/header.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/treegrid/header.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/listbox/header.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/treegrid/header.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/calendar/header.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/grid/header.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/layout/header.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/listbox/header.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/mygantt/header.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/navbar/header.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/panel/header.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/window/header.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/header_bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/help.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/help.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/menu/hmenu.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/menu/hmenu.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/menu/hmenubg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/button/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/layout/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/menu/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tabs/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/button/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/menu/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/tree/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/button/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/menu/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/tabs/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/tree/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/button/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/menu/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/tabs/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/tree/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/button/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/buttonedit/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/button/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/buttonedit/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/layout/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/menu/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tabs/hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/filemanager/images/hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/button/hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/buttonedit/hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tabs/hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/messagebox/icon-error.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/messagebox/icon-info.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/messagebox/icon-question.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/messagebox/icon-warning.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/buttonedit/icon1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/buttonedit/icon1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/buttonedit/icon1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/buttonedit/icon1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/buttonedit/icon2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/buttonedit/icon2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/buttonedit/icon3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/buttonedit/icon3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/buttonedit/icon3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/buttonedit/icon3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/button/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/grid/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/invalid_line.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/menu/item.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/pager/last.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/pager/last.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/pager/last.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/pager/last.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/_pager/last.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/pager/last.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/pager/last.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tree/lastCollapseNode.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/lastCollapseNode.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tree/lastCollapseNode.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tree/lastExpandNode.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/lastExpandNode.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tree/lastExpandNode.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tree/lastline.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/lastline.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tree/lastline.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/tree/leaf.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/tree/leaf.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/leaf.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/grid/list.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/grid/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/messagebox/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supertree/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/textboxlist/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/treegrid/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/grid/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/imgs/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/tools/max.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/tools/max.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tools/max.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tools/max.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/menu/menu-hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/menu/menu-hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/menu/menu.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/menu/menu.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/button/menu_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/button/menu_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/menu/menu_bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/menu/menu_bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/menu/menubg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/menu/menubg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/milestone-red.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/milestone.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tools/min.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tools/min.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/splitter/mini-bottom.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/splitter/mini-left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/splitter/mini-right.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/splitter/mini-top.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/calendar/months.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/calendar/months.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/calendar/months.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/ms-task.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/new.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/pager/next.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/pager/next.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/pager/next.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/pager/next.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/_pager/next.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/calendar/next.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/pager/next.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/calendar/next.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/pager/next.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/grid/no.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/no.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/no.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/imgs/node.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/node.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/noimage.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/layout/north.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/layout/north.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/layout/north.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/layout/north.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/layout/north.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/layout/north.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/notes.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/nowait.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/offday.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/grid/ok.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/ok.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/imgs/ok.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/ok.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/open-flash-chart/open-flash-chart.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/open.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/rgantt/pc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/rgantt/pc_03.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/button/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/buttonedit/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/menu/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tree/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/button/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/buttonedit/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/menu/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/tree/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/button/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/tabs/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/tree/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/button/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/tabs/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/tree/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/button/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/buttonedit/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/menu/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tree/pressed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/menu/pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/menu/pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/button/pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/buttonedit/pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/menu/pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/pager/prev.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/pager/prev.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/pager/prev.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/pager/prev.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/_pager/prev.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/calendar/prev.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/pager/prev.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/calendar/prev.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/pager/prev.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/print.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/radio_checked.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/radio_unchecked.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/redo.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tools/refresh.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tools/refresh.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/pager/reload.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/reload.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/panel/remove.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/remove.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/grid/resize.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/panel/resize.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/splitter/resize.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/splitter/resize_h.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/tools/restore.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/tools/restore.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tools/restore.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tools/resume.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/row_collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/row_expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/rowselected.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/filemanager/filetype/rtf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/save.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/buttonedit/search.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tools/search.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/search.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tools/search.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/sort.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/grid/sort_asc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/sort_asc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/grid/sort_desc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/sort_desc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/layout/south.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/layout/south.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/layout/south.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/layout/south.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/layout/south.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/layout/south.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/button/split-allow-bottom.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/button/split-allow-bottom.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/split.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/button/split_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/images/button/split_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/splitter/splitter.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/splitter/splitter.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/images/start.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/images/starth.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/summary-top.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/summary.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/summary2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fileupload/swfupload/swfupload.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fileupload/swfupload/swfuploadbutton.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tabs/tab.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/tabs/tab.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/tabs/tab.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tabs/tab.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tabs/tab.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/images/taskbar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/taskbg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/taskbg2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/taskstatus.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/buttonedit/text-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/buttonedit/text-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/tip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/title_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/supergrid/title_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/titleback.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/toolbar/toolbar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/toolbar/toolbar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/toolbar/toolbar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/menu/top-arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tree/treeNodeLine.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/treeNodeLine.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tree/treeNodeLine.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/tree/treeline.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tree/treeline.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/tree/treeline.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/images/tube.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/filemanager/filetype/txt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/button/unchecked.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/undo.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/unlock.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/buttonedit/up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/upgrade.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/upload.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/user.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/user_female.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/wait.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/tooltip/wait.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/wait.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/gantt/warning.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/warning.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/images/layout/west.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/images/layout/west.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/images/layout/west.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/images/layout/west.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/images/layout/west.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/images/layout/west.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/zoomin.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons/zoomout.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/diyclass/1_treebox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/diyclass/2_combotree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/diyclass/3_gridbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/diyclass/4_combogrid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/AjaxService.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/AjaxService.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/windows/ChartWindow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/CustomSkin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/CustomizeSeriesItems.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/form/jqueryForm/Default.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/form/jqueryForm/Default.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/DeskTop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/DualAxesChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CommonLibs/EditForm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CommonLibs/EditForm_Inner.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/include/js/EmployeeGrid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CommonLibs/EmployeeWindow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/FileService.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/FileService.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/FormService.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/FormService.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/windows/GridWindow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/js/HtmlEditors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/windows/IFrameWindow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/js/LinkTree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/windows/MapWindow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CommonLibs/MultiSelectGridWindow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CommonLibs/MultiSelectGridWindow3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CommonLibs/MultiSelectTreeWindow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/portal/js/Portal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CommonLibs/SelectGridWindow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CommonLibs/SelectGridWindow2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CommonLibs/SelectTreeWindow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/windows/SplitterWindow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/data/Stacked Bar Chart.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/StackedBarChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/StackedBarChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/StylingLines,BordersandFills.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/windows/TabsWindow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CommonLibs/TreeSelectWindow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/TreeService.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/TreeService.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CommonLibs/UserSelectWindow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/Window.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/actiontree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tooltip/ajaxload.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/alternating.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/highcharts/areachart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/form/aslabel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/autocollapse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/autocomplete/autocomplete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fieldmap/autocomplete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/autocomplete/autocomplete2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/autosize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/data/barChart-3D.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/barChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/barChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/data/barChart.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/barChart3D.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/highcharts/barcharts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/between.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/boot.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/window/borderWindow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/box/box.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/button/button.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/buttonedit/buttonedit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tabs/buttons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/calendar/calendar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/candleChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/data/candleChart.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/celledit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/treegrid/celledit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/celledit2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/celllinkedit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/celllinkedit2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/cellvalidation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/YUI2/charts-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/checkbox/checkbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/checkboxlist/checkboxlist.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fieldmap/checkboxlist.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/checkboxtree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/treegrid/checkboxtree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/ckeditor/ckeditor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/theme/cobalt.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/lib/codemirror.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/lib/codemirror.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/runCode/codeview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/collapsetree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/columnChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/columnChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/data/columnChart.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/highcharts/columncharts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/columnfit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/columngroup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/columnsmenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/data/combined-chart.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/combinedChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/combobox/combobox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fieldmap/combobox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/diyclass/combogrid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/diyclass/combotree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/contextmenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/menu/contextmenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tabs/contextmenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/contextmenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/combobox/countrys.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/countrys.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fieldmap/countrys.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/createtree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/crud-rowedit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/crud.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/mode/css/css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/data.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/data.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tooltip/data.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/data2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/data3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/databinding/databinding.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/databinding/databinding2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/datagrid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/kindeditor/datagrid1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/YUI2/datasource-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/calendar/datedisable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datepicker/datepicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/deptTree.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/desktop.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/detailform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/detailgrid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/detailgrid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/detailtabs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/lib/util/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/lib/util/dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/diypager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/form/diysize.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/form/diysize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/dragdrop.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/treegrid/dragdrop.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/dragdrop2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/combobox/drawcell.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/drawcell.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/treegrid/drawcell.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/drawcell2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/drawnode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/theme/eclipse.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/editable-rowedit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/editable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/editform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/editform2.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/kindeditor/editortest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/editvalidation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/theme/elegant.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/YUI2/element-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/keymap/emacs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/employees.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/locale/en_US.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/export.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/export.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/export.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/export2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fieldset/fieldset.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/filemanager/filemanager.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fileupload/fileupload.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/filter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/treegrid/filter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/filterServer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/filter_client.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/filteredit/filteredit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/filtertree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fit/fit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/fitcolumnwidth.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/fitsize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/fixcolumnwidth.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/fixedcolumns.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/lib/util/foldcode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fontcss/fontcss.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fontcss/fontcss.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/form/form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/form/jqueryForm/form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tooltip/form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/form.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/buttonedit/form_buttonedit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/lib/util/formatting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/formlayout/formlayout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/functiontree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/treegrid/functiontree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/treegrid/functiontree.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/genders.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tooltip/grid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/grid.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/grid2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/diyclass/gridbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/gridlines.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/grouping.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/grouping_edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/hello_world.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/hidecolumn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/form/htmlForm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fileupload/htmlfile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/mode/htmlmixed/htmlmixed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/iconcls.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/icons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/include/include.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/mode/css/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/mode/htmlmixed/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/mode/javascript/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/mode/xml/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/filemanager/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/portal/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/runCode/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/inline_detailform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/inline_detailgrid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/inline_detailtabs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/lib/util/javascript-hint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/mode/javascript/javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/js/jquery.PrintArea.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/form/jqueryForm/jquery.form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/js/jquery.tmpl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tooltip/jquery.tmpl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/YUI2/json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/kindeditor/kindeditor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/form/labelfield.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/desktop/js/windows/layout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/layout/layout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/treeselect/lazy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/lazytree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/treegrid/lazytree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/lazytree2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/menu/leftmenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/menu/leftmenu.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/lineChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/lineChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/data/lineChart.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/highcharts/linechart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/combobox/linkage-combo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/linkage-select.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/linktree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/linktree.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/list2tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/listMenu.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fieldmap/listMenu.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/listTree.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fieldmap/listTree.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fieldmap/listbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/listbox/listbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/panel/load.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tabs/load.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/loadtree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/treegrid/loadtree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/layout/loginLayout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/lookup/lookup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/master-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/dataset/master-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fieldmap/menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/menu/menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/menu.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/menu/menubar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/button/menubutton.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/button/menubutton2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/menu/menuimg.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/mergecells.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/mergecolumns.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/messagebox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/default/miniui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/miniui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/theme/monokai.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/monthpicker/monthpicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/moveitems.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/listbox/moveitems.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/moveitems_copy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/moveitems_dragdrop.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/movenode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/moverow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/multiselect.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/dbsql/mysql.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/navtree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/theme/neat.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/theme/night.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/nodes.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/buttonedit/openpage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/outlookbar/outlookbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/outlookbar/outlookbar_simple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/outlookmenu/outlookmenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/outlookmenu.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/outlookmenu/outlookmenu2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/outlooktree/outlooktree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/outlooktree.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/outlooktree/outlooktree2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/lib/util/overlay.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/overview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/overview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/overview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tabs/pages/page1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tabs/pages/page2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tabs/pages/page3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tabs/pages/page4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tabs/pages/page5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/layout/pagelayout.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/pager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/pager/pager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/pager_client.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/pagerbuttons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/pagertree/pagertree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/pagertree/pagertree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/panel/panel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/panel/panelLayout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/pieChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/pieChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/data/pieChart.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/highcharts/piechart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/combobox/pinyin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/treeselect/pinyin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/popup/popup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/popupeditform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/popupeditform2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/popupmenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/portal/js/portal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/print.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/radarChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/data/radarChart.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/button/radiobutton.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/radiobuttonlist/radiobuttonlist.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/rowdetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/rowedit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/rowedit_autocomplete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/rowedit_autocomplete2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/rowedit_lookup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/rowedit_openpage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/rowedit_openwindow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/rowedit_textboxlist.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/rowedit_treeselect.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/rowhover.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/rowmenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/rowtemplate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/theme/rubyblue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/form/rules.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/lib/util/runmode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/scatterChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/data/scatterChart.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/lib/util/search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/lib/util/searchcursor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/buttonedit/selectGrid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/buttonedit/selectGrid_Multi.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/buttonedit/selectGrid_Multi2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/buttonedit/selectGrid_Multi3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/buttonedit/selectGrid_js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/buttonedit/selectTree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/buttonedit/selectTree_Multi.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/buttonedit/selectTree_js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/selection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/setcolumns.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/lib/util/simple-hint.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/lib/util/simple-hint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/dataset/singleTable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2003/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/blue2010/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/bootstrap/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/gray/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/themes/olive2003/skin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/sorting.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/sorting_client.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/spinner/spinner.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/splitter/splitter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/splitter/splitter2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/dbsql/sqlserver.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/staticedit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/YUI2/swf/swf-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/open-flash-chart/swfobject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fileupload/swfupload/swfupload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fieldmap/tabs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tabs/tabs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fieldmap/tabs.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tabs/tabs.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tabs/tabs2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tabs/tabs4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tabs/tabsLayout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/tags.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/open-flash-chart/data/tags.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/taskPanel/taskPanel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/tasks.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/pagertree/tasks.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tbz.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CommonLibs/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/outlookmenu/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fileupload/upload/test.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/textbox/textbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fieldmap/textboxlist.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/textboxlist/textboxlist.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/timespinner/timespinner.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/tongji.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/menu/toolbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/toolbar/toolbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/toolbar/toolbar2.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tooltip/tooltip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fieldmap/tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/data/tree.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/treeselect/tree.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/treeCRUD.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/treeCRUD2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/diyclass/treebox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/treegrid/treegrid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/tree/treeimg.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/pagertree/treeload.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/pagertree/treeload.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fieldmap/treeselect.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/treeselect/treeselect.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fileupload/upload.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fileupload/upload.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/form/validGroup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/form/validLabel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/form/validWindow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/validation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/form/validation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/keymap/vim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/window/window.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CodeMirror/mode/xml/xml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/YUI2/YUI2/yahoo-dom-event.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/miniui/locale/zh_CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/CommonLibs/公共资源.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/副本 fixedcolumns.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/datagrid/副本 rowedit_treeselect.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/fileupload/upload/新建 文本文档2.txt" />
+    </list>
+    <ignored path="SVGDrawDemo.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/index.html" changelist="39d44960-fcae-4852-80d6-719e3f47c1ca" time="1401282856052" ignored="false" />
+    <file path="/test.html" changelist="39d44960-fcae-4852-80d6-719e3f47c1ca" time="1400773383175" ignored="false" />
+    <file path="/Dummy.txt" changelist="39d44960-fcae-4852-80d6-719e3f47c1ca" time="1404787390098" ignored="false" />
+    <file path="/a.dummy" changelist="39d44960-fcae-4852-80d6-719e3f47c1ca" time="1400814586850" ignored="false" />
+    <file path="/tree-init.js" changelist="39d44960-fcae-4852-80d6-719e3f47c1ca" time="1401281949337" ignored="false" />
+    <file path="/left-page.html" changelist="39d44960-fcae-4852-80d6-719e3f47c1ca" time="1401283249349" ignored="false" />
+    <file path="/apps.js" changelist="39d44960-fcae-4852-80d6-719e3f47c1ca" time="1401283740688" ignored="false" />
+    <file path="/tbz.html" changelist="39d44960-fcae-4852-80d6-719e3f47c1ca" time="1404787591512" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="SVGDrawDemo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="tbz.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tbz.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="38" selection-start="857" selection-end="857" vertical-scroll-proportion="-2.0193236">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/miniui/treegrid.js" />
+        <option value="$PROJECT_DIR$/data/test.text" />
+        <option value="$PROJECT_DIR$/testhtml/js/tree-init.js" />
+        <option value="$PROJECT_DIR$/testhtml/att-panel.html" />
+        <option value="$PROJECT_DIR$/testhtml/js/apps.js" />
+        <option value="$PROJECT_DIR$/testhtml/left-page.html" />
+        <option value="$PROJECT_DIR$/testhtml/index.html" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/tbz.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="10" />
+    <option name="width" value="1580" />
+    <option name="height" value="860" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SVGDrawDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SVGDrawDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SVGDrawDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SVGDrawDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SVGDrawDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SVGDrawDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SVGDrawDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="miniui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SVGDrawDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SVGDrawDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="miniui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="locale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="D:/WebstormProjects" />
+    <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git-Resource\web前端\框架\SVGDrawDemo" />
+      <recent name="D:\Git-Resource\web前端\框架" />
+      <recent name="D:\Git-Resource\web前端\框架\SVGDrawDemo\miniui" />
+      <recent name="D:\Git-Resource\web前端\框架\SVGDrawDemo\lib" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="39d44960-fcae-4852-80d6-719e3f47c1ca" name="Default" comment="" />
+      <created>1400256016110</created>
+      <updated>1400256016110</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="10" y="0" width="1580" height="860" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24983777" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/testhtml/js/fun.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="26" selection-start="41" selection-end="41" vertical-scroll-proportion="0.05637982" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testhtml/js/fun.js.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniui/treegrid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="24" selection-start="2413" selection-end="2420" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testhtml/two.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="171" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testhtml/js/tree.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="41" selection-start="127" selection-end="127" vertical-scroll-proportion="0.11497731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testhtml/js/tree-init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="31" selection-start="6302" selection-end="6306" vertical-scroll-proportion="0.051437218">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testhtml/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testhtml/index.html.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="33" selection-start="1780" selection-end="1785" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testhtml/js/apps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="20" selection-start="607" selection-end="607" vertical-scroll-proportion="0.09792285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testhtml/att-panel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="13" selection-start="3662" selection-end="3662" vertical-scroll-proportion="0.7352941">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testhtml/left-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="8" selection-start="762" selection-end="762" vertical-scroll-proportion="0.029411765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="116" selection-start="1828" selection-end="1828" vertical-scroll-proportion="0.029411765">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/miniui/locale/en_US.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="37" selection-start="351" selection-end="351" vertical-scroll-proportion="0.4792285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testhtml/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="1931" selection-end="1931" vertical-scroll-proportion="0.69984204">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/box/box.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="38" selection-start="857" selection-end="857" vertical-scroll-proportion="-2.0193236">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

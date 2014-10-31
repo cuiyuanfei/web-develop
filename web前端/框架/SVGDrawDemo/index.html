@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="lib/jquery-1.10.2.js"></script>
+    <script src="lib/jquery-ui-1.10.4.js"></script>
+    <style>
+         .main {
+             float: left;
+             width:auto;
+             height: auto;
+
+         }
+        .left {
+            float: left;
+            width: 200px;
+            height: 700px;
+            border: 1px solid #000000;
+
+        }
+        .left ul {
+            list-style-type: none; height: 300px;
+            text-align:center;
+            margin: 0 auto;
+            padding: 6px;
+        }
+        .left ul li {
+            border: 1px solid #000000;
+            padding: 1px;
+            margin: 1px;
+            height: 30px;
+            width: 30px;
+            float: left;
+        }
+        .right{
+            float: left;
+            width: 1000px;
+            height: 700px;
+            border: 1px solid #000000;
+            border-left: 0px;
+
+        }
+    </style>
+    <script>
+        $(function() {
+            var $svgTools = $( "#svgTools" ),
+                   $trash = $( "#trash" );
+// let the gallery items be draggable
+            $( "li", $svgTools ).draggable({
+                cancel: "a.ui-icon", // clicking an icon won't initiate dragging
+                revert: "invalid", // when not dropped, the item will revert back to its initial position
+                containment: "document",
+                helper: "clone",
+                cursor: "move"
+            });
+// let the trash be droppable, accepting the gallery items
+            $trash.droppable({
+                accept: "#svgTools > li",
+                activeClass: "ui-state-highlight",
+                drop: function( event, ui ) {
+                    drawSvgEntity(ui,ui.draggable.children()[0].id,"coreArea",{});
+                }
+            });
+// let the gallery be droppable as well, accepting items from the trash
+            $svgTools.droppable({
+                accept: "#trash li",
+                activeClass: "custom-state-active",
+                drop: function( event, ui ) {
+                    recycleImage( ui.draggable );
+                }
+            });
+
+            var drawSvgEntity = function (ui,toolsID,entityContainer,config){
+
+                var $tools = $("#"+toolsID +" #entity")[0];
+
+                var newTools = $tools.cloneNode(true);
+                $(newTools.children[0]).attr("cx",ui.offset.left-200).attr("cy",ui.offset.top);
+                var $entityContainer = $("#"+entityContainer);
+                var $ui= ui;
+                $entityContainer.append(newTools);
+
+            }
+
+
+
+        })
+
+    </script>
+</head>
+<body>
+<div class="main">
+    <div class="left">
+        <ul id="svgTools">
+            <li class="s"></li>
+            <li class="s"></li>
+            <li class="s"></li>
+            <li class="s r"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="r"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="r"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="r"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="r"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="r"></li>
+            <li class="r">
+                <svg id="toolsCircle" width="100%" height="100%" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" viewbox="30 30 150 50">
+                     <g id="entity" transform="translate(0.5,0.5)">
+                         <circle cx="100" cy="50" r="40" stroke="black"
+                                 stroke-width="2" fill="red"/>
+                     </g>
+                </svg>
+            </li>
+        </ul>
+    </div>
+    <div id="trash" class="right">
+        <svg id="SvgDiagram" width="100%" height="100%" version="1.1"
+             xmlns="http://www.w3.org/2000/svg" style="border: 0px solid gray;background-color: ghostwhite">
+                  <g id="coreArea"></g>
+                  <g id="hotpoint"></g>
+                  <g id=""></g>
+            </svg>
+    </div>
+</div>
+</body>
+</html>
